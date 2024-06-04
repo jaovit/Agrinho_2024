@@ -1,0 +1,14 @@
+.template{
+    position: relative;
+    width: 100vw;
+}
+
+.background {
+    position: relative;
+    width: 100vw;
+    background-color: red;
+}
+
+.background img {
+    width: 100vw;
+}

@@ -1,0 +1,146 @@
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.25vw 0;
+    z-index: 2;
+    transition: all .5s;
+}
+
+.header.scrollou {
+    background-color: var(--menu-cor);
+    opacity: .95;
+    border-bottom: var(--borda-menu);
+}
+
+.header_itens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header_itens >.itens {
+    margin: 0 1.75vw;
+}
+
+.header_itens a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.header_itens .texto {
+    transition: .25s;
+}
+
+.header_itens .texto:hover,
+.header_itens.scrollou.claro .texto:hover,
+.header_itens.claro .texto:hover {
+    color: var(--cor-menu-2);
+    cursor: pointer;
+}
+
+
+.header_itens.claro .texto,
+.logo .texto.claro {
+    font-weight: 500;
+    color: rgb(22, 22, 22);
+}
+
+.header_itens .texto.claro.txtColor,
+.logo .texto.claro.texto.txtColor {
+    color: var(--cor-texto);
+}
+
+
+.header_itens.scrollou.claro .texto,
+.logo.scrollou .texto.claro {
+    font-weight: 300;
+    color: var(--cor-text-menu);
+}
+
+
+/* clima */
+
+.clima {
+    position: absolute;
+    left: 1.5vw;
+    display: flex;
+    align-items: center;
+    font-size: .875vw;
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+}
+
+.condicoes {
+    display: flex;
+    align-items: center;
+    padding-left: .35vw;
+    margin-top: .25vw;
+}
+
+.temp, .humidade, .vento {
+    margin-right: .75vw;
+}
+
+
+.iconClima  img{
+    width: 3vw;
+    background-color: red;
+}
+
+.load {
+    display: none;
+    margin-left: 1.25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load div{
+    width: 1.75vw;
+    height: 1.75vw;
+    border-radius: 50%;
+    border: solid .3vw #969494;
+    border-top: solid .3vw #5e5c5c;
+    animation: load 1.25s infinite;
+}
+
+.resultado, .erro, .load {
+    display: none;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* celular  */
+@media (max-width: 500px) {
+    .header {
+        padding: 0;
+        height: 14.5vw;
+        border-bottom: var(--borda-menu);
+    }
+
+    .header.scrollou {
+        opacity: 1;
+    }
+
+    .header::before {
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: var(--menu-cor);
+    }
+
+    .header_itens .itens:not(.opcoes .itens, .header_itens .itens:nth-child(4)) {
+        display: none;
+    }
+
+}
