@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styleMain.css">
+
+  <script src="js/animations.js" defer></script>
+  <script src="js/settings.js" defer></script>
+  <script src="js/menus.js" defer></script>
+  <script src="js/apiClima.js" defer></script>
+
+  <!-- <link rel="icon" href="img/logo_escola.jpg"> -->
+
+<!-- icones trocar -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;700;900&display=swap"
+    rel="stylesheet">
+
+  <title>Agrinho: Do Campo a Cidade</title>
+</head>
+
+<body>
+
+  <header class="header scroll_header content">
+    <input type="checkbox" id="menu_input">
+
+    <Section class="clima">
+      <section class="setcity">
+        <label for="cep">informe seu cep</label>
+        <input type="number" id="cep">
+        <button id="set">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </section>
+      <section class="resultado">
+        <div class="city">barracao</div>
+        <div class="condicoes">
+          <div class="temp"><span>30</span>&deg;C</div>
+          <div class="humidade"><i class="fa-solid fa-droplet"></i> <span>7%</span></div>
+        <div class="iconClima"><img id="condicao-icon" src="img/logo_escola.jpg"></div>
+          <!-- <div id="vento"><i class="fa-solid fa-wind"></i><span>12</span>km/h</div> -->
+        </div>
+      </Section>
+      <section class="erro">
+        <p>deu ruim meu nobre</p>
+      </section>
+      <section class="load">
+        <div></div>
+      </section>
+    </section>
+    
+
+    <ul class="header_itens scroll_header tema">
+
+      <li class="itens">
+        <a href="#" onclick="nativo()">
+          <p class="texto tema textColor">Compartilhar</p>
+        </a>
+      </li>
+
+      <li class="itens">
+        <a href="#" onclick='fechar(["none", "block", "none", "block"])'>
+          <p class="texto tema textColor">Comentar</p>
+        </a>
+      </li>
+
+      <li class="itens">
+        <a href="#" onclick='fechar(["block", "none", "none", "block"])'>
+          <p class="texto tema textColor">Entrar</p>
+        </a>
+      </li>
+    </ul>
+    <nav class="configuracao">
+      <h4 class="subtitulo">
+        Menu
+      </h4>
+      <ul class="opcoes tema">
+        <li class="itens cabec">
+          <a href="#" onclick="nativo()">
+            <p class="texto">Compartilhar<i class="fas fa-share"></i>
+            </p>
+          </a>
+        </li>
+
+        <li class="itens cabec">
+          <a href="#" onclick='fechar(["none", "block", "none", "block"])'>
+            <p class="texto">Comentar<i class="far fa-comment"></i></p>
+          </a>
+        </li>
+
+        <li class="itens cabec">
+          <a href="#" onclick='fechar(["block", "none", "none", "block"])'>
+            <p class="texto">Entrar<i class="fas fa-user"></i>
+            </p>
+          </a>
+        </li>
+
+        <li class="itens">
+          <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
+              1</span> </label>
+          <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
+        </li>
+        <li class="itens">
+          <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
+              1</span> </label>
+          <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
+        </li>
+        <li class="itens">
+          <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
+              1</span> </label>
+          <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
+        </li>
+        <li class="itens">
+          <label class="texto tema">
+            <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
+              onclick="mudarRoot()">
+          </label>
+        </li>
+
+        <li class="itens color">
+          <p class="texto">Cores de fundo:</p>
+          <label for="input_cor_1" class="texto">Principal:</label>
+          <input type="color" id="input_cor_1" class="input_cor">
+
+          <label for="input_cor_1" class="texto">Segundaria:</label>
+          <input type="color" id="input_cor_2" class="input_cor">
+        </li>
+        <li class="itens color">
+          <p class="texto">Cores do texto:</p>
+          <label for="input_cor_1" class="texto">Titulo:</label>
+          <input type="color" id="input_cor_3" class="input_cor">
+
+          <label for="input_cor_1" class="texto">Texto:</label>
+          <input type="color" id="input_cor_4" class="input_cor">
+        </li>
+        <li class="itens color">
+          <p class="texto">Cores do menu:</p>
+          <label for="input_cor_1" class="texto">Fundo:</label>
+          <input type="color" id="input_cor_5" class="input_cor">
+
+          <label for="input_cor_1" class="texto">Texto:</label>
+          <input type="color" id="input_cor_6" class="input_cor">
+        </li>
+        
+        <li class="itens">
+          <label class="texto">
+            <input type="button" id="input_reset" class="bnt" value="Resetar" alt="botão de resetar"
+              onclick="resetConf()">
+          </label>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="botao scroll_header">
+      <div class="barras"></div>
+      <div class="barras"></div>
+      <div class="barras"></div>
+      <label class="clic_js" for="menu_input"></label>
+    </div>
+  </header>
+
+  <section class="menu_audio">
+    <input type="checkbox" id="audio_input">
+
+    <label class="clic_audio" for="audio_input">
+      <i class="fas fa-volume-up"></i>
+    </label>
+    <audio controls>
+      <source src="audio/pagina_audio.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudios.
+    </audio>
+  </section>
+
+  <section class="template">
+    <div class="background">
+      <img src="img/background.png" alt="template">
+    </div>
+  </section>
+  
+</body>
+
+</html>
