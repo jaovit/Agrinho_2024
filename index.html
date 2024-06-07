@@ -15,9 +15,9 @@
   <!-- <link rel="icon" href="img/logo_escola.jpg"> -->
 
 <!-- icones trocar -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
   integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,8 +60,8 @@
     </section>
     
 
+    <!-- forms do cabeçalho -->
     <ul class="header_itens scroll_header tema">
-
       <li class="itens">
         <a href="#" onclick="nativo()">
           <p class="texto tema textColor">Compartilhar</p>
@@ -80,10 +80,14 @@
         </a>
       </li>
     </ul>
+
+    <!-- menu -->
     <nav class="configuracao">
       <h4 class="subtitulo">
         Menu
       </h4>
+
+      <!-- forms do menu cllr e tablete -->
       <ul class="opcoes tema">
         <li class="itens cabec">
           <a href="#" onclick="nativo()">
@@ -104,52 +108,62 @@
             </p>
           </a>
         </li>
+        
+        <!-- sub menu alteraçoẽs de tanhamos -->
+        <li class="subMenu sizes">
 
-        <li class="itens">
-          <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
-              1</span> </label>
-          <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
-        </li>
-        <li class="itens">
-          <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
-              1</span> </label>
-          <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
-        </li>
-        <li class="itens">
-          <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
-              1</span> </label>
-          <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
-        </li>
-        <li class="itens">
-          <label class="texto tema">
-            <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
-              onclick="mudarRoot()">
-          </label>
+          <li class="itens">
+            <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
+                1</span> </label>
+            <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
+          </li>
+          <li class="itens">
+            <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
+                1</span> </label>
+            <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
+          </li>
+          <li class="itens">
+            <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
+                1</span> </label>
+            <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
+          </li>
+          <li class="itens">
+            <label class="texto tema">
+              <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
+                onclick="mudarRoot()">
+            </label>
+          </li>
+
         </li>
 
-        <li class="itens color">
-          <p class="texto">Cores de fundo:</p>
-          <label for="input_cor_1" class="texto">Principal:</label>
-          <input type="color" id="input_cor_1" class="input_cor">
+        <!-- sub meno alterações das cores -->
+        <li class="subMenu color">
 
-          <label for="input_cor_1" class="texto">Segundaria:</label>
-          <input type="color" id="input_cor_2" class="input_cor">
-        </li>
-        <li class="itens color">
-          <p class="texto">Cores do texto:</p>
-          <label for="input_cor_1" class="texto">Titulo:</label>
-          <input type="color" id="input_cor_3" class="input_cor">
+          <li class="itens color">
+            <p class="texto">Cores de fundo:</p>
+            <label for="input_cor_1" class="texto">Principal:</label>
+            <input type="color" id="input_cor_1" class="input_cor">
 
-          <label for="input_cor_1" class="texto">Texto:</label>
-          <input type="color" id="input_cor_4" class="input_cor">
-        </li>
-        <li class="itens color">
-          <p class="texto">Cores do menu:</p>
-          <label for="input_cor_1" class="texto">Fundo:</label>
-          <input type="color" id="input_cor_5" class="input_cor">
+            <label for="input_cor_1" class="texto">Segundaria:</label>
+            <input type="color" id="input_cor_2" class="input_cor">
+          </li>
+          <li class="itens color">
+            <p class="texto">Cores do texto:</p>
+            <label for="input_cor_1" class="texto">Titulo:</label>
+            <input type="color" id="input_cor_3" class="input_cor">
 
-          <label for="input_cor_1" class="texto">Texto:</label>
-          <input type="color" id="input_cor_6" class="input_cor">
+            <label for="input_cor_1" class="texto">Texto:</label>
+            <input type="color" id="input_cor_4" class="input_cor">
+          </li>
+          <li class="itens color">
+            <p class="texto">Cores do menu:</p>
+            <label for="input_cor_1" class="texto">Fundo:</label>
+            <input type="color" id="input_cor_5" class="input_cor">
+
+            <label for="input_cor_1" class="texto">Texto:</label>
+            <input type="color" id="input_cor_6" class="input_cor">
+          </li>
+
         </li>
         
         <li class="itens">
