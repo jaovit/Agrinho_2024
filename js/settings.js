@@ -96,7 +96,7 @@ barraFont.addEventListener("input", fonte)
 function fonte() {
   
   document.querySelector(".fonte_tamanho").innerHTML = barraFont.value / 100;
-  root.style.setProperty("--font-size-js", barraFont.value / 100);
+  root.style.setProperty("--font-size", barraFont.value / 100);
 
   for (let i = 0; i < txtMax.length; i++) {
     let VtxtMax = parseInt(txtMax[i].attributes.txt_max.value);
@@ -115,7 +115,7 @@ barraImg.addEventListener("input", img)
 
 function img(){
   document.querySelector(".img_tamanho").innerHTML = barraImg.value / 100;
-  root.style.setProperty("--tamanho-img", barraImg.value / 100);
+  root.style.setProperty("--size-img", barraImg.value / 100);
 
   for (let i = 0; i < imgMax.length; i++) {
     let VimgMax = parseInt(imgMax[i].attributes.img_max.value);
