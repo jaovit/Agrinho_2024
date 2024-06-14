@@ -5,7 +5,7 @@ var root = document.documentElement;
 
 const elementosMudar = document.querySelectorAll(".tema");
 
-temaPadrao()
+// temaPadrao()
 
 // function temaPadrao() {
 //   if (
@@ -26,7 +26,9 @@ temaPadrao()
 //   }
 // }
 
-elementosMudar[i].classList.add("claro");
+for (var i = 0; i < elementosMudar.length; i++) {
+        elementosMudar[i].classList.add("claro");
+       }
 
 function mudarRoot() {
   resetcolor();

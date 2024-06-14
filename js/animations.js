@@ -1,4 +1,4 @@
-// scroll
+// animação do scroll
 
 const elementosHeader = document.querySelectorAll(".scroll_header")
 const elementosTexto = document.querySelectorAll(".scrollTexto")
