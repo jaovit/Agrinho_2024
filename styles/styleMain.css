@@ -1,7 +1,10 @@
 @import url("header.css");
 @import url("menus.css");
 @import url("menuAudio.css");
-@import url("section_1.css");
+@import url("typeStyle_1.css");
+@import url("typeStyle_2.css");
+@import url("typeStyle_3.css");
+@import url("typeStyle_4.css");
 
 
 
@@ -10,10 +13,10 @@
   --fonte-subtitulo: 'Roboto', sans-serif;
   --borda-menu: solid .1vw #ebc4b0;
   --menu-cor: #191919;
-  --font-size-js: 1;
-  --tamanho-img: 1;
-  --cor-text-menu: #c9c2c0;
-  --cor-menu-2: #e4b7a0;
+  --font-size: 1;
+  --size-img: 1;
+  --text-menu-color: #c9c2c0;
+  --menu-color-2: #e4b7a0;
 
 
     /* modo claro padrão*/
