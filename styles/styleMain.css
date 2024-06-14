@@ -1,5 +1,4 @@
 @import url("header.css");
-@import url("formularios.css");
 @import url("menus.css");
 @import url("menuAudio.css");
 @import url("section_1.css");
@@ -18,7 +17,7 @@
 
 
     /* modo claro padrão*/
-    --cor-principal: #c7c7c7;
+    --cor-principal: #2A2F34;
     --cor-segundaria: #b6b6b6;
     --cor-titulo: #202020;
     --sub-titulo: #242424;
@@ -104,14 +103,6 @@ ul {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-.content::after,
-.content::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .titulo {
