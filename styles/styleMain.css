@@ -112,12 +112,12 @@ table {
   color: var(--cor-titulo);
   font-family: var(--fonte-principal);
   font-weight: 600;
-  font-size: calc(var(--font-size-js) * 2vw);
+  font-size: calc(var(--font-size) * 2vw);
   margin-bottom: .9vw;
 }
 
 .subtitulo {
-  font-size: calc(var(--font-size-js) * 1.4vw);
+  font-size: calc(var(--font-size) * 1.4vw);
   font-weight: 600;
   margin-bottom: .5vw;
   color: var(--sub-titulo);
@@ -127,8 +127,8 @@ table {
 .texto {
   color: var(--cor-texto);
   font-family: var(--fonte-principal);
-  font-size: calc(var(--font-size-js) * 1.075vw);
-  line-height: calc(var(--font-size-js) * 1.75vw);
+  font-size: calc(var(--font-size) * 1.075vw);
+  line-height: calc(var(--font-size) * 1.75vw);
   font-weight: 400;
 }
 
@@ -154,20 +154,20 @@ table {
   }
 
   .titulo {
-    font-size: calc(var(--font-size-js) * 3.5vw);
-    margin-bottom: calc(var(--font-size-js) * 1.75vw);
+    font-size: calc(var(--font-size) * 3.5vw);
+    margin-bottom: calc(var(--font-size) * 1.75vw);
     font-weight: 400;
   }
 
   .subtitulo {
-    font-size: calc(var(--font-size-js) * 2.75vw);
-    margin-bottom: calc(var(--font-size-js) * 1.75vw);
+    font-size: calc(var(--font-size) * 2.75vw);
+    margin-bottom: calc(var(--font-size) * 1.75vw);
     font-weight: 400;
   }
 
   .texto {
-    font-size: calc(var(--font-size-js) * 2.35vw);
-    line-height: calc(var(--font-size-js) * 3.75vw);
+    font-size: calc(var(--font-size) * 2.35vw);
+    line-height: calc(var(--font-size) * 3.75vw);
     font-weight: 400;
   }
 
@@ -191,19 +191,19 @@ table {
   }
 
   .titulo {
-    font-size: calc(var(--font-size-js) * 4.75vw);
-    margin-bottom: calc(var(--font-size-js) * 2.15vw);
+    font-size: calc(var(--font-size) * 4.75vw);
+    margin-bottom: calc(var(--font-size) * 2.15vw);
 
   }
 
   .subtitulo {
-    font-size: calc(var(--font-size-js) * 4.5vw);
-    margin-bottom: calc(var(--font-size-js) * 2vw);
+    font-size: calc(var(--font-size) * 4.5vw);
+    margin-bottom: calc(var(--font-size) * 2vw);
   }
 
   .texto {
-    font-size: calc(var(--font-size-js) * 4.2vw);
-    line-height: calc(var(--font-size-js) * 6.85vw);
+    font-size: calc(var(--font-size) * 4.2vw);
+    line-height: calc(var(--font-size) * 6.85vw);
   }
 
 }
