@@ -92,7 +92,7 @@ barraFont.addEventListener("input", fonte)
 function fonte() {
   
   document.querySelector(".fonte_tamanho").innerHTML = barraFont.value / 100;
-  root.style.setProperty("--font-size-js", barraFont.value / 100);
+  root.style.setProperty("--font-size", barraFont.value / 100);
 
   for (let i = 0; i < txtMax.length; i++) {
     let VtxtMax = parseInt(txtMax[i].attributes.txt_max.value);
@@ -111,7 +111,7 @@ barraImg.addEventListener("input", img)
 
 function img(){
   document.querySelector(".img_tamanho").innerHTML = barraImg.value / 100;
-  root.style.setProperty("--tamanho-img", barraImg.value / 100);
+  root.style.setProperty("--img-size", barraImg.value / 100);
 
   for (let i = 0; i < imgMax.length; i++) {
     let VimgMax = parseInt(imgMax[i].attributes.img_max.value);
@@ -153,37 +153,37 @@ const input_cor_5 = document.querySelector("#input_cor_5");
 const input_cor_6 = document.querySelector("#input_cor_6");
 
 input_cor_1.addEventListener("input", () => {
-  root.style.setProperty("--cor-principal", input_cor_1.value);
-  root.style.setProperty("--cor-principal-deg", `${input_cor_1.value}00`);
+  root.style.setProperty("--color-principal", input_cor_1.value);
+  root.style.setProperty("--color-principal-deg", `${input_cor_1.value}00`);
 });
 
 input_cor_2.addEventListener("input", () => {
-  root.style.setProperty("--cor-segundaria", input_cor_2.value);
+  root.style.setProperty("--color-segundaria", input_cor_2.value);
   
 });
 
 input_cor_3.addEventListener("input", () => {
-  root.style.setProperty("--cor-titulo", input_cor_3.value);
-  root.style.setProperty("--sub-titulo", input_cor_3.value);
+  root.style.setProperty("--color-title", input_cor_3.value);
+  root.style.setProperty("--color-subtitle", input_cor_3.value);
   for (var i = 0; i < tituloColor.length; i++) {
     tituloColor[i].classList.add("tituloColor");
   }
 });
 
 input_cor_4.addEventListener("input", () => {
-  root.style.setProperty("--cor-texto", input_cor_4.value);
+  root.style.setProperty("--color-text", input_cor_4.value);
   for (var i = 0; i < txtColor.length; i++) {
     txtColor[i].classList.add("txtColor");
   }
 });
 
 input_cor_5.addEventListener("input", () => {
-  root.style.setProperty("--menu-cor", input_cor_5.value);
+  root.style.setProperty("--menu-color", input_cor_5.value);
   
 });
 
 input_cor_6.addEventListener("input", () => {
-  root.style.setProperty("--cor-text-menu", input_cor_6.value);
+  root.style.setProperty("--color-text-menu", input_cor_6.value);
   
 });
 
