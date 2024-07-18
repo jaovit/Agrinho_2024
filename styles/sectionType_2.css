@@ -1,0 +1,43 @@
+.section_1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 0;
+    background-color: var(--cor-principal);
+    border-bottom: solid .1vw gainsboro;
+}
+
+.section_1 .content {
+    display: flex;
+    justify-content: space-between;
+    width: 94vw;
+}
+
+.section_1 .textos {
+    margin-top: 5%;
+    padding-right: 1vw;
+}
+
+.section_1 .texto {
+    margin-left: 5%;
+}
+
+.section_1 .images {
+    display: grid;
+    gap: 1vw;
+    grid-template-rows: repeat(2, 1fr);;
+    grid-template-columns: auto 1fr 1fr;
+}
+
+.section_1 .images img {
+    width: 14vw;
+    height: 14.5vw;
+    object-fit: cover;
+}
+
+.section_1 .images img:nth-child(1) {
+    grid-row: span 2;
+    width: 26vw;
+    height: 30vw;
+}

@@ -1,0 +1,21 @@
+.topicos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: solid .1vw ghostwhite;
+    background-color: rgb(1, 99, 99);
+    padding: 1.5vw 0vw;
+}
+
+.topicos .titulo {
+    position: relative; 
+    background-color: red;
+    text-align: center;
+}
+
+.topicos .carrocel-box {
+    background-color: blue;
+    width: 100vw;
+    height: 26vw;
+}
