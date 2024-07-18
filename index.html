@@ -15,14 +15,14 @@
   <!-- <link rel="icon" href="img/logo_escola.jpg"> -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-  integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
   <title>Agrinho: Do Campo à Cidade</title>
@@ -48,7 +48,7 @@
         <div class="condicoes">
           <div class="temp"><span>30</span>&deg;C</div>
           <div class="humidade"><i class="fa-solid fa-droplet"></i> <span>7%</span></div>
-        <div class="iconClima"><img id="condicao-icon" src="img/logo_escola.jpg"></div>
+          <div class="iconClima"><img id="condicao-icon" src="img/logo_escola.jpg"></div>
           <!-- <div id="vento"><i class="fa-solid fa-wind"></i><span>12</span>km/h</div> -->
         </div>
       </Section>
@@ -59,7 +59,7 @@
         <div></div>
       </section>
     </section>
-    
+
 
     <!-- forms do cabeçalho -->
     <ul class="header_itens scroll_header tema">
@@ -109,64 +109,64 @@
             </p>
           </a>
         </li>
-        
+
         <!-- sub menu alteraçoẽs de tanhamos -->
         <li class="subMenu sizes">
 
-          <li class="itens">
-            <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
-                1</span> </label>
-            <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
-          </li>
-          <li class="itens">
-            <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
-                1</span> </label>
-            <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
-          </li>
-          <li class="itens">
-            <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
-                1</span> </label>
-            <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
-          </li>
-          <li class="itens">
-            <label class="texto tema">
-              <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
-                onclick="mudarRoot()">
-            </label>
-          </li>
+        <li class="itens">
+          <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
+              1</span> </label>
+          <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
+        </li>
+        <li class="itens">
+          <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
+              1</span> </label>
+          <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
+        </li>
+        <li class="itens">
+          <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
+              1</span> </label>
+          <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
+        </li>
+        <li class="itens">
+          <label class="texto tema">
+            <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
+              onclick="mudarRoot()">
+          </label>
+        </li>
 
         </li>
 
         <!-- sub meno alterações das cores -->
         <li class="subMenu color">
 
-          <li class="itens color">
-            <p class="texto">Cores de fundo:</p>
-            <label for="input_cor_1" class="texto">Principal:</label>
-            <input type="color" id="input_cor_1" class="input_cor">
+        <li class="itens color">
+          <p class="texto">Cores de fundo:</p>
+          <label for="input_cor_1" class="texto">Principal:</label>
+          <input type="color" id="input_cor_1" class="input_cor">
 
-            <label for="input_cor_1" class="texto">Segundaria:</label>
-            <input type="color" id="input_cor_2" class="input_cor">
-          </li>
-          <li class="itens color">
-            <p class="texto">Cores do texto:</p>
-            <label for="input_cor_1" class="texto">Titulo:</label>
-            <input type="color" id="input_cor_3" class="input_cor">
+          <label for="input_cor_1" class="texto">Segundaria:</label>
+          <input type="color" id="input_cor_2" class="input_cor">
+        </li>
+        <li class="itens color">
+          <p class="texto">Cores do texto:</p>
+          <label for="input_cor_1" class="texto">Titulo:</label>
+          <input type="color" id="input_cor_3" class="input_cor">
 
-            <label for="input_cor_1" class="texto">Texto:</label>
-            <input type="color" id="input_cor_4" class="input_cor">
-          </li>
-          <li class="itens color">
-            <p class="texto">Cores do menu:</p>
-            <label for="input_cor_1" class="texto">Fundo:</label>
-            <input type="color" id="input_cor_5" class="input_cor">
+          <label for="input_cor_1" class="texto">Texto:</label>
+          <input type="color" id="input_cor_4" class="input_cor">
+        </li>
+        <li class="itens color">
+          <p class="texto">Cores do menu:</p>
+          <label for="input_cor_1" class="texto">Fundo:</label>
+          <input type="color" id="input_cor_5" class="input_cor">
 
-            <label for="input_cor_1" class="texto">Texto:</label>
-            <input type="color" id="input_cor_6" class="input_cor">
-          </li>
+          <label for="input_cor_1" class="texto">Texto:</label>
+          <input type="color" id="input_cor_6" class="input_cor">
+        </li>
 
         </li>
-        
+
         <li class="itens">
           <label class="texto">
             <input type="button" id="input_reset" class="bnt" value="Resetar" alt="botão de resetar"
@@ -197,26 +197,70 @@
   </section>
 
   <section class="template">
-    <div class="conteudo">
+    <div class="content">
       <h1 class="titulo tema titleColor" txt_max="120">
-        Do Campo à Cidade: colhendo opotunidades
+        Da fazenda à cidade
       </h1>
-      <p class="texto tema textColor">Mais do que uma palavra da moda, a sustentabilidade é um objetivo a ser alcançado.
-        Juntos,
-        podemos tornar o mundo
-        um lugar melhor.</p>
+      <p class="texto tema textColor">Explore as últimas tecnologias e automação na agricultura brasileira,
+        transformando o campo em um centro de inovação e oportunidades</p>
     </div>
   </section>
 
-
-  <section class="">
-    <div class="conteudo">
+  <section class="topicos">
+    <div class="content">
       <h1 class="titulo" txt_max="120">
-        
+        tópicos
       </h1>
-      <p class="texto"></p>
+      <div class="carrocel-box">
+
+      </div>
     </div>
   </section>
-  
+
+  <section class="section_1">
+    <div class="content">
+      <div class="textos">
+        <h1 class="titulo textColor" txt_max="120">
+          Tecnologia de ponta no campo
+        </h1>
+        <p class="texto textColor">Descubra como a tecnologia está revolucionando a agricultura brasileira, aumentando a
+          produtividade e sustentabilidade </p>
+      </div>
+      <div class="images">
+        <img src="img/Captura de tela 2024-07-18 130503.png" alt="" class="img">
+        <img src="img/Captura de tela 2024-07-18 131043.png" alt="" class="img">
+        <img src="img/Captura de tela 2024-07-18 131005.png" alt="" class="img">
+        <img src="img/Captura de tela 2024-07-18 131028.png" alt="" class="img">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" txt_max="110">
+    <ul class="lista">
+      <li class="itens texto"> Colégio Estadual
+        Bom Jesus E.F.M</li>
+      <li class="itens texto"><span class="titulo">Endereço:</span> <a href="https://goo.gl/maps/vecZkPFKK8psWQD76"
+          class="texto">Av. Ipiranga, 133 - Centro, Bom Jesus do Sul - PR, 85708-000</a>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14320.658600164077!2d-53.6020241!3d-26.1913217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f09063fd6b7abd%3A0xeec2efbc2e39fe07!2sCol%C3%A9gio%20Estadual%20Bom%20Jesus!5e0!3m2!1spt-BR!2sbr!4v1690927125144!5m2!1spt-BR!2sbr"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </li>
+      <li class="itens texto"><span class="titulo">Telefone:</span> <span class="info"> &nbsp;(46) 3548-1121</span>
+      </li>
+      <li class="itens texto"><span class="titulo">Fecebook:</span> <span class="info"> <a
+            href="https://www.facebook.com/cebomjesusefm" class="texto">Colegio Estadual B.J.S</a></span>
+      </li>
+      <li class="itens texto"><span class="titulo">Professor:</span> <span class="info"> &nbsp;Eli Berto Dambros</span>
+      </li>
+      <li class="itens texto"><span class="titulo">Aluno:</span> <span class="info"> &nbsp;João Vitor da Silva
+          Antunes</span></li>
+      <li class="itens texto"> &copy; Sustentabilidade: Ações que mudam o mundo - 2023</li>
+    </ul>
+  </footer>
+
 </body>
+
 </html>
