@@ -9,7 +9,7 @@
     transition: all .5s;
 }
 
-.header.scrollou {
+.header.visible {
     background-color: var(--color-menu);
     opacity: .95;
     border-bottom: var(--borda-menu);
@@ -34,7 +34,7 @@
 }
 
 .header_itens .texto:hover,
-.header_itens.scrollou.claro .texto:hover,
+.header_itens.visible.claro .texto:hover,
 .header_itens.claro .texto:hover {
     color: var(--cor-menu-2);
     cursor: pointer;
@@ -53,8 +53,8 @@
 }
 
 
-.header_itens.scrollou.claro .texto,
-.logo.scrollou .texto.claro {
+.header_itens.visible.claro .texto,
+.logo.visible .texto.claro {
     font-weight: 300;
     color: var(--cor-text-menu);
 }
@@ -135,7 +135,7 @@
         border-bottom: var(--borda-menu);
     }
 
-    .header.scrollou {
+    .header.visible {
         opacity: 1;
     }
 

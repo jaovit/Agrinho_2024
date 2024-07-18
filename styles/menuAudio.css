@@ -6,7 +6,7 @@
     transform: translateX(-100%);
     left: 0;
     z-index: 5;
-    background-color: var(--menu-cor);
+    background-color: var(--color-menu);
     border: var(--borda-menu);
     border-left: none;
 }
@@ -24,7 +24,7 @@
     left: calc(100% - .1vw);
     top: 51%;
     transform: translateY(-50%);
-    background-color: var(--menu-cor);
+    background-color: var(--color-menu);
     height: 70%;
     width: 3.25vw;
     border-radius: 0 1vw 1vw 0;
@@ -36,7 +36,7 @@
     position: relative;
     top: 1.35vw;
     left: .8vw;
-    color: var(--cor-menu-2);
+    color: var(--color-menu-2);
     transform: rotate(-90deg);
 }
 
@@ -67,7 +67,7 @@
 
 .menu_audio audio::-webkit-media-controls-current-time-display,
 .menu_audio audio::-webkit-media-controls-time-remaining-display {
-    color: var(--cor-menu-2);
+    color: var(--color-menu-2);
     font-size: calc(var(--font-size-js) * 1vw);
     filter: invert(100%);
     margin-left: 1vw;

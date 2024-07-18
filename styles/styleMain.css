@@ -21,8 +21,6 @@
   --leter-space: 1;
   --color-text-menu: #c9c2c0;
   --color-menu-2: #e4b7a0;
-
-
     
 /*  modo escuro */
     --color-principal: #23272b; 
@@ -143,12 +141,12 @@ table {
 
 /* aparecer com a rolagem */
 
-.scrollTexto .conteudo {
+.scrollContent .content {
   filter: opacity(0);
   transition: .75s ease-in-out;
 }
 
-.scrollTexto.scrollou .conteudo {
+.scrollContent.visible .content {
   filter: opacity(1);
 }
 
