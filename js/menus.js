@@ -1,6 +1,6 @@
 // menu principal
 
-var aberto = false
+let aberto = false
 const checkbox = document.querySelector('#menu_input')
 const nav = document.querySelector('.configuracao')
 const label = document.querySelector('.clic_js')
@@ -17,16 +17,12 @@ document.addEventListener('click', (event) => {
                 aberto = true
                 checkbox.checked = false
             }
-        } else {
-
-            if (target !== checkbox && target !== nav) {
+        } else if (target !== checkbox && target !== nav) {
                 checkbox.checked = false
                 if (aberto) {
                     aberto = false
                     checkbox.checked = false
-
                 }
-            }
         }
     }
 })

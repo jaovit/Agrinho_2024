@@ -1,7 +1,7 @@
 // tema
 
-var modo = true;
-var root = document.documentElement;
+let modo = true;
+let root = document.documentElement;
 
 const elementosMudar = document.querySelectorAll(".tema");
 
