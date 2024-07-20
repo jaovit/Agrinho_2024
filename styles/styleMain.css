@@ -90,7 +90,7 @@ body {
   vertical-align: baseline;
 }
 
-* :not(.topicos, .configuracao) {
+* :not(.topicos, .config) {
   transition: background-color 1s;
 }
 

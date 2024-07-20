@@ -70,7 +70,7 @@
 
 /* configuração */
 
-.configuracao {
+.config {
     position: fixed;
     top: 0;
     right: 0;
@@ -86,15 +86,15 @@
     overflow-x: hidden;
 }
 
-.configuracao::-webkit-scrollbar-thumb {
+.config::-webkit-scrollbar-thumb {
     background-color: var(--color-menu-2);
 }
 
-#menu_input:checked~.configuracao {
+#menu_input:checked~.config {
     transform: translateX(0)
 }
 
-.configuracao .subtitulo {
+.config .subtitulo {
     font-size: calc(var(--font-size) * 1.5vw);
     font-weight: 500;
     margin: 1.5vw 0 1vw 0;
@@ -243,11 +243,11 @@
 
     /* configuração */
 
-    .configuracao {
+    .config {
         width: 42.5vw;
     }
 
-    .configuracao .subtitulo {
+    .config .subtitulo {
         font-size: calc(var(--font-size-js) * 2.75vw);
         margin: 1.5vw 0;
     }
@@ -325,7 +325,7 @@
 
     }
 
-    .configuracao {
+    .config {
         top: 14vw;
         transform: translateY(-100%);
         height: 110vw;
@@ -336,11 +336,11 @@
         width: 100%;
     }
 
-    #menu_input:checked~.header_itens .configuracao {
+    #menu_input:checked~.header_itens .config {
         transform: translateY(-1%)
     }
 
-    .configuracao .subtitulo {
+    .config .subtitulo {
         font-size: calc(var(--font-size-js) * 4.6vw);
         margin: 0 0 2.5vw 0;
     }

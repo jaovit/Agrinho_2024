@@ -11,8 +11,8 @@
 
 .header.visible {
     background-color: var(--color-menu);
-    opacity: .95;
     border-bottom: var(--borda-menu);
+    opacity: .95;
 }
 
 .header_itens {
@@ -20,7 +20,7 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.header_itens >.itens {
+.header_itens > .itens {
     margin: 0 1.75vw;
 }
 
@@ -31,32 +31,6 @@
 
 .header_itens .texto {
     transition: .25s;
-}
-
-.header_itens .texto:hover,
-.header_itens.visible.claro .texto:hover,
-.header_itens.claro .texto:hover {
-    color: var(--cor-menu-2);
-    cursor: pointer;
-}
-
-
-.header_itens.claro .texto,
-.logo .texto.claro {
-    font-weight: 500;
-    color: rgb(22, 22, 22);
-}
-
-.header_itens .texto.claro.txtColor,
-.logo .texto.claro.texto.txtColor {
-    color: var(--cor-texto);
-}
-
-
-.header_itens.visible.claro .texto,
-.logo.visible .texto.claro {
-    font-weight: 300;
-    color: var(--cor-text-menu);
 }
 
 
