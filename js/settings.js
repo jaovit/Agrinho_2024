@@ -14,13 +14,13 @@ function temaPadrao() {
   ) {
     modo = false;
     // true = escuro;
-    for (var i = 0; i < elementosMudar.length; i++) {
+    for (let i = 0; i < elementosMudar.length; i++) {
       elementosMudar[i].classList.remove("claro");
     }
   } else {
     modo = true;
     // false = claro;
-    for (var i = 0; i < elementosMudar.length; i++) {
+    for (let i = 0; i < elementosMudar.length; i++) {
       elementosMudar[i].classList.add("claro");
     }
   }
@@ -47,7 +47,7 @@ function mudarRoot() {
       "--filtro": "brightness(75%) opacity(.5)",
     };
 
-    for (var i = 0; i < elementosMudar.length; i++) {
+    for (let i = 0; i < elementosMudar.length; i++) {
       elementosMudar[i].classList.add("claro");
     }
 
@@ -71,14 +71,14 @@ function mudarRoot() {
       "--filtro": "brightness(25%)",
     };
 
-    for (var i = 0; i < elementosMudar.length; i++) {
+    for (let i = 0; i < elementosMudar.length; i++) {
       elementosMudar[i].classList.remove("claro");
     }
 
     modo = true;
   }
 
-  for (var i in root_prop) {
+  for (let i in root_prop) {
     root.style.setProperty(i, root_prop[i]);
   }
 }
@@ -165,14 +165,14 @@ input_cor_2.addEventListener("input", () => {
 input_cor_3.addEventListener("input", () => {
   root.style.setProperty("--color-title", input_cor_3.value);
   root.style.setProperty("--color-subtitle", input_cor_3.value);
-  for (var i = 0; i < tituloColor.length; i++) {
+  for (let i = 0; i < tituloColor.length; i++) {
     tituloColor[i].classList.add("tituloColor");
   }
 });
 
 input_cor_4.addEventListener("input", () => {
   root.style.setProperty("--color-text", input_cor_4.value);
-  for (var i = 0; i < txtColor.length; i++) {
+  for (let i = 0; i < txtColor.length; i++) {
     txtColor[i].classList.add("txtColor");
   }
 });
@@ -188,10 +188,10 @@ input_cor_6.addEventListener("input", () => {
 });
 
 function resetcolor() {
-  for (var i = 0; i < txtColor.length; i++) {
+  for (let i = 0; i < txtColor.length; i++) {
     txtColor[i].classList.remove("txtColor");
   }
-  for (var i = 0; i < tituloColor.length; i++) {
+  for (let i = 0; i < tituloColor.length; i++) {
     tituloColor[i].classList.remove("tituloColor");
   }
 }
