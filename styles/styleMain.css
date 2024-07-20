@@ -10,25 +10,31 @@
 @import url("footer.css");
 
 
-
 :root {
   --font-title: "Lexend", sans-serif;
   --font-text: "Montserrat", sans-serif;
-  --borda-menu: solid .1vw #ebc4b0;
-  --color-menu: #191919;
+  --borda-menu: solid .1vw #a9cec9;
+  --borda-section: solid .1vw #a9cec9;
+  --color-menu: #1b1b1b;
   --font-size: 1;
   --img-size: 1;
   --leter-space: 1;
   --color-text-menu: #c9c2c0;
-  --color-menu-2: #e4b7a0;
+  --color-menu-2: #a9cec9;
     
-/*  modo escuro */
-    --color-principal: #23272b; 
-    --color-principal-deg: #302d2cc9;
-    --color-segundaria: #413d3c;
+/*  modo neutro padrão */
+    --color-principal: #222525; 
+    --color-principal-deg: linear-gradient(to top, var(--color-principal) 7%, #1e1e1ecb 25%, transparent);
+    --color-segundaria: #2a2a2d;
     --color-title: #FEFEFE;
-    --color-subtitle: #FEFEFE;
+    --color-title-deg: linear-gradient(120deg, #FFFFFF 0%,#96989C 80%);
+    --color-subtitle: #d8d5d5;
     --color-text: #c9c2c0;
+
+    --color-principal-light: #e7eef1;
+    --color-title-light: #27272A;
+    --color-subtitle-light: rgb(194, 193, 193);
+    --color-text-light: #504f4f;
 }
 
 @media (prefers-color-scheme: light) {
@@ -70,6 +76,7 @@ body {
 }
 
 ::selection {
+  background-color: #00f7ff69;
   color: rgb(26, 26, 26);
   -webkit-text-fill-color: black;
 }
@@ -115,13 +122,13 @@ table {
   color: var(--color-title);
   font-family: var(--font-title);
   font-weight: 600;
-  font-size: calc(var(--font-size) * 2.25vw);
+  font-size: calc(var(--font-size) * 2.9vw);
   margin-bottom: .9vw;
 }
 
 .subtitulo {
-  font-size: calc(var(--font-size) * 1.4vw);
-  font-weight: 600;
+  font-size: calc(var(--font-size) * 1.7vw);
+  font-weight: 500;
   margin-bottom: .5vw;
   color: var(--color-subtitle);
   font-family: var(--font-title);
@@ -130,7 +137,7 @@ table {
 .texto {
   color: var(--color-text);
   font-family: var(--font-text);
-  font-size: calc(var(--font-size) * 1.075vw);
+  font-size: calc(var(--font-size) * 1.085vw);
   line-height: calc(var(--font-size) * 1.75vw);
   font-weight: 400;
 }

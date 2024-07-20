@@ -1,26 +1,26 @@
-.section_1 {
+.section_1, .section_2{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 3vw 0;
-    background-color: var(--cor-principal);
-    border-bottom: solid .1vw gainsboro;
+    padding: 5vw 0;
+    border-bottom: var(--borda-section);
+    overflow: hidden;
 }
 
-.section_1 .content {
+.section_1 .content, 
+.section_2 .content {
     display: flex;
     justify-content: space-between;
     width: 94vw;
 }
 
 .section_1 .textos {
-    margin-top: 5%;
-    padding-right: 1vw;
+    margin-top: 1vw;
+    padding-right: 5%;
 }
 
 .section_1 .texto {
-    margin-left: 5%;
+    margin-left: 1vw;
 }
 
 .section_1 .images {
@@ -29,6 +29,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: auto repeat(2, 1fr);
 }
+
 
 .section_1 .images img {
     width: calc(var(--img-size) * 14vw);
@@ -45,4 +46,36 @@
 .section_1 .images img:nth-child(4) {
     grid-column: span 2;
     width: calc(var(--img-size) * 20vw);
+}
+
+
+.section_2 {
+    background-color: var(--color-principal-light);
+}
+
+.section_2 .content{
+    flex-direction: row-reverse;
+}
+
+.section_2 .titulo {
+    color: var(--color-title-light);
+    margin-right: 10vw ;
+}
+
+.section_2 .textos {
+    padding-left: 3vw;
+}
+
+.section_2 .texto {
+    color: var(--color-text-light);
+    font-weight: 500;
+    margin-left: 1vw;
+}
+
+.section_2 .images img {
+    margin-left: -5vw;
+    width: calc(var(--img-size) * 55vw);
+    height: calc(var(--img-size) * 30vw);
+    object-fit: cover;
+    box-shadow: .75vw .75vw 1.5vw 0 rgba(0, 0, 0, 0.25);
 }

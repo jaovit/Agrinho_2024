@@ -12,7 +12,8 @@
     right: 0;
     top: 0;
     left: 0;
-    background-image: url(../img/casal-bebendo-vinho.jpg);
+    background-image: url(../img/tipos-de-drones.webp);
+    filter: brightness(.5);
     background-size: cover;
     background-position: center;
     z-index: -2;
@@ -27,16 +28,20 @@
     top: calc(var(--font-size) * 1vw);
     height: 100%;
     left: 0;
-    background: linear-gradient(to top, var(--color-principal) 7%, var(--color-principal-deg) 25%, transparent);
+    background: var( --color-principal-deg);
     z-index: -1;
 }
 
-.template .conteudo {
-    margin-left: 19vw;
+.template .content {
+    margin-left: 18vw;
     width: 70vw;
 }
 
 .template .titulo {
+    background-image: var(--color-title-deg); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: calc(var(--font-size) * 3.85vw);
     line-height: 4.5vw;
     margin-bottom: 1.5vw;
