@@ -8,6 +8,7 @@
 @import url("sectionType_3.css");
 @import url("sectionType_4.css");
 @import url("footer.css");
+@import url("animations.css");
 
 
 :root {
@@ -25,7 +26,7 @@
 /*  modo neutro padrão */
     --color-principal: #222525; 
     --color-principal-deg: linear-gradient(to top, var(--color-principal) 7%, #1e1e1ecb 25%, transparent);
-    --color-segundaria: #2a2a2d;
+    --color-segundaria: #141414;
     --color-title: #FEFEFE;
     --color-title-deg: linear-gradient(120deg, #FFFFFF 0%,#96989C 80%);
     --color-subtitle: #d8d5d5;
@@ -144,17 +145,6 @@ table {
 
 .texto.claro {
   font-weight: 600;
-}
-
-/* aparecer com a rolagem */
-
-.scrollContent .content {
-  filter: opacity(0);
-  transition: .75s ease-in-out;
-}
-
-.scrollContent.visible .content {
-  filter: opacity(1);
 }
 
 /* tablet */
