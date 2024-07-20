@@ -31,9 +31,6 @@
 <body>
 
   <header class="header scroll_header content">
-    <input type="checkbox" id="menu_input">
-
-
     <!-- api de clima -->
     <Section class="clima">
       <section class="setcity">
@@ -83,96 +80,109 @@
     </ul>
 
     <!-- menu -->
-    <nav class="configuracao">
+    <input type="checkbox" id="menu_input">
+    <nav class="config">
       <h4 class="subtitulo">
         Menu
       </h4>
 
-      <!-- forms do menu cllr e tablete -->
-      <ul class="opcoes tema">
-        <li class="itens cabec">
-          <a href="#" onclick="nativo()">
-            <p class="texto">Compartilhar<i class="fas fa-share"></i>
-            </p>
-          </a>
-        </li>
 
-        <li class="itens cabec">
-          <a href="#" onclick='fechar(["none", "block", "none", "block"])'>
-            <p class="texto">Comentar<i class="far fa-comment"></i></p>
-          </a>
-        </li>
+      <ul class="box-lista">
 
-        <li class="itens cabec">
-          <a href="#" onclick='fechar(["block", "none", "none", "block"])'>
-            <p class="texto">Entrar<i class="fas fa-user"></i>
-            </p>
-          </a>
+        <!-- forms do menu cllr e tablete -->
+        <li class="item">
+          <ul class="opcoes tema forms">
+            <li class="item">
+              <a href="#" onclick="nativo()">
+                <p class="texto">Compartilhar<i class="fas fa-share"></i>
+                </p>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="#" onclick='fechar(["none", "block", "none", "block"])'>
+                <p class="texto">Comentar<i class="far fa-comment"></i></p>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="#" onclick='fechar(["block", "none", "none", "block"])'>
+                <p class="texto">Entrar<i class="fas fa-user"></i>
+                </p>
+              </a>
+            </li>
+          </ul>
         </li>
 
         <!-- sub menu alteraçoẽs de tanhamos -->
-        <li class="subMenu sizes">
-
-        <li class="itens">
-          <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
-              1</span> </label>
-          <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
-        </li>
-        <li class="itens">
-          <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
-              1</span> </label>
-          <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
-        </li>
-        <li class="itens">
-          <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
-              1</span> </label>
-          <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
-        </li>
-        <li class="itens">
-          <label class="texto tema">
-            <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
-              onclick="mudarRoot()">
-          </label>
-        </li>
-
+        <li class="item">
+          <ul class="subMenu sizes">
+            <li class="item">
+              <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
+            </li>
+            <li class="item">
+              <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
+            </li>
+            <li class="item">
+              <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
+            </li>
+          </ul>
         </li>
 
         <!-- sub meno alterações das cores -->
-        <li class="subMenu color">
+        <li class="item">
+          <ul class="subMenu color">
+            <li class="item color">
+              <p class="texto">Cores de fundo:</p>
+              <label for="input_cor_1" class="texto">Principal:</label>
+              <input type="color" id="input_cor_1" class="input_cor">
 
-        <li class="itens color">
-          <p class="texto">Cores de fundo:</p>
-          <label for="input_cor_1" class="texto">Principal:</label>
-          <input type="color" id="input_cor_1" class="input_cor">
+              <label for="input_cor_1" class="texto">Segundaria:</label>
+              <input type="color" id="input_cor_2" class="input_cor">
+            </li>
+            <li class="item color">
+              <p class="texto">Cores do texto:</p>
+              <label for="input_cor_1" class="texto">Titulo:</label>
+              <input type="color" id="input_cor_3" class="input_cor">
 
-          <label for="input_cor_1" class="texto">Segundaria:</label>
-          <input type="color" id="input_cor_2" class="input_cor">
+              <label for="input_cor_1" class="texto">Texto:</label>
+              <input type="color" id="input_cor_4" class="input_cor">
+            </li>
+            <li class="item color">
+              <p class="texto">Cores do menu:</p>
+              <label for="input_cor_1" class="texto">Fundo:</label>
+              <input type="color" id="input_cor_5" class="input_cor">
+
+              <label for="input_cor_1" class="texto">Texto:</label>
+              <input type="color" id="input_cor_6" class="input_cor">
+            </li>
+          </ul>
         </li>
-        <li class="itens color">
-          <p class="texto">Cores do texto:</p>
-          <label for="input_cor_1" class="texto">Titulo:</label>
-          <input type="color" id="input_cor_3" class="input_cor">
 
-          <label for="input_cor_1" class="texto">Texto:</label>
-          <input type="color" id="input_cor_4" class="input_cor">
-        </li>
-        <li class="itens color">
-          <p class="texto">Cores do menu:</p>
-          <label for="input_cor_1" class="texto">Fundo:</label>
-          <input type="color" id="input_cor_5" class="input_cor">
-
-          <label for="input_cor_1" class="texto">Texto:</label>
-          <input type="color" id="input_cor_6" class="input_cor">
-        </li>
-
-        </li>
-
-        <li class="itens">
+        <!-- botão de rest -->
+        <li class="item">
           <label class="texto">
             <input type="button" id="input_reset" class="bnt" value="Resetar" alt="botão de resetar"
               onclick="resetConf()">
           </label>
         </li>
+
+        <!-- mudar tema-->
+        <li class="item">
+            <div class="item">
+              <label class="texto tema">
+                <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
+                  onclick="mudarRoot()">
+              </label>
+            </div>
+        </li>
+
       </ul>
     </nav>
 
@@ -367,9 +377,9 @@
 
   <footer class="footer" txt_max="110">
     <ul class="lista">
-      <li class="itens texto"> Colégio Estadual
+      <li class="item texto"> Colégio Estadual
         Bom Jesus E.F.M</li>
-      <li class="itens texto"><span class="titulo">Endereço:</span> <a href="https://goo.gl/maps/vecZkPFKK8psWQD76"
+      <li class="item texto"><span class="titulo">Endereço:</span> <a href="https://goo.gl/maps/vecZkPFKK8psWQD76"
           class="texto">Av. Ipiranga, 133 - Centro, Bom Jesus do Sul - PR, 85708-000</a>
         <div class="mapa">
           <iframe
@@ -378,16 +388,16 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </li>
-      <li class="itens texto"><span class="titulo">Telefone:</span> <span class="info"> &nbsp;(46) 3548-1121</span>
+      <li class="item texto"><span class="titulo">Telefone:</span> <span class="info"> &nbsp;(46) 3548-1121</span>
       </li>
-      <li class="itens texto"><span class="titulo">Fecebook:</span> <span class="info"> <a
+      <li class="item texto"><span class="titulo">Fecebook:</span> <span class="info"> <a
             href="https://www.facebook.com/cebomjesusefm" class="texto">Colegio Estadual B.J.S</a></span>
       </li>
-      <li class="itens texto"><span class="titulo">Professor:</span> <span class="info"> &nbsp;Eli Berto Dambros</span>
+      <li class="item texto"><span class="titulo">Professor:</span> <span class="info"> &nbsp;Eli Berto Dambros</span>
       </li>
-      <li class="itens texto"><span class="titulo">Aluno:</span> <span class="info"> &nbsp;João Vitor da Silva
+      <li class="item texto"><span class="titulo">Aluno:</span> <span class="info"> &nbsp;João Vitor da Silva
           Antunes</span></li>
-      <li class="itens texto"> &copy; Sustentabilidade: Ações que mudam o mundo - 2023</li>
+      <li class="item texto"> &copy; Sustentabilidade: Ações que mudam o mundo - 2023</li>
     </ul>
   </footer>
 
