@@ -2,7 +2,7 @@
 
 let aberto = false
 const checkbox = document.querySelector('#menu_input')
-const nav = document.querySelector('.configuracao')
+const nav = document.querySelector('.config')
 const label = document.querySelector('.clic_js')
 
 document.addEventListener('click', (event) => {
