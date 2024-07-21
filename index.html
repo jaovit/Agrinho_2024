@@ -80,110 +80,133 @@
     </ul>
 
     <!-- menu -->
-    <input type="checkbox" id="menu_input">
+    <input type="checkbox" id="menu_input" checked>
     <nav class="config">
       <h4 class="subtitulo">
         Menu
       </h4>
 
 
-      <ul class="box-lista">
+      <div class="box-lista">
 
         <!-- forms do menu cllr e tablete -->
-        <li class="item">
-          <ul class="opcoes tema forms">
-            <li class="item">
-              <a href="#" onclick="nativo()">
-                <p class="texto">Compartilhar<i class="fas fa-share"></i>
-                </p>
-              </a>
-            </li>
+        <ul class="opcoes tema forms">
+          <li class="item">
+            <a href="#" onclick="nativo()">
+              <p class="texto">Compartilhar<i class="fas fa-share"></i>
+              </p>
+            </a>
+          </li>
 
-            <li class="item">
-              <a href="#" onclick='fechar(["none", "block", "none", "block"])'>
-                <p class="texto">Comentar<i class="far fa-comment"></i></p>
-              </a>
-            </li>
+          <li class="item">
+            <a href="#" onclick='fechar(["none", "block", "none", "block"])'>
+              <p class="texto">Comentar<i class="far fa-comment"></i></p>
+            </a>
+          </li>
 
-            <li class="item">
-              <a href="#" onclick='fechar(["block", "none", "none", "block"])'>
-                <p class="texto">Entrar<i class="fas fa-user"></i>
-                </p>
-              </a>
-            </li>
-          </ul>
-        </li>
+          <li class="item">
+            <a href="#" onclick='fechar(["block", "none", "none", "block"])'>
+              <p class="texto">Entrar<i class="fas fa-user"></i>
+              </p>
+            </a>
+          </li>
+        </ul>
 
         <!-- sub menu alteraçoẽs de tanhamos -->
-        <li class="item">
-          <ul class="subMenu sizes">
-            <li class="item">
+        <ul class="subMenu sizes">
+          <li class="item">
+            <p class="subtitulo">Escalas:</p>
+            <label for="dropDown_1">
+            <input type="checkbox" id="dropDown_1">
+            <i class="fa-solid fa-angle-down"></i>
+            </label>
+          </li>
+         <ul class="content">
+          <li class="item">
+            <div class="box-input">
               <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
                   1</span> </label>
               <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
-            </li>
-            <li class="item">
+            </div>
+          </li>
+          <li class="item">
+            <div class="box-input">
               <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
                   1</span> </label>
               <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
-            </li>
-            <li class="item">
+            </div>
+          </li>
+          <li class="item">
+            <div class="box-input">
               <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
                   1</span> </label>
               <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
-            </li>
-          </ul>
-        </li>
+            </div>
+          </li>
+         </ul>
+        </ul>
 
         <!-- sub meno alterações das cores -->
-        <li class="item">
-          <ul class="subMenu color">
-            <li class="item color">
-              <p class="texto">Cores de fundo:</p>
+        <ul class="subMenu color">
+          <li class="item">
+            <h3 class="subtitulo">Cores:</h3>
+            <label for="dropDown_2">
+            <input type="checkbox" id="dropDown_2">
+            <i class="fa-solid fa-angle-down"></i>
+            </label>
+          </li>
+         <ul class="content">
+          <li class="item">
+            <div class="box-input">
+              <span class="texto">Fundo:</span>
               <label for="input_cor_1" class="texto">Principal:</label>
               <input type="color" id="input_cor_1" class="input_cor">
 
-              <label for="input_cor_1" class="texto">Segundaria:</label>
+              <label for="input_cor_2" class="texto">Segundaria:</label>
               <input type="color" id="input_cor_2" class="input_cor">
-            </li>
-            <li class="item color">
-              <p class="texto">Cores do texto:</p>
-              <label for="input_cor_1" class="texto">Titulo:</label>
+            </div>
+          </li>
+          <li class="item">
+            <div class="box-input">
+              <span class="texto">Texto:</span>
+              <label for="input_cor_3" class="texto">Titulo:</label>
               <input type="color" id="input_cor_3" class="input_cor">
 
-              <label for="input_cor_1" class="texto">Texto:</label>
+              <label for="input_cor_4" class="texto">Texto:</label>
               <input type="color" id="input_cor_4" class="input_cor">
-            </li>
-            <li class="item color">
-              <p class="texto">Cores do menu:</p>
-              <label for="input_cor_1" class="texto">Fundo:</label>
+            </div>
+          </li>
+          <li class="item">
+            <div class="box-input">
+              <span class="texto">Menu:</span>
+              <label for="input_cor_5" class="texto">Fundo:</label>
               <input type="color" id="input_cor_5" class="input_cor">
 
-              <label for="input_cor_1" class="texto">Texto:</label>
+              <label for="input_cor_6" class="texto">Texto:</label>
               <input type="color" id="input_cor_6" class="input_cor">
-            </li>
-          </ul>
-        </li>
-
-        <!-- botão de rest -->
-        <li class="item">
-          <label class="texto">
-            <input type="button" id="input_reset" class="bnt" value="Resetar" alt="botão de resetar"
-              onclick="resetConf()">
-          </label>
-        </li>
+            </div>
+          </li>
+         </ul>
+        </ul>
 
         <!-- mudar tema-->
-        <li class="item">
-          <div class="item">
+        <div class="item">
+          <div class="box-bnt">
             <label class="texto tema">
               <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
-                onclick="mudarRoot()">
+                onclick="modo += 1; if (modo == 3) {modo = 0}; mudarRoot(modo)">
             </label>
           </div>
-        </li>
-
-      </ul>
+        </div>
+        <!-- botão de rest -->
+        <div class="item">
+          <div class="box-bnt">
+            <label class="texto">
+              <input type="button" id="input_reset" class="bnt" value="Resetar" alt="botão de resetar"
+                onclick="resetConf()">
+            </label>
+          </div>
+        </div>
     </nav>
 
     <div class="botao scroll_header">
@@ -374,7 +397,7 @@
       </div>
     </section>
 
-    <section class="section_6 animation" data-animation="scrollOpacity" id="section_6" >
+    <section class="section_6 animation" data-animation="scrollOpacity" id="section_6">
       <div class="content ">
         <div class="textos">
           <h1 class="titulo textColor">
