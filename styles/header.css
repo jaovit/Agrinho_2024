@@ -9,6 +9,10 @@
     transition: all .5s;
 }
 
+.header .texto {
+    color: var(--color-text-menu);
+}
+
 .header.visible {
     background-color: var(--color-menu);
     border-bottom: var(--borda-menu);
@@ -42,7 +46,7 @@
     display: flex;
     align-items: center;
     font-size: .875vw;
-    color: var(--color-text);
+    color: var(--color-text-menu);
     font-family: var(--font-text);
 }
 

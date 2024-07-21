@@ -37,7 +37,6 @@
     top: 1.35vw;
     left: .8vw;
     color: var(--color-menu-2);
-    transform: rotate(-90deg);
 }
 
 #audio_input {
@@ -61,13 +60,11 @@
 .menu_audio audio::-webkit-media-controls-panel {
     padding: .5vw;
     filter: invert(100%);
-    transform: scale(1.1);
-
 }
 
 .menu_audio audio::-webkit-media-controls-current-time-display,
 .menu_audio audio::-webkit-media-controls-time-remaining-display {
-    color: var(--color-menu-2);
+    color: var(--color-text-menu);
     font-size: calc(var(--font-size-js) * 1vw);
     filter: invert(100%);
     margin-left: 1vw;

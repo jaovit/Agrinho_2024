@@ -14,14 +14,14 @@
 :root {
   --font-title: "Lexend", sans-serif;
   --font-text: "Montserrat", sans-serif;
-  --borda-menu: solid .1vw #a9cec9;
-  --borda-section: solid .1vw #a9cec9;
+  --borda-section: solid .1vw #dde1e6;
   --color-menu: #1b1b1b;
   --font-size: 1;
   --img-size: 1;
-  --leter-space: 1;
-  --color-text-menu: #c9c2c0;
-  --color-menu-2: #a9cec9;
+  --letter-space: 1;
+  --color-text-menu: #dde1e6;
+  --color-menu-2: #dde1e6;
+  --borda-menu: solid .1vw #dde1e6;
     
 /*  modo neutro padrão */
     --color-principal: #222525; 
@@ -30,7 +30,7 @@
     --color-title: #FEFEFE;
     --color-title-deg: linear-gradient(120deg, #FFFFFF 0%,#96989C 80%);
     --color-subtitle: #d8d5d5;
-    --color-text: #c9c2c0;
+    --color-text: #dde1e6;
 
     --color-principal-light: #e7eef1;
     --color-title-light: #27272A;
