@@ -45,9 +45,53 @@
     left: 1.5vw;
     display: flex;
     align-items: center;
-    font-size: .875vw;
+    font-size: calc(var(--font-size) * .875vw);
     color: var(--color-text-menu);
     font-family: var(--font-text);
+}
+
+
+.setcity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1vw ;
+}
+
+.clima .input-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 1vw ;
+    padding: 0 0 0 .25vw;
+    background-color: var(--color-principal);
+}
+
+.clima #cep {
+    border: none;
+    padding: .3vw 0;
+    color: var(--color-text);
+    transition: none;
+    background-color: transparent;
+}
+
+.clima #cep:focus {
+    outline: none;
+}
+
+.clima #cep::-webkit-inner-spin-button,
+.clima #cep::-webkit-outer-spin-button {
+    display: none;
+}
+
+#set {
+    padding: 0 .4vw;
+    color: var(--color-text);
+    background-color: transparent;
+    transition: none;
+}
+
+#set:hover {
+    background-color: #323232;
 }
 
 .condicoes {

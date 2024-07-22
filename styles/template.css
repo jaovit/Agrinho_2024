@@ -10,13 +10,13 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    top: 0;
+    top: -10vw;
     left: 0;
     background-image: url(../img/Tecnologia-5G-conectividade-scaled.jpg);
-    filter: brightness(.5);
     background-size: cover;
     background-position: center;
     z-index: -2;
+    filter: brightness(.5);
 }
 
 
