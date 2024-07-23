@@ -46,12 +46,23 @@ async function setClima(localidade) {
 
 botao.addEventListener("click", async (e) => {
   e.preventDefault();
+  Botao();
+});
 
+document.addEventListener("keypress", (e) =>  {
+  if (cepInput === document.activeElement) {
+  if (e.key === 'Enter') {
+      Botao();
+  } 
+}
+})
+
+function Botao(event) {
   const cep = cepInput.value;
 
   setApiCep(cep);
   exibir(["none", "block", "none", "none"]);
-});
+}
 
 async function setApiCep(cep) {
   try {
