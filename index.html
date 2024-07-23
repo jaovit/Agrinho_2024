@@ -18,13 +18,6 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-
   <title>Agrinho: Do Campo à Cidade</title>
 </head>
 
@@ -34,20 +27,20 @@
     <!-- api de clima -->
     <Section class="clima">
       <section class="setcity">
-        <label for="cep">informe seu cep</label>
+        <label for="cep">Clima:</label>
         <div class="input-box">
-        <input type="number" id="cep">
+        <input type="number" id="cep" placeholder="CEP: 00000000">
         <button id="set">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
       </section>
       <section class="resultado">
-        <div class="city">barracao</div>
+        <div class="city"></div>
         <div class="condicoes">
-          <div class="temp"><span>30</span>&deg;C</div>
-          <div class="humidade"><i class="fa-solid fa-droplet"></i> <span>7%</span></div>
-          <div class="iconClima"><img id="condicao-icon" src="img/Captura de tela 2024-07-18 131005.png"></div>
+          <div class="temp"><span></span>&deg;C</div>
+          <div class="humidade"><i class="fa-solid fa-droplet"></i> <span></span></div>
+          <div class="iconClima"><img id="condicao-icon" src=""></div>
           <!-- <div id="vento"><i class="fa-solid fa-wind"></i><span>12</span>km/h</div> -->
         </div>
       </Section>
@@ -220,15 +213,16 @@
   </header>
 
   <section class="menu_audio">
+    <div class="box-audio">
     <input type="checkbox" id="audio_input">
-
-    <label class="clic_audio" for="audio_input">
-      <i class="fas fa-volume-up"></i>
-    </label>
     <audio controls>
       <source src="audio/pagina_audio.mp3" type="audio/mpeg">
       Seu navegador não suporta áudios.
     </audio>
+  </div>
+  <label class="box-icon" for="audio_input">
+    <i class="fas fa-volume-up"></i>
+  </label>
   </section>
 
   <section class="template">
@@ -247,6 +241,75 @@
         tópicos
       </h1>
       <div class="carrocel-box">
+        <div class="cards">
+          <a href="#section_1">
+          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+          </a>
+            <a class="textos" href="#section_1">
+              <h2 href="#section_1" class="subtitulo">section_1</h2>
+              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
+          </a>
+        </div>
+
+        <div class="cards">
+          <a href="#section_2">
+          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+          </a>
+            <a class="textos" href="#section_2">
+              <h2 class="subtitulo">section_2</h2>
+              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
+          </a>
+        </div>
+
+        <div class="cards">
+          <a href="#section_3">
+          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+          </a>
+            <a class="textos" href="#section_3">
+              <h2 class="subtitulo">section_3</h2>
+              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
+          </a>
+        </div>
+
+        <div class="cards">
+          <a href="#section_4">
+          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+          </a>
+            <a class="textos" href="#section_4">
+              <h2 class="subtitulo">section_4</h2>
+              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
+          </a>
+        </div>
+
+        <div class="cards">
+          <a href="#section_5">
+          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+          </a>
+            <a class="textos" href="#section_5">
+              <h2 class="subtitulo">section_5</h2>
+              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
+          </a>
+        </div>
+
+        <div class="cards">
+          <a href="#section_6">
+          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+          </a>
+            <a class="textos" href="#section_6">
+              <h2 class="subtitulo">section_6</h2>
+              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
+          </a>
+        </div>
+
+        <div class="cards">
+          <a href="#section_7">
+          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+          </a>
+            <a class="textos" href="#section_7">
+              <h2 class="subtitulo">section_7</h2>
+              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
+          </a>
+        </div>
 
       </div>
     </div>
@@ -416,15 +479,17 @@
     </section>
   </section>
 
-  <section class="section_10 animation" data-animation="scrollOpacity" id="section_10">
+  <section class="section_7 animation" data-animation="scrollOpacity" id="section_7">
     <div class="content">
-      <h1 class="titulo tema">
-        teste de cores
-      </h1>
-      <div class="cores">
-        <div class="bloco cor-1"></div>
-        <div class="bloco cor-2"></div>
-        <div class="bloco cor-3"></div>
+      <div class="textos">
+        <h1 class="titulo textColor">
+          Tecnologia de ponta no campo
+        </h1>
+        <p class="texto textColor">Descubra como a tecnologia está revolucionando a agricultura brasileira, aumentando a
+          produtividade e sustentabilidade </p>
+      </div>
+      <div class="images">
+        <img src="img/Captura de tela 2024-07-18 131028.png" alt="" class="img">
       </div>
     </div>
   </section>
