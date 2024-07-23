@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import url("header.css");
 @import url("menu.css");
 @import url("menuAudio.css");
@@ -25,13 +27,12 @@
     
 /*  modo neutro padrão */
     --color-principal: #222525; 
-    --color-principal-deg: linear-gradient(to top, var(--color-principal) 7%, #1e1e1ecb 25%, transparent);
-    --color-segundaria: #141414;
+    --color-segundaria: #151515;
+    --color-principal-deg: linear-gradient(to top, var(--color-segundaria) 10%, #151515d0 40%, transparent);
     --color-title: #FEFEFE;
     --color-title-deg: linear-gradient(120deg, #FFFFFF 0%,#96989C 80%);
     --color-subtitle: #d8d5d5;
     --color-text: #dde1e6;
-
     --color-principal-light: #e7eef1;
     --color-title-light: #27272A;
     --color-subtitle-light: rgb(194, 193, 193);
@@ -53,7 +54,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 3.5vw;
+  scroll-padding-top: 5vw;
   background-color: var(--color-principal);
 }
 
@@ -68,7 +69,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(28, 28, 28);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -122,14 +123,14 @@ table {
 .titulo {
   color: var(--color-title);
   font-family: var(--font-title);
-  font-weight: 600;
+  font-weight: 500;
   font-size: calc(var(--font-size) * 2.9vw);
   margin-bottom: .9vw;
 }
 
 .subtitulo {
   font-size: calc(var(--font-size) * 1.7vw);
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: .5vw;
   color: var(--color-subtitle);
   font-family: var(--font-title);
@@ -138,13 +139,9 @@ table {
 .texto {
   color: var(--color-text);
   font-family: var(--font-text);
-  font-size: calc(var(--font-size) * 1.085vw);
+  font-size: calc(var(--font-size) * 1.15vw);
   line-height: calc(var(--font-size) * 1.75vw);
-  font-weight: 400;
-}
-
-.texto.claro {
-  font-weight: 600;
+  font-weight: 300;
 }
 
 /* tablet */

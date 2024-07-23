@@ -1,4 +1,4 @@
-.section_1, .section_2{
+.section_1, .section_7 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -7,19 +7,22 @@
     overflow: hidden;
 }
 
-.section_1 .content, 
-.section_2 .content {
+.section_1 .content,
+.section_7 .content {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 94vw;
 }
 
-.section_1 .textos {
+.section_1 .textos,
+.section_7 .textos{
     margin-top: 1vw;
     padding-right: 5%;
 }
 
-.section_1 .texto {
+.section_1 .texto,
+.section_7 .texto {
     margin-left: 1vw;
 }
 
@@ -48,34 +51,8 @@
     width: calc(var(--img-size) * 20vw);
 }
 
-
-.section_2 {
-    background-color: var(--color-principal-light);
-}
-
-.section_2 .content{
-    flex-direction: row-reverse;
-}
-
-.section_2 .titulo {
-    color: var(--color-title-light);
-    margin-right: 10vw ;
-}
-
-.section_2 .textos {
-    padding-left: 3vw;
-}
-
-.section_2 .texto {
-    color: var(--color-text-light);
-    font-weight: 500;
-    margin-left: 1vw;
-}
-
-.section_2 .images img {
-    margin-left: -5vw;
-    width: calc(var(--img-size) * 55vw);
-    height: calc(var(--img-size) * 30vw);
+.section_7 .images img {
+    width: calc(var(--img-size) * 24vw);
+    height: calc(var(--img-size) * 24.5vw);
     object-fit: cover;
-    box-shadow: .75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
 }

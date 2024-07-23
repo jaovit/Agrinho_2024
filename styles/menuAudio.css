@@ -2,13 +2,12 @@
 
 .menu_audio {
     position: fixed;
+    display: flex;
+    align-items: center;
+    transform: translateX(calc(-100% + 5vw));
     top: 80%;
-    transform: translateX(-100%);
     left: 0;
     z-index: 5;
-    background-color: var(--color-menu);
-    border: var(--borda-menu);
-    border-left: none;
 }
 
 .menu_audio.transition {
@@ -19,24 +18,28 @@
     transform: translateX(0%);
 }
 
-.clic_audio {
-    position: absolute;
-    left: calc(100% - .1vw);
-    top: 51%;
-    transform: translateY(-50%);
+.menu_audio .box-audio {
     background-color: var(--color-menu);
-    height: 70%;
-    width: 3.25vw;
-    border-radius: 0 1vw 1vw 0;
     border: var(--borda-menu);
     border-left: none;
 }
 
-.clic_audio .fa-volume-up {
-    position: relative;
-    top: 1.35vw;
-    left: .8vw;
-    color: var(--color-menu-2);
+.box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-menu);
+    padding: 1.25vw;
+    width: 2.5vw;
+    border-radius: 0 .75vw .75vw 0;
+    border: var(--borda-menu);
+    border-left: none;
+    margin-left: -.1vw;
+}
+
+.box-icon .fa-volume-up {
+    color: var(--color-text);
+    font-size: calc(var(--font-size) * 1.45vw);
 }
 
 #audio_input {

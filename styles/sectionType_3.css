@@ -1,43 +1,116 @@
-.section_10{
-    padding: 3vw 0;
+.section_3,
+.section_4 {
+    display: flex;
+    justify-content: center;
+    padding: 5vw 0;
     border-bottom: var(--borda-section);
-    background-color:  #222525;
 }
 
-.section_10 .content {
+.section_3 .content,
+.section_4 .content {
+    /* background-color: red; */
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
+    gap: 3vw;
+}
+
+.section_3 .images img {
+    width: calc(var(--img-size) * 30vw);
+    height: calc(var(--img-size) * 43vw);
+    object-fit: cover;
+    box-shadow: -.75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
+}
+
+.section_3 .textos {
+    /* background-color: blueviolet; */
+    width: 45%;
+}
+
+.section_3 .titulo,
+.section_4 .titulo {
+    background-image: var(--color-title-deg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2.5vw;
+}
+
+.section_3 .box-lista {
+    /* background-color: aqua; */
+    display: flex;
     flex-direction: column;
+    gap: 1vw;
+    margin-left: 1.75vw;
 }
 
-.section_10 .cores {
+.section_3 .item,
+.section_4 .item {
+    /* background-color: blue; */
     display: flex;
     align-items: center;
-    justify-items: center;
-    gap: 1vw;
-    background-color:#191b1b ;
-    padding: 3vw;
+    column-gap: 1vw;
 }
 
-.section_10 .titulo {
-    color: #FEFEFE;
+.section_3 .pos {
+    background-color: rgba(92, 92, 92, 0.3);
+    border: solid .1vw rgba(145, 145, 145, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 10vw;
 }
 
-.bloco {
-    width: 15vw;
-    height: 15vw;
+.section_3 .item .texto:not(.section_3 .pos .texto) {
+    margin-left: 1vw;
+    /* background-color: red; */
 }
 
-.cor-1 {
-    /* background-color:#BB86FC; */
-    background: linear-gradient(120deg, #FFFFFF 0%,#96989C 80%);
+.section_4 {
+    position: relative;
+    display: flex;
+    padding: 6vw 0;
 }
 
-.cor-2 {
-    background-color: #e7eef1;
+.section_4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/tipos-de-drones.webp);
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    filter: brightness(.25) opacity(.5);
 }
 
-.cor-3 {
-    background-color:  #a9cec9;
+.section_4 .content {
+    width: 75vw;
+    gap: 0;
+}
+
+.section_4 .box-lista {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+
+.section_4 .item {
+    flex-direction: column;
+    width: 24%;
+    /* background-color: green; */
+}
+
+.section_4 .item .texto{
+    margin-left: .5vw;
+}
+
+.section_4 .item .icon {
+    color: var(--color-title);
+    font-size: 2.5vw;
+    align-self: flex-start;
+    margin-bottom: 1vw;
 }
