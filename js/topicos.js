@@ -1,43 +1,62 @@
 const cards = document.querySelectorAll(".cards");
-const carrocel = document.querySelector(".carrocel-box");
+const carrocel = document.querySelector(".carrocel");
+const box = document.querySelector(".carrocel-box")
+
 
 window.addEventListener("load", () => {
-    for (let i = 0; i < cards.length; i++) {
-        cards[i].style.cssText = `order: ${i};`;
-    }
-    PositionCard()
-}) // quando ela terminar de carregar
-carrocel.addEventListener("scroll", PositionCard);// qunado o carrocel for scrolada (essa palavra existe?)
-window.addEventListener('resize', PositionCard) // qunado o tamanho da pagina for alterado 
+  ajustColunas();
+  const scrollTotal = carrocel.scrollWidth - carrocel.clientWidth;
+  carrocel.scrollLeft = scrollTotal / 2;
+  PositionCard();
+}); // quando a página terminar de carregar
 
-function Positions(element, position) {
-    const rect = element.getBoundingClientRect();
-    const elementCenterX = rect.left + rect.width / 2;
+carrocel.addEventListener("scroll", PositionCard); // quando o carrocel for rolado (melhor doq scrolado...)
+window.addEventListener("resize", PositionCard); // quando o tamanho da página for alterado
 
-    const viewportWidth = window.innerWidth;
-    const viewportWPorCento = viewportWidth / 100
+function Positions(element) {
+  const rect = element.getBoundingClientRect();
+  const elementCenterX = rect.left + rect.width / 2;
+  
+  const viewportWidth = window.innerWidth;
+  const viewportWPorCento = (value) => (value / 100) * viewportWidth;
+//   const vwToPx = (value) => (parseFloat(value) / 100) * viewportWidth;
 
-    const positions = {
-        centro: viewportWPorCento * 50,
-        esquerdo: viewportWPorCento * 28,
-        direito: viewportWPorCento * 72,
-        cantoE: viewportWPorCento * 7.5,
-        cantoD: viewportWPorCento * 92.5 
-    };
+   const colunaCarrocel = ajustColunas();
 
-    // Tolerancia em px
-    const tolerance = viewportWidth / 7.5;
+  const positions = [
+    [viewportWPorCento(50), "centro"],
+    [viewportWPorCento(28), "esquerdo"],
+    [viewportWPorCento(72), "direito"],
+    [viewportWPorCento(7.5), "cantoE"],
+    [viewportWPorCento(92.5), "cantoD"],
+    [viewportWidth - (colunaCarrocel * 1.5), "fimEs"],
+    [viewportWidth + (colunaCarrocel * 1.5), "fimDi"]
+  ];
 
-    return Math.abs(positions[position] - elementCenterX) < tolerance;
+  const tolerance = viewportWPorCento(10);
+
+  for (let i = 0; i < positions.length; i++) {
+    const Verifica = Math.abs(positions[i][0] - elementCenterX) < tolerance;
+    element.classList.toggle(positions[i][1], Verifica);
+  }
 }
 
 function PositionCard() {
-    for (let index = 0; index < cards.length; index++) {
-        cards[index].classList.toggle("centro", Positions(cards[index], 'centro'));
-        cards[index].classList.toggle("esquerdo", Positions(cards[index], 'esquerdo'));
-        cards[index].classList.toggle("direito", Positions(cards[index], 'direito'));
-        cards[index].classList.toggle("cantoE", Positions(cards[index], 'cantoE'));
-        cards[index].classList.toggle("cantoD", Positions(cards[index], 'cantoD'));
-    }
+  for (let i = 0; i < cards.length; i++) {
+    Positions(cards[i]);
+  }
 }
 
+function ajustColunas() {
+    const cardStyle = window.getComputedStyle(cards[1]); // todos os cards são iguais
+
+  const marginLeft = parseFloat(cardStyle.marginLeft);
+  const marginRight = parseFloat(cardStyle.marginRight);
+  const width = parseFloat(cardStyle.width);
+
+  const colunaCarrocel = marginLeft + marginRight + width;
+
+  box.style.width = `${colunaCarrocel * (cards.length + 3.6)}px`;
+
+  return colunaCarrocel
+}
