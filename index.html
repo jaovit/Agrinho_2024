@@ -11,6 +11,7 @@
   <script src="js/settings.js" defer></script>
   <script src="js/menus.js" defer></script>
   <script src="js/apiClima.js" defer></script>
+  <script src="js/topicos.js" defer></script>
 
   <!-- <link rel="icon" href="img/logo_escola.jpg"> -->
 
@@ -23,17 +24,18 @@
 
 <body>
 
+  <div class="regua"></div>
   <header class="header scroll_header content">
     <!-- api de clima -->
     <Section class="clima">
       <section class="setcity">
         <label for="cep">Clima:</label>
         <div class="input-box">
-        <input type="number" id="cep" placeholder="CEP: 00000000">
-        <button id="set">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
+          <input type="number" id="cep" placeholder="CEP: 00000000">
+          <button id="set">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
       </section>
       <section class="resultado">
         <div class="city"></div>
@@ -112,33 +114,33 @@
           <li class="item">
             <p class="subtitulo">Escalas:</p>
             <label for="dropDown_1">
-            <input type="checkbox" id="dropDown_1">
-            <i class="fa-solid fa-angle-down"></i>
+              <input type="checkbox" id="dropDown_1">
+              <i class="fa-solid fa-angle-down"></i>
             </label>
           </li>
-         <ul class="content">
-          <li class="item">
-            <div class="box-input">
-              <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
-                  1</span> </label>
-              <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
-            </div>
-          </li>
-          <li class="item">
-            <div class="box-input">
-              <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
-                  1</span> </label>
-              <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
-            </div>
-          </li>
-          <li class="item">
-            <div class="box-input">
-              <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
-                  1</span> </label>
-              <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
-            </div>
-          </li>
-         </ul>
+          <ul class="content">
+            <li class="item">
+              <div class="box-input">
+                <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
+                    1</span> </label>
+                <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
+              </div>
+            </li>
+            <li class="item">
+              <div class="box-input">
+                <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
+                    1</span> </label>
+                <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
+              </div>
+            </li>
+            <li class="item">
+              <div class="box-input">
+                <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
+                    1</span> </label>
+                <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
+              </div>
+            </li>
+          </ul>
         </ul>
 
         <!-- sub meno alterações das cores -->
@@ -146,42 +148,42 @@
           <li class="item">
             <h3 class="subtitulo">Cores:</h3>
             <label for="dropDown_2">
-            <input type="checkbox" id="dropDown_2">
-            <i class="fa-solid fa-angle-down"></i>
+              <input type="checkbox" id="dropDown_2">
+              <i class="fa-solid fa-angle-down"></i>
             </label>
           </li>
-         <ul class="content">
-          <li class="item">
-            <div class="box-input">
-              <span class="texto">Fundo:</span>
-              <label for="input_cor_1" class="texto">Principal:</label>
-              <input type="color" id="input_cor_1" class="input_cor">
+          <ul class="content">
+            <li class="item">
+              <div class="box-input">
+                <span class="texto">Fundo:</span>
+                <label for="input_cor_1" class="texto">Principal:</label>
+                <input type="color" id="input_cor_1" class="input_cor">
 
-              <label for="input_cor_2" class="texto">Segundaria:</label>
-              <input type="color" id="input_cor_2" class="input_cor">
-            </div>
-          </li>
-          <li class="item">
-            <div class="box-input">
-              <span class="texto">Texto:</span>
-              <label for="input_cor_3" class="texto">Titulo:</label>
-              <input type="color" id="input_cor_3" class="input_cor">
+                <label for="input_cor_2" class="texto">Segundaria:</label>
+                <input type="color" id="input_cor_2" class="input_cor">
+              </div>
+            </li>
+            <li class="item">
+              <div class="box-input">
+                <span class="texto">Texto:</span>
+                <label for="input_cor_3" class="texto">Titulo:</label>
+                <input type="color" id="input_cor_3" class="input_cor">
 
-              <label for="input_cor_4" class="texto">Texto:</label>
-              <input type="color" id="input_cor_4" class="input_cor">
-            </div>
-          </li>
-          <li class="item">
-            <div class="box-input">
-              <span class="texto">Menu:</span>
-              <label for="input_cor_5" class="texto">Fundo:</label>
-              <input type="color" id="input_cor_5" class="input_cor">
+                <label for="input_cor_4" class="texto">Texto:</label>
+                <input type="color" id="input_cor_4" class="input_cor">
+              </div>
+            </li>
+            <li class="item">
+              <div class="box-input">
+                <span class="texto">Menu:</span>
+                <label for="input_cor_5" class="texto">Fundo:</label>
+                <input type="color" id="input_cor_5" class="input_cor">
 
-              <label for="input_cor_6" class="texto">Texto:</label>
-              <input type="color" id="input_cor_6" class="input_cor">
-            </div>
-          </li>
-         </ul>
+                <label for="input_cor_6" class="texto">Texto:</label>
+                <input type="color" id="input_cor_6" class="input_cor">
+              </div>
+            </li>
+          </ul>
         </ul>
 
         <!-- mudar tema-->
@@ -214,15 +216,15 @@
 
   <section class="menu_audio">
     <div class="box-audio">
-    <input type="checkbox" id="audio_input">
-    <audio controls>
-      <source src="audio/pagina_audio.mp3" type="audio/mpeg">
-      Seu navegador não suporta áudios.
-    </audio>
-  </div>
-  <label class="box-icon" for="audio_input">
-    <i class="fas fa-volume-up"></i>
-  </label>
+      <input type="checkbox" id="audio_input">
+      <audio controls>
+        <source src="audio/pagina_audio.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudios.
+      </audio>
+    </div>
+    <label class="box-icon" for="audio_input">
+      <i class="fas fa-volume-up"></i>
+    </label>
   </section>
 
   <section class="template">
@@ -242,73 +244,87 @@
       </h1>
       <div class="carrocel-box">
         <div class="cards">
-          <a href="#section_1">
-          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-          </a>
+          <div class="cards-box">
+            <a href="#section_1">
+              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+            </a>
             <a class="textos" href="#section_1">
               <h2 href="#section_1" class="subtitulo">section_1</h2>
-              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
-          </a>
+              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+            </a>
+          </div>
         </div>
 
         <div class="cards">
-          <a href="#section_2">
-          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-          </a>
+          <div class="cards-box">
+            <a href="#section_2">
+              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+            </a>
             <a class="textos" href="#section_2">
               <h2 class="subtitulo">section_2</h2>
-              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
-          </a>
+              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+            </a>
+          </div>
         </div>
 
         <div class="cards">
-          <a href="#section_3">
-          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-          </a>
+          <div class="cards-box">
+            <a href="#section_3">
+              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+            </a>
             <a class="textos" href="#section_3">
               <h2 class="subtitulo">section_3</h2>
-              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
-          </a>
+              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+            </a>
+          </div>
         </div>
 
         <div class="cards">
-          <a href="#section_4">
-          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-          </a>
+          <div class="cards-box">
+            <a href="#section_4">
+              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+            </a>
             <a class="textos" href="#section_4">
               <h2 class="subtitulo">section_4</h2>
-              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
-          </a>
+              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+            </a>
+          </div>
         </div>
 
         <div class="cards">
-          <a href="#section_5">
-          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-          </a>
+          <div class="cards-box">
+            <a href="#section_5">
+              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+            </a>
             <a class="textos" href="#section_5">
               <h2 class="subtitulo">section_5</h2>
-              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
-          </a>
+              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+            </a>
+          </div>
         </div>
 
         <div class="cards">
-          <a href="#section_6">
-          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-          </a>
+          <div class="cards-box">
+            <a href="#section_6">
+              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+            </a>
             <a class="textos" href="#section_6">
               <h2 class="subtitulo">section_6</h2>
-              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
-          </a>
+              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+            </a>
+          </div>
         </div>
 
         <div class="cards">
-          <a href="#section_7">
-          <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-          </a>
+          <div class="cards-box">
+            <a href="#section_7">
+              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+            </a>
             <a class="textos" href="#section_7">
               <h2 class="subtitulo">section_7</h2>
-              <p class="texto" >era uma vez um elfo encantado que vivia fazendo pipi</p>
-          </a>
+              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+            </a>
+          </div>
         </div>
 
       </div>
