@@ -33,9 +33,9 @@
     flex-shrink: 0;
 }
 
-/* .topicos .carrocel-box::-webkit-scrollbar {
+.topicos .carrocel::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .topicos .cards {
     display: flex;
