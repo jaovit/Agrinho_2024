@@ -56,7 +56,7 @@ function ajustColunas() {
 
   const colunaCarrocel = marginLeft + marginRight + width;
 
-  box.style.width = `${colunaCarrocel * (cards.length + 3.6)}px`;
+  box.style.width = `${colunaCarrocel * (cards.length + 3.625)}px`;
 
   return colunaCarrocel
 }
