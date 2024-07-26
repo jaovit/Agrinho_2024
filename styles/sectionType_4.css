@@ -1,4 +1,4 @@
-.box-section{
+.box-section {
     position: relative;
     display: flex;
     justify-content: center;
@@ -7,14 +7,15 @@
 }
 
 
-.section_5, .section_6{
+.section_5,
+.section_6 {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
     padding: 2vw 0;
 }
 
-.section_5 .content, 
+.section_5 .content,
 .section_6 .content {
     min-height: 25vw;
     width: 43vw;
@@ -37,7 +38,8 @@
     max-width: 58vw;
 }
 
-.section_5 .texto, .section_6 .texto{
+.section_5 .texto,
+.section_6 .texto {
     margin-left: 1vw;
 }
 
@@ -47,7 +49,7 @@
 
 .section_6 .titulo {
     color: var(--color-title-light);
-    margin-right: 10vw ;
+    margin-right: 10vw;
 }
 
 .section_6 .texto {

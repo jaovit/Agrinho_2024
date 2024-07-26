@@ -171,3 +171,9 @@
     }
 
 }
+
+@media (min-width: 1900px) {
+    .footer {
+        background-color: red;
+    }
+}

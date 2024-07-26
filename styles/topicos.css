@@ -9,13 +9,13 @@
     overflow: hidden;
 }
 
-.topicos .content > .titulo {
+.topicos .content>.titulo {
     text-align: center;
     font-weight: 300;
     font-size: calc(var(--font-size) * 2.25vw);
 }
 
-.topicos .carrocel{
+.topicos .carrocel {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +25,7 @@
     scroll-behavior: smooth;
 }
 
-.topicos .carrocel-box{
+.topicos .carrocel-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,9 +33,9 @@
     flex-shrink: 0;
 }
 
-/* .topicos .carrocel::-webkit-scrollbar {
+.topicos .carrocel::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .topicos .cards {
     display: flex;
@@ -71,26 +71,26 @@
 }
 
 .topicos .cards.cantoE .cards-box {
-    transform: scale(.965) rotateY(-3.5deg) ;
+    transform: scale(.965) rotateY(-3.5deg);
     filter: opacity(.2);
 }
 
 .topicos .cards.cantoD .cards-box {
-    transform: scale(.965) rotateY(3.5deg) ;
+    transform: scale(.965) rotateY(3.5deg);
     filter: opacity(.2);
 }
 
 .topicos .cards.esquerdo .cards-box {
-    transform: rotateY(-1.75deg) ;
+    transform: rotateY(-1.75deg);
     filter: opacity(.4);
 }
 
 .topicos .cards.direito .cards-box {
-    transform: rotateY(1.75deg) ;
+    transform: rotateY(1.75deg);
     filter: opacity(.4);
 }
 
-.regua{
+.regua {
     display: none;
     position: fixed;
     top: 50%;
@@ -100,6 +100,7 @@
     left: 28%;
     background-color: red;
 }
+
 /* .topicos .car-box:nth-child(7) {
     transform: scale(.7) rotateY( 30deg) ;
     filter: opacity(.5);
@@ -117,7 +118,7 @@
     
 } */
 
-.topicos .cards img{
+.topicos .cards img {
     width: calc(var(--img-size) * 15vw);
     height: calc(var(--img-size) * 14vw);
     border-radius: 2.5%;

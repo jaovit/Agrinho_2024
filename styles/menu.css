@@ -96,7 +96,7 @@
     transform: translateX(0)
 }
 
-.config > .subtitulo {
+.config>.subtitulo {
     text-align: center;
     font-size: calc(var(--font-size) * 1.5vw);
     font-weight: 500;
@@ -137,7 +137,7 @@
     color: var(--color-text-menu);
 }
 
-.config .subMenu > .item:nth-child(1) {
+.config .subMenu>.item:nth-child(1) {
     justify-content: space-between;
     align-items: center;
     border-bottom: none;
@@ -179,7 +179,7 @@
     border-top: none;
 }
 
-.config .subMenu .content .item{
+.config .subMenu .content .item {
     border-top: none;
 }
 

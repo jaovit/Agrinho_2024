@@ -28,7 +28,7 @@
     top: calc(var(--font-size) * 1vw);
     height: 100%;
     left: 0;
-    background: var( --color-principal-deg);
+    background: var(--color-principal-deg);
     z-index: -1;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .template .titulo {
-    background-image: var(--color-title-deg); 
+    background-image: var(--color-title-deg);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

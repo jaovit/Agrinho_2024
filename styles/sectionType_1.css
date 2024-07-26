@@ -1,4 +1,5 @@
-.section_1, .section_7 {
+.section_1,
+.section_7 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -15,7 +16,7 @@
 }
 
 .section_1 .textos,
-.section_7 .textos{
+.section_7 .textos {
     margin-top: 1vw;
     padding-right: 5%;
 }

@@ -24,7 +24,7 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.header_itens > .itens {
+.header_itens>.itens {
     margin: 0 1.75vw;
 }
 
@@ -55,13 +55,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 1vw ;
+    column-gap: 1vw;
 }
 
 .clima .input-box {
     display: flex;
     justify-content: center;
-    column-gap: 1vw ;
+    column-gap: 1vw;
     padding: 0 0 0 .25vw;
     background-color: var(--color-principal);
 }
@@ -101,7 +101,9 @@
     margin-top: .25vw;
 }
 
-.temp, .humidade, .vento {
+.temp,
+.humidade,
+.vento {
     margin-right: .75vw;
 }
 
@@ -114,7 +116,7 @@
     overflow: hidden;
 }
 
-.iconClima  img{
+.iconClima img {
     width: 3.25vw;
 }
 
@@ -126,7 +128,7 @@
     justify-content: center;
 }
 
-.load div{
+.load div {
     width: 1.75vw;
     height: 1.75vw;
     border-radius: 50%;
@@ -135,7 +137,9 @@
     animation: load 1.25s infinite;
 }
 
-.resultado, .erro, .load {
+.resultado,
+.erro,
+.load {
     display: none;
 }
 

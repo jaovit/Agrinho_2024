@@ -23,34 +23,34 @@
   --color-text-menu: #dde1e6;
   --color-menu-2: #dde1e6;
   --borda-menu: solid .1vw #dde1e6;
-    
-/*  modo neutro padrão */
-    --color-principal: #252929; 
-    --color-segundaria: #1a1a1a;
-    --color-principal-deg: linear-gradient(to top, var(--color-segundaria) 10%, #1a1a1ad0 45%, transparent 90%);
-    --color-title: #FEFEFE;
-    --color-title-deg: linear-gradient(120deg, #FFFFFF 0%,#96989C 80%);
-    --color-subtitle: #d8d5d5;
-    --color-text: #dde1e6;
-    
-    --color-principal-light: #e7eef1;
-    --color-title-light: #27272A;
-    --color-subtitle-light: rgb(51, 51, 51);
-    --color-text-light: #504f4f;
+
+  /*  modo neutro padrão */
+  --color-principal: #252929;
+  --color-segundaria: #1a1a1a;
+  --color-principal-deg: linear-gradient(to top, var(--color-segundaria) 10%, #1a1a1ad0 45%, transparent 90%);
+  --color-title: #FEFEFE;
+  --color-title-deg: linear-gradient(120deg, #FFFFFF 0%, #96989C 80%);
+  --color-subtitle: #d8d5d5;
+  --color-text: #dde1e6;
+
+  --color-principal-light: #e7eef1;
+  --color-title-light: #27272A;
+  --color-subtitle-light: rgb(51, 51, 51);
+  --color-text-light: #504f4f;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-/* modo claro padrão*/
---cor-principal: #2A2F34;
---cor-segundaria: #b6b6b6;
---cor-titulo: #202020;
---cor-subtitulo: #242424;
---cor-texto: #2e2e2e;
---borda: solid .01vw rgb(70, 70, 70);
---cor-principal-deg: none;
+    /* modo claro padrão*/
+    --cor-principal: #2A2F34;
+    --cor-segundaria: #b6b6b6;
+    --cor-titulo: #202020;
+    --cor-subtitulo: #242424;
+    --cor-texto: #2e2e2e;
+    --borda: solid .01vw rgb(70, 70, 70);
+    --cor-principal-deg: none;
   }
-} 
+}
 
 html {
   scroll-behavior: smooth;
@@ -125,11 +125,14 @@ table {
   font-family: var(--font-title);
   font-weight: 500;
   font-size: calc(var(--font-size) * 2.9vw);
+  letter-spacing: calc(var(--font-size) * .075vw);
+
   margin-bottom: .9vw;
 }
 
 .subtitulo {
   font-size: calc(var(--font-size) * 1.7vw);
+  letter-spacing: calc(var(--font-size) * .075vw);
   font-weight: 300;
   margin-bottom: .5vw;
   color: var(--color-subtitle);
@@ -141,6 +144,7 @@ table {
   font-family: var(--font-text);
   font-size: calc(var(--font-size) * 1.15vw);
   line-height: calc(var(--font-size) * 1.75vw);
+  letter-spacing: calc(var(--font-size) * .075vw);
   font-weight: 300;
 }
 
@@ -153,18 +157,21 @@ table {
   .titulo {
     font-size: calc(var(--font-size) * 3.5vw);
     margin-bottom: calc(var(--font-size) * 1.75vw);
+    letter-spacing: calc(var(--font-size) * .075vw);
     font-weight: 400;
   }
 
   .subtitulo {
     font-size: calc(var(--font-size) * 2.75vw);
     margin-bottom: calc(var(--font-size) * 1.75vw);
+    letter-spacing: calc(var(--font-size) * .075vw);
     font-weight: 400;
   }
 
   .texto {
     font-size: calc(var(--font-size) * 2.35vw);
     line-height: calc(var(--font-size) * 3.75vw);
+    letter-spacing: calc(var(--font-size) * .075vw);
     font-weight: 400;
   }
 
@@ -190,17 +197,46 @@ table {
   .titulo {
     font-size: calc(var(--font-size) * 4.75vw);
     margin-bottom: calc(var(--font-size) * 2.15vw);
+    letter-spacing: calc(var(--font-size) * .075vw);
 
   }
 
   .subtitulo {
     font-size: calc(var(--font-size) * 4.5vw);
     margin-bottom: calc(var(--font-size) * 2vw);
+    letter-spacing: calc(var(--font-size) * .075vw);
   }
 
   .texto {
     font-size: calc(var(--font-size) * 4.2vw);
     line-height: calc(var(--font-size) * 6.85vw);
+    letter-spacing: calc(var(--font-size) * .075vw);
   }
 
+}
+
+@media (min-width: 1900px) {
+
+  .titulo {
+    font-weight: 500;
+    font-size: calc(var(--font-size) * 2.25vw);
+    margin-bottom: .9vw;
+    margin-bottom: calc(var(--font-size) * 0.8vw);
+    letter-spacing: calc(var(--font-size) * .075vw);
+
+  }
+
+  .subtitulo {
+    font-size: calc(var(--font-size) * 1.15vw);
+    font-weight: 300;
+    margin-bottom: calc(var(--font-size) * .4vw);
+    letter-spacing: calc(var(--font-size) * .075vw);
+  }
+
+  .texto {
+    font-size: calc(var(--font-size) * .85vw);
+    line-height: calc(var(--font-size) * 1.5vw);
+    letter-spacing: calc(var(--font-size) * .075vw);
+    font-weight: 300;
+  }
 }

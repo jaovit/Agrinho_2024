@@ -18,7 +18,7 @@
     background-color: var(--color-principal-light);
 }
 
-.section_2 .content{
+.section_2 .content {
     flex-direction: row-reverse;
 }
 

@@ -1,10 +1,10 @@
 /* aparecer com a rolagem */
 
-[data-animation="scrollOpacity"] > .content {
-    filter: opacity(0);
-    transition: .85s ease-in-out;
-  }
+[data-animation="scrollOpacity"]>.content {
+  filter: opacity(0);
+  transition: .85s ease-in-out;
+}
 
-[data-animation="scrollOpacity"].visible > .content {
-    filter: opacity(1);
-  }
+[data-animation="scrollOpacity"].visible>.content {
+  filter: opacity(1);
+}
