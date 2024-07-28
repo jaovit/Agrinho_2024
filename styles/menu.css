@@ -83,7 +83,7 @@
     border-left: var(--borda-menu);
     background-color: var(--color-menu);
     opacity: .95;
-    width: 24vw;
+    max-width: 26vw;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -119,9 +119,8 @@
 .config .box-input {
     display: grid;
     grid-template-rows: auto;
-    justify-content: center;
     width: 100%;
-    padding: .5vw;
+    padding: .5vw 1.15vw;
 }
 
 .config .subMenu .texto {
@@ -133,18 +132,18 @@
     text-decoration: none;
 }
 
-.forms .texto {
+.config .forms .texto {
     color: var(--color-text-menu);
 }
 
-.config .subMenu>.item:nth-child(1) {
+.config .subMenu > .item:nth-child(1) {
     justify-content: space-between;
     align-items: center;
     border-bottom: none;
     border-top: var(--borda-menu);
 }
 
-.config .subMenu input[type="checkbox"] {
+.config .subMenu .dropDown{
     display: none;
 }
 
@@ -184,18 +183,23 @@
 }
 
 .config .sizes.aberto .content {
-    height: 12vw;
+    height: 17vw;
 }
 
 .config .color.aberto .content {
     height: 20vw;
 }
 
+.config .otimizacao.aberto .content {
+    height: 4.85vw;
+}
+
 .progress {
-    margin: .75vw 0 .5vw 0;
+    margin: .75vw 0 .65vw 0;
     width: 20vw;
     -webkit-appearance: none;
     appearance: none;
+    justify-self: center;
 }
 
 .progress::-webkit-slider-runnable-track {
@@ -221,7 +225,6 @@
 .config .color .box-input {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    width: 85%;
 }
 
 .color .item label:first-of-type {
@@ -248,18 +251,34 @@
     padding: 1vw 0;
 }
 
-.bnt {
+
+.config .bnt {
     background-color: transparent;
     color: var(--color-text-menu);
     border-radius: .25vw;
-    border: .01vw solid var(--color-menu-2);
+    border: var(--borda-menu);
     padding: .25vw 2vw;
     font-weight: 500;
-    transition: .75s ease-in-out;
+    transition: all .15s ease-in-out;
 }
 
 .bnt:hover {
     transform: scale(1.05);
+}
+
+.otimizacao .textos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.otimizacao .textos .texto {
+    margin: 0;
+    padding:  0  0 1vw 0;
+}
+
+.otimizacao .textos .texto:nth-child(2) {
+    margin-left: -.8vw;
 }
 
 /* tablet */

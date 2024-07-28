@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url("header.css");
+@import url("forms.css");
 @import url("menu.css");
 @import url("menuAudio.css");
 @import url("template.css");
@@ -21,7 +22,7 @@
   --img-size: 1;
   --letter-space: 1;
   --color-text-menu: #dde1e6;
-  --color-menu-2: #dde1e6;
+  --color-menu-2: #0e0d0d;
   --borda-menu: solid .1vw #dde1e6;
 
   /*  modo neutro padrão */
@@ -65,7 +66,6 @@ body {
 
 ::-webkit-scrollbar {
   width: .575vw;
-  position: fixed;
 }
 
 ::-webkit-scrollbar-track {
@@ -125,14 +125,15 @@ table {
   font-family: var(--font-title);
   font-weight: 500;
   font-size: calc(var(--font-size) * 2.9vw);
-  letter-spacing: calc(var(--font-size) * .075vw);
-
+  letter-spacing: calc(var(--letter-space) * .075vw);
+  word-spacing: calc(var(--letter-space) * .075vw);
   margin-bottom: .9vw;
 }
 
 .subtitulo {
   font-size: calc(var(--font-size) * 1.7vw);
-  letter-spacing: calc(var(--font-size) * .075vw);
+  letter-spacing: calc(var(--letter-space) * .075vw);
+  word-spacing: calc(var(--letter-space) * .075vw);
   font-weight: 300;
   margin-bottom: .5vw;
   color: var(--color-subtitle);
@@ -144,7 +145,8 @@ table {
   font-family: var(--font-text);
   font-size: calc(var(--font-size) * 1.15vw);
   line-height: calc(var(--font-size) * 1.75vw);
-  letter-spacing: calc(var(--font-size) * .075vw);
+  letter-spacing: calc(var(--letter-space) * .075vw);
+  word-spacing: calc(var(--letter-space) * .075vw);
   font-weight: 300;
 }
 
@@ -157,21 +159,24 @@ table {
   .titulo {
     font-size: calc(var(--font-size) * 3.5vw);
     margin-bottom: calc(var(--font-size) * 1.75vw);
-    letter-spacing: calc(var(--font-size) * .075vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
     font-weight: 400;
   }
 
   .subtitulo {
     font-size: calc(var(--font-size) * 2.75vw);
     margin-bottom: calc(var(--font-size) * 1.75vw);
-    letter-spacing: calc(var(--font-size) * .075vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
     font-weight: 400;
   }
 
   .texto {
     font-size: calc(var(--font-size) * 2.35vw);
     line-height: calc(var(--font-size) * 3.75vw);
-    letter-spacing: calc(var(--font-size) * .075vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
     font-weight: 400;
   }
 
@@ -197,46 +202,50 @@ table {
   .titulo {
     font-size: calc(var(--font-size) * 4.75vw);
     margin-bottom: calc(var(--font-size) * 2.15vw);
-    letter-spacing: calc(var(--font-size) * .075vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
 
   }
 
   .subtitulo {
     font-size: calc(var(--font-size) * 4.5vw);
     margin-bottom: calc(var(--font-size) * 2vw);
-    letter-spacing: calc(var(--font-size) * .075vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
   }
 
   .texto {
     font-size: calc(var(--font-size) * 4.2vw);
     line-height: calc(var(--font-size) * 6.85vw);
-    letter-spacing: calc(var(--font-size) * .075vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
   }
 
 }
 
+/* telas grandes? */
+ 
 @media (min-width: 1900px) {
 
   .titulo {
-    font-weight: 500;
     font-size: calc(var(--font-size) * 2.25vw);
-    margin-bottom: .9vw;
     margin-bottom: calc(var(--font-size) * 0.8vw);
-    letter-spacing: calc(var(--font-size) * .075vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
 
   }
 
   .subtitulo {
     font-size: calc(var(--font-size) * 1.15vw);
-    font-weight: 300;
     margin-bottom: calc(var(--font-size) * .4vw);
-    letter-spacing: calc(var(--font-size) * .075vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
   }
 
   .texto {
     font-size: calc(var(--font-size) * .85vw);
     line-height: calc(var(--font-size) * 1.5vw);
-    letter-spacing: calc(var(--font-size) * .075vw);
-    font-weight: 300;
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
   }
 }
