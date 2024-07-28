@@ -24,7 +24,6 @@
 
 <body>
 
-  <div class="regua"></div>
   <header class="header scroll_header content">
     <!-- api de clima -->
     <Section class="clima">
@@ -58,19 +57,19 @@
     <!-- forms do cabeçalho -->
     <ul class="header_itens scroll_header tema">
       <li class="itens">
+        <a href="#" onclick='fechar(["none", "flex", "none", "block"])'>
+          <p class="texto tema textColor">Contato</p>
+        </a>
+      </li>
+
+      <li class="itens">
         <a href="#" onclick="nativo()">
           <p class="texto tema textColor">Compartilhar</p>
         </a>
       </li>
 
       <li class="itens">
-        <a href="#" onclick='fechar(["none", "block", "none", "block"])'>
-          <p class="texto tema textColor">Comentar</p>
-        </a>
-      </li>
-
-      <li class="itens">
-        <a href="#" onclick='fechar(["block", "none", "none", "block"])'>
+        <a href="#" onclick='fechar(["flex", "none", "none", "block"])'>
           <p class="texto tema textColor">Entrar</p>
         </a>
       </li>
@@ -96,13 +95,13 @@
           </li>
 
           <li class="item">
-            <a href="#" onclick='fechar(["none", "block", "none", "block"])'>
+            <a href="#" onclick='fechar(["none", "flex", "none", "block"])'>
               <p class="texto">Comentar<i class="far fa-comment"></i></p>
             </a>
           </li>
 
           <li class="item">
-            <a href="#" onclick='fechar(["block", "none", "none", "block"])'>
+            <a href="#" onclick='fechar(["flex", "none", "none", "block"])'>
               <p class="texto">Entrar<i class="fas fa-user"></i>
               </p>
             </a>
@@ -114,7 +113,7 @@
           <li class="item">
             <p class="subtitulo">Escalas:</p>
             <label for="dropDown_1">
-              <input type="checkbox" id="dropDown_1">
+              <input type="checkbox" id="dropDown_1" class="dropDown">
               <i class="fa-solid fa-angle-down"></i>
             </label>
           </li>
@@ -135,6 +134,14 @@
             </li>
             <li class="item">
               <div class="box-input">
+                <label for="progress_letter" class="texto">
+                  espaçamento entre letras: <span class="letter_tamanho num">
+                    1</span> </label>
+                <input type="range" min="0" max="500" value="100" id="progress_letter" class="progress">
+              </div>
+            </li>
+            <li class="item">
+              <div class="box-input">
                 <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
                     1</span> </label>
                 <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
@@ -148,7 +155,7 @@
           <li class="item">
             <h3 class="subtitulo">Cores:</h3>
             <label for="dropDown_2">
-              <input type="checkbox" id="dropDown_2">
+              <input type="checkbox" id="dropDown_2" class="dropDown">
               <i class="fa-solid fa-angle-down"></i>
             </label>
           </li>
@@ -181,6 +188,28 @@
 
                 <label for="input_cor_6" class="texto">Texto:</label>
                 <input type="color" id="input_cor_6" class="input_cor">
+              </div>
+            </li>
+          </ul>
+        </ul>
+
+        <ul class="subMenu otimizacao">
+          <li class="item">
+            <h3 class="subtitulo">Otimização:</h3>
+            <label for="dropDown_3">
+              <input type="checkbox" id="dropDown_3" class="dropDown">
+              <i class="fa-solid fa-angle-down"></i>
+            </label>
+          </li>
+          <ul class="content">
+            <li class="item">
+              <div class="box-input">
+                <div class="textos">
+                  <div class="texto">Baixa</div>
+                  <div class="texto">Média</div>
+                  <div class="texto">Alta</div>
+                </div>
+                <input type="range" min="0" max="2" value="0" id="progress_otim_size" class="progress">
               </div>
             </li>
           </ul>
@@ -242,93 +271,104 @@
       <h1 class="titulo">
         tópicos
       </h1>
+
+        <div class="setas right">
+          <label for="seta_right" class="arrow right"><i class="fa-solid fa-angle-down"></i></label>
+          <input type="button" onclick="Arrows(1)" id="seta_right">
+        </div>
+
+        <div class="setas left">
+          <label for="seta_left" class="arrow left"><i class="fa-solid fa-angle-down"></i></label>
+          <input type="button" onclick="Arrows(0)" id="seta_left">
+        </div>
+
       <div class="carrocel">
         <div class="carrocel-box">
-        <div class="cards">
-          <div class="cards-box">
-            <a href="#section_1">
-              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-            </a>
-            <a class="textos" href="#section_1">
-              <h2 href="#section_1" class="subtitulo">section_1</h2>
-              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
-            </a>
+          <div class="cards">
+            <div class="cards-box">
+              <a href="#section_1">
+                <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+              </a>
+              <a class="textos" href="#section_1">
+                <h2 href="#section_1" class="subtitulo">section_1</h2>
+                <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="cards">
-          <div class="cards-box">
-            <a href="#section_2">
-              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-            </a>
-            <a class="textos" href="#section_2">
-              <h2 class="subtitulo">section_2</h2>
-              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
-            </a>
+          <div class="cards">
+            <div class="cards-box">
+              <a href="#section_2">
+                <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+              </a>
+              <a class="textos" href="#section_2">
+                <h2 class="subtitulo">section_2</h2>
+                <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="cards">
-          <div class="cards-box">
-            <a href="#section_3">
-              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-            </a>
-            <a class="textos" href="#section_3">
-              <h2 class="subtitulo">section_3</h2>
-              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
-            </a>
+          <div class="cards">
+            <div class="cards-box">
+              <a href="#section_3">
+                <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+              </a>
+              <a class="textos" href="#section_3">
+                <h2 class="subtitulo">section_3</h2>
+                <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="cards">
-          <div class="cards-box">
-            <a href="#section_4">
-              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-            </a>
-            <a class="textos" href="#section_4">
-              <h2 class="subtitulo">section_4</h2>
-              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
-            </a>
+          <div class="cards">
+            <div class="cards-box">
+              <a href="#section_4">
+                <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+              </a>
+              <a class="textos" href="#section_4">
+                <h2 class="subtitulo">section_4</h2>
+                <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="cards">
-          <div class="cards-box">
-            <a href="#section_5">
-              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-            </a>
-            <a class="textos" href="#section_5">
-              <h2 class="subtitulo">section_5</h2>
-              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
-            </a>
+          <div class="cards">
+            <div class="cards-box">
+              <a href="#section_5">
+                <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+              </a>
+              <a class="textos" href="#section_5">
+                <h2 class="subtitulo">section_5</h2>
+                <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="cards">
-          <div class="cards-box">
-            <a href="#section_6">
-              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-            </a>
-            <a class="textos" href="#section_6">
-              <h2 class="subtitulo">section_6</h2>
-              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
-            </a>
+          <div class="cards">
+            <div class="cards-box">
+              <a href="#section_6">
+                <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+              </a>
+              <a class="textos" href="#section_6">
+                <h2 class="subtitulo">section_6</h2>
+                <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="cards">
-          <div class="cards-box">
-            <a href="#section_7">
-              <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
-            </a>
-            <a class="textos" href="#section_7">
-              <h2 class="subtitulo">section_7</h2>
-              <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
-            </a>
+          <div class="cards">
+            <div class="cards-box">
+              <a href="#section_7">
+                <img src="img/Captura de tela 2024-07-18 130503.png" alt="">
+              </a>
+              <a class="textos" href="#section_7">
+                <h2 class="subtitulo">section_7</h2>
+                <p class="texto">era uma vez um elfo encantado que vivia fazendo pipi</p>
+              </a>
+            </div>
           </div>
+
         </div>
-        
-      </div>
       </div>
     </div>
   </section>
@@ -417,7 +457,7 @@
     </div>
   </section>
 
-  
+
 
   <section class="section_4 animation" data-animation="scrollOpacity" id="section_4">
     <div class="content ">
@@ -513,88 +553,116 @@
     </div>
   </section>
 
-  
 
-  <!-- <section class="formularios">
-    <section class="compartilhar">
+
+  <section class="formularios">
+    <section class="share">
       <form class="form">
-        <h3 class="subtitulo">Compartilhar</h3>
-        <input type="button" value="Sair" class="bnt texto sair" onclick='fechar(["none", "none", "none", "none"])'>
-
+        <div class="header-forms">
+          <h3 class="subtitulo">Compartilhar</h3>
+          <input type="button" value="Sair" class="bnt texto sair" onclick='fechar(["none", "none", "none", "none"])'>
+        </div>
         <ul class="lista">
           <li class="itens"><a
-              href="https://api.whatsapp.com/send?text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo%20-%20https%3A%2F%2Fagrinho2023-iota.vercel.app"
+              href="https://api.whatsapp.com/send?text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo%20-%20https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F"
               target="_blank" class="texto"><i class="fab fa-whatsapp icone"></i>Whatsapp</a></li>
           <li class="itens"><a
-              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fagrinho2023-iota.vercel.app&quote=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&quote=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
               class="texto" target="_blank"><i class="fab fa-facebook icone"></i>Facebook</a></li>
           <li class="itens"><a
-              href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&title=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo&summary=Confira%20nosso%20site%20sobre%20sustentabilidade%20e%20as%20a%C3%A7%C3%B5es%20que%20podem%20mudar%20o%20mundo."
+              href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&title=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo&summary=Confira%20nosso%20site%20sobre%20sustentabilidade%20e%20as%20a%C3%A7%C3%B5es%20que%20podem%20mudar%20o%20mundo."
               class="texto" target="_blank"><i class="fab fa-linkedin icone"></i>Linkedin</a></li>
           <li class="itens"><a
-              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
               class="texto" target="_blank"><i class="fab fa-twitter icone"></i>Twitter</a></li>
           <li class="itens"><a
-              href="https://t.me/share/url?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              href="https://t.me/share/url?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
               target="_blank" class="texto"><i class="fab fa-telegram icone"></i>Telegram</a></li>
           <li class="itens"><a
-              href="https://www.reddit.com/submit?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&title=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              href="https://www.reddit.com/submit?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&title=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
               target="_blank" class="texto"><i class="fab fa-reddit icone"></i>Reddit</a></li>
           <li class="itens"><a
-              href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&media=https%3A%2F%2Fagrinho2023-iota.vercel.app%2Fimagens%2Fimagem-compartilhamento.jpg&description=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
-              target="_blank" class="texto"><i class="fab fa-pinterest icone"></i>Pinterest</a>
-          </li>
-          <li class="itens texto"><span>link:</span> <a href="https://agrinho2023-iota.vercel.app"> https://agrinho2023-iota.vercel.app </a></li>
+              href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&media=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2Fimagens%2Fimagem-compartilhamento.jpg&description=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              target="_blank" class="texto"><i class="fab fa-pinterest icone"></i>Pinterest</a></li>
+          <li class="itens texto"><span>link:</span> <a href="https://jaovit.github.io/Agrinho_2024/">
+              https://jaovit.github.io/Agrinho_2024/ </a></li>
         </ul>
-
       </form>
     </section>
-    <section class="comentar">
+
+    <section class="contato">
       <form class="form" id="form_c">
-        <h3 class="subtitulo">Comentar</h3>
-        <input type="button" value="Sair" class="bnt texto sair" onclick='fechar(["none", "none", "none", "none"])'>
+        <div class="header-forms">
+          <h3 class="subtitulo">Entre em Contato</h3>
+          <input type="button" value="Sair" class=" bnt texto" onclick='fechar(["none", "none", "none", "none"])'>
+        </div>
 
-        <label for="input_nome" class="texto">Nome e sobrenome:</label>
-        <input type="text" id="input_nome" class="input texto" required>
-
-        <label for="input_email" class="texto">Email:</label>
-        <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
-
-        <label for="input_telefone" class="texto">Telefone:</label>
-        <input type="tel" id="input_telefone" class="input texto" placeholder="(XX) XXXXX-XXXX" required>
-
-        <label for="input_mensagem" class="texto">Mensagem:</label>
-        <textarea cols="50" rows="10" id="input_mensagem" class="input texto mensagem" required></textarea>
-
+        <div class="content">
+          <div class="part">
+          <div class="input-box">
+            <label for="input_nome" class="texto">Nome e sobrenome:</label>
+            <input type="text" id="input_nome" class="input texto" required>
+          </div>
+          <div class="input-box">
+            <label for="input_email" class="texto">Email:</label>
+            <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
+          </div>
+          <div class="input-box">
+            <label for="input_telefone" class="texto">Telefone:</label>
+            <input type="tel" id="input_telefone" class="input texto" placeholder="(XX) XXXXX-XXXX" required>
+          </div>
+        </div>
+        <div class="part">
+          <div class="input-box">
+            <label for="input_mensagem" class="texto">Mensagem:</label>
+            <textarea cols="50" rows="10" id="input_mensagem" class="input texto mensagem" required></textarea>
+          </div>
+        </div>
+        </div>
         <input type="submit" value="Enviar" class="bnt texto" onclick="fecharCompleto(false)">
       </form>
     </section>
+
     <section class="entrar">
       <form class="form" id="form_e">
-        <h3 class="subtitulo">Entrar</h3>
-        <input type="button" value="Sair" class="bnt texto sair" onclick='fechar(["none", "none", "none", "none"])''>
+        <div class="header-forms">
+          <h3 class="subtitulo">Entrar</h3>
+          <input type="button" value="Sair" class="bnt texto sair" onclick='fechar(["none", "none", "none", "none"])''>
+      </div>
 
+      <div class="content">
+      <div class="input-box">
         <label for="input_foto" id="label_foto">
           <p class="texto textolabel">Foto:</p>
         </label>
         <input type="file" id="input_foto" accept=".png, .jpg, .jpeg" class="input_foto">
+      </div>
 
+      <div class="input-box">
         <label for="input_nome" class="texto">Nome:</label>
         <input type="text" id="input_nome" class="input texto" required>
+      </div>
 
+      <div class="input-box">
         <label for="input_data" class="texto">Data de nascimento:</label>
         <input type="date" id="input_data" class="input texto" required>
+      </div>
 
+      <div class="input-box">
         <label for="input_email" class="texto">Email:</label>
         <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
+      </div>
 
+      <div class="input-box">
         <label for="input_senha" class="texto">Senha:</label>
         <input type="password" id="input_email" class="input texto" required>
+      </div>
 
         <input type="submit" value="Entrar" class="bnt texto" onclick="fecharCompleto(true)">
+      </div>
       </form>
     </section>
-  </section> -->
+  </section>
 
   <footer class="footer" txt_max="110" >
     <ul class="lista">
