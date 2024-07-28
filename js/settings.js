@@ -118,10 +118,29 @@ function img(){
   for (let i = 0; i < imgMax.length; i++) {
     let VimgMax = parseInt(imgMax[i].attributes.img_max.value);
     imgMax[i].classList.toggle(
-      `img_${(imgMax[i].attributes.img_max.value)}`,barraFont.value > VimgMax
+      `img_${(imgMax[i].attributes.img_max.value)}`,barraImg.value > VimgMax
     );
   }
 };
+
+// letter space
+const letterBarra = document.querySelector("#progress_letter");
+const letterMax = document.querySelectorAll("[letter_max]");
+
+letterBarra.addEventListener("input", Letter)
+
+function Letter(){
+  document.querySelector(".letter_tamanho").innerHTML = letterBarra.value / 100;
+  root.style.setProperty("--letter-space", letterBarra.value / 100);
+
+  for (let i = 0; i < letterMax.length; i++) {
+    let VLetterMax = parseInt(letterMax[i].attributes.letterMax_max.value);
+    letterMax[i].classList.toggle(
+      `letter_${(letterMax[i].attributes.letter_max.value)}`,letterBarra.value > VLetterMax
+    );
+  }
+};
+
 
 // geral
 const barraGeral = document.querySelector("#progress_geral");
@@ -203,6 +222,8 @@ function resetConf() {
   barraFont.value = 100;
   barraImg.value = 100;
   barraGeral.value = 100;
+  letterBarra.value = 100;
+  Letter();
   resetcolor();
   geral();
   mudarRoot(1);

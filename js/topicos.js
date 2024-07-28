@@ -48,7 +48,7 @@ function PositionCard() {
 }
 
 function ajustColunas() {
-    const cardStyle = window.getComputedStyle(cards[1]); // todos os cards são iguais
+  const cardStyle = window.getComputedStyle(cards[1]); // todos os cards são iguais
 
   const marginLeft = parseFloat(cardStyle.marginLeft);
   const marginRight = parseFloat(cardStyle.marginRight);
@@ -56,7 +56,19 @@ function ajustColunas() {
 
   const colunaCarrocel = marginLeft + marginRight + width;
 
-  box.style.width = `${colunaCarrocel * (cards.length + 3.625)}px`;
+  box.style.width = `${colunaCarrocel * (cards.length + 3.5)}px`;
 
   return colunaCarrocel
+}
+
+function Arrows(direction) {
+  const scrollTotal = carrocel.scrollWidth - carrocel.clientWidth;
+
+  const colunaCarrocel = ajustColunas();
+
+  if (direction == 0) {
+  carrocel.scrollLeft -= colunaCarrocel;
+  } else {
+  carrocel.scrollLeft += colunaCarrocel;
+  }
 }
