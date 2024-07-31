@@ -16,8 +16,7 @@
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    background-color: var(--color-menu);
-    border: var(--borda-menu);
+    background-color: var(--color-menu-2);
     border-radius: .25vw;
     overflow-y: auto;
     display: none; 
@@ -50,10 +49,6 @@
     display: flex;
 }
 
-.formularios label {
-    margin: 1vw 0 .5vw 0;
-}
-
 .form .input {
     margin: auto;
     background-color: transparent;
@@ -62,8 +57,8 @@
     border-radius: .25vw;
     margin-left: .5vw;
     margin-top: .25vw;
-    border: var(--borda-menu);
-    background-color: var(--color-menu-2);
+    border: var(--borda);
+    background-color: var(--color-menu);
 }
 
 .form .input:focus {
@@ -73,7 +68,7 @@
 .form .bnt {
     background-color: transparent;
     color: var(--color-text-menu);
-    border: var(--borda-menu);
+    border: var(--borda);
     border-radius: .25vw;
     padding: .25vw 1.5vw;
     font-weight: 500;
@@ -82,13 +77,13 @@
 
 .form .bnt:hover {
     transform: scale(1.025);
-    background-color: rgba(173, 173, 173, 0.164);
 }
 
 /* Contatos, ou entre en contato */
 .contato {
     width: 65vw;
     top: 6vw;
+    padding: 1vw;
 }
 
 .contato .form {
@@ -110,25 +105,51 @@
     padding: .25vw 10vw;
 }
 
-/* login ou entra soq em ingles sla */
+/* login ou entrar soq em ingles sla */
 .entrar {
-    height: 82.5vh;
-    top: 5.5vw;
-    max-height: 40vw;
+    display: flex;
+    height: 85vh;
+    top: 5.25vw;
+    width: 68vw;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.entrar .form-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
 }
 
 .entrar .form {
-    margin: .75vw 1vw .5vw 1vw;
+    flex-direction: column;
+    row-gap: 1vw;
 }
 
-.entrar label:first-of-type {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    width: 9vw;
-    height: 9vw;
-    border: var(--borda-menu);
+.entrar .content {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vw;
+}
+
+.entrar .local {
+    overflow-y: auto;
+}
+
+.entrar .input-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.entrar #label_foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 8.25vw;
+    height: 8.25vw;
+    border: var(--borda);
     border-radius: 50%;
     margin: 0;
     background-size: cover;
@@ -137,38 +158,115 @@
     cursor: pointer;
 }
 
-.entrar label:first-of-type .texto {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: calc(var(--font-size) * 1.5vw);
+.entrar #label_foto .icon {
+    color: var(--color-text-menu);
+    font-size: 3.5vw;
 }
 
 .entrar input[type="file"] {
     display: none;
 }
 
+.entrar .content > .bnt {
+    padding: .25vw 0;
+    width: 7.5vw;
+}
+
+.entrar .google {
+    overflow-y: auto;
+    background-color: var(--color-principal-light);
+}
+
+.entrar .google .form,
+.entrar .google .content {
+    row-gap: 1.5vw;
+}
+
+.entrar .google .texto{
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+.entrar .google .subtitulo {
+    color: var(--color-sutitle-light);
+    font-weight: 500;
+}
+
+.entrar .google .bnt {
+    border: var(--borda-light);
+}
+
+.entrar .google .bnt:hover {
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+.entrar .google .bnt-google {
+    width: 27.5vw;
+    height: 5vw;
+    background-color: red;
+}
+
+.entrar .google .textos {
+    margin: 0 1vw;
+}
+
+.entrar .google .dadosEx.txt_120 .texto {
+    font-size: calc(1.2 * 1.15vw);
+  letter-spacing: .075vw;
+
+}
+
+.entrar .dadosEx {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+.entrar .google .email {
+    display: flex;
+    flex-direction: column;
+    width: 27.5vw;
+    padding: .25vw .5vw;
+    border: var(--borda-light);
+}
+
+.entrar .google .email .texto {
+    display: flex;
+    align-items: center;
+    column-gap: .5vw;
+}
+
+.entrar .google .copy,
+.share .copy {
+    background-color: transparent;
+    transition: all .25s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.entrar .google .copy:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.entrar.google .copy, .icon{
+    font-size: 1.2vw;
+    margin: 0;
+}
+
 /* compartilhar */
 .share {
     position: relative;
-    display: flex;
     top: 7.5vw;
-    height: 22vw;
-    width: 32vw;
+    height: 24vw;
+    width: 37.5vw;
 }
 
-.share::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: red;
-    width: 50%;
-    filter: opacity(.1);
+.share .texto {
+    text-decoration: none;
 }
 
 .share .form {
@@ -179,30 +277,47 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-top: 1.5vw;
-    margin-left: 2.5vw;
+    column-gap: 5vw;
+    row-gap: 1.4vw;
+    margin-top: 2.25vw;
+    margin-left: -1vw;
 }
 
-.share .itens {
-    margin: .25vw 0;
+.share .texto {
+    display: flex;
+    align-items: center;
 }
 
-.share .itens:last-of-type {
+
+.share .icon {
+    font-size: 2.45vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.share .copy  {
+    width: 3.75vw;
+    height: 3.75vw;
+    margin-right: .5vw;
+    margin-left: .25vw;
+}
+
+.share .copy:hover{
+    background-color: rgba(53, 53, 53, 0.4);
+}
+
+.share .copy .icon{
+    color: var(--color-text-menu);
+    margin: 0;
+}
+
+
+
+/* .share .itens:last-of-type {
     grid-column: span 2;
     margin-left: .75vw;
     margin-top: 1vw;
-}
-
-.share .itens:last-of-type span {
-    font-size: calc(var(--font-size) * 1.25vw);
-    display: block;
-    margin-left: -.75vw;
-}
-
-.share .icone {
-    margin-right: 1vw;
-    scale: 1.5;
-} 
+} */
 
 /* tablet */
 @media (max-width: 850px) {
@@ -290,7 +405,7 @@
         font-size: calc(var(--font-size) * 2.3vw);
     }
 
-    .share .icone {
+    .share .icon {
         margin-right: 2vw;
     }
 }
@@ -381,7 +496,7 @@
         font-size: calc(var(--font-size) * 3.6vw);
     }
 
-    .share .icone {
+    .share .icon {
         margin-right: 3vw;
     }
 }

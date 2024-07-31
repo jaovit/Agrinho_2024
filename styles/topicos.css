@@ -139,7 +139,7 @@
 
 .topicos .cards img {
     width: 100%;
-    height: calc(var(--img-size) * 18.25vw);
+    height: 19vw;
     border-radius: 2.5%;
     box-shadow: .75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
     object-fit: cover;

@@ -16,11 +16,11 @@
 }
 
 .footer .texto {
-    font-size: calc(var(--font-size-js) * 1vw);
+    font-size: calc(var(--font-size) * 1vw);
 }
 
 .footer .titulo {
-    font-size: calc(var(--font-size-js) * 1.35vw);
+    font-size: calc(var(--font-size) * 1.35vw);
     display: block;
     margin-bottom: 0;
 }
@@ -78,7 +78,7 @@
     }
 
     .footer .texto {
-        font-size: calc(var(--font-size-js) * 1.5vw);
+        font-size: calc(var(--font-size) * 1.5vw);
     }
 
     .footer.txt_110 .texto {
@@ -86,7 +86,7 @@
     }
 
     .footer .titulo {
-        font-size: calc(var(--font-size-js) * 1.75vw);
+        font-size: calc(var(--font-size) * 1.75vw);
     }
 
     .footer.txt_110 .titulo {
@@ -94,7 +94,7 @@
     }
 
     .footer .itens:nth-child(1) {
-        font-size: calc(var(--font-size-js) * 1.85vw);
+        font-size: calc(var(--font-size) * 1.85vw);
     }
 
     .footer.txt_110 .itens:nth-child(1) {

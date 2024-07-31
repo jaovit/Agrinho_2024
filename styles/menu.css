@@ -80,7 +80,7 @@
     height: 100%;
     z-index: 1;
     transition: .75s;
-    border-left: var(--borda-menu);
+    border-left: var(--borda);
     background-color: var(--color-menu);
     opacity: .95;
     max-width: 26vw;
@@ -96,10 +96,10 @@
     transform: translateX(0)
 }
 
-.config>.subtitulo {
+.config > .subtitulo {
     text-align: center;
     font-size: calc(var(--font-size) * 1.5vw);
-    font-weight: 500;
+    font-weight: 300;
     margin: 1.5vw 0 1vw 0;
     color: var(--color-text-menu);
 }
@@ -112,8 +112,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    border-top: var(--borda-menu);
-    border-bottom: var(--borda-menu);
+    border-top: var(--borda);
+    border-bottom: var(--borda);
 }
 
 .config .box-input {
@@ -140,7 +140,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: none;
-    border-top: var(--borda-menu);
+    border-top: var(--borda);
 }
 
 .config .subMenu .dropDown{
@@ -163,7 +163,7 @@
     margin: 0;
     padding: 1vw 0;
     font-size: calc(var(--font-size) * 1.2vw);
-    font-weight: 400;
+    font-weight: 300;
     margin-left: 1.3vw;
     color: var(--color-text-menu);
 }
@@ -256,14 +256,15 @@
     background-color: transparent;
     color: var(--color-text-menu);
     border-radius: .25vw;
-    border: var(--borda-menu);
+    border: var(--borda);
     padding: .25vw 2vw;
     font-weight: 500;
     transition: all .15s ease-in-out;
 }
 
 .bnt:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
+    background-color: rgba(173, 173, 173, 0.164);
 }
 
 .otimizacao .textos {
@@ -408,7 +409,7 @@
         height: 110vw;
         z-index: 1;
         border-left: none;
-        border-bottom: var(--borda-menu);
+        border-bottom: var(--borda);
         opacity: 1;
         width: 100%;
     }
