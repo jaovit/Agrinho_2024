@@ -12,6 +12,7 @@
   <script src="js/menus.js" defer></script>
   <script src="js/apiClima.js" defer></script>
   <script src="js/topicos.js" defer></script>
+  <script src="js/login.js" defer></script>
 
   <!-- <link rel="icon" href="img/logo_escola.jpg"> -->
 
@@ -57,19 +58,19 @@
     <!-- forms do cabeçalho -->
     <ul class="header_itens scroll_header tema">
       <li class="itens">
-        <a href="#" onclick='fechar(["none", "flex", "none", "block"])'>
+        <a href="#" onclick='fechar(event, ["none", "flex", "none", "block"])'>
           <p class="texto tema textColor">Contato</p>
         </a>
       </li>
 
       <li class="itens">
-        <a href="#" onclick="nativo()">
+        <a href="#" onclick="nativo(event)">
           <p class="texto tema textColor">Compartilhar</p>
         </a>
       </li>
 
       <li class="itens">
-        <a href="#" onclick='fechar(["flex", "none", "none", "block"])'>
+        <a href="#" onclick='fechar( event, ["flex", "none", "none", "block"])'>
           <p class="texto tema textColor">Entrar</p>
         </a>
       </li>
@@ -88,20 +89,20 @@
         <!-- forms do menu cllr e tablete -->
         <ul class="opcoes tema forms">
           <li class="item">
-            <a href="#" onclick="nativo()">
+            <a href="#" onclick="nativo(event)">
               <p class="texto">Compartilhar<i class="fas fa-share"></i>
               </p>
             </a>
           </li>
 
           <li class="item">
-            <a href="#" onclick='fechar(["none", "flex", "none", "block"])'>
+            <a href="#" onclick='fechar(event, ["none", "flex", "none", "block"])'>
               <p class="texto">Comentar<i class="far fa-comment"></i></p>
             </a>
           </li>
 
           <li class="item">
-            <a href="#" onclick='fechar(["flex", "none", "none", "block"])'>
+            <a href="#" onclick='fechar(event, ["flex", "none", "none", "block"])'>
               <p class="texto">Entrar<i class="fas fa-user"></i>
               </p>
             </a>
@@ -272,15 +273,15 @@
         tópicos
       </h1>
 
-        <div class="setas right">
-          <label for="seta_right" class="arrow right"><i class="fa-solid fa-angle-down"></i></label>
-          <input type="button" onclick="Arrows(1)" id="seta_right">
-        </div>
+      <div class="setas right">
+        <label for="seta_right" class="arrow right"><i class="fa-solid fa-angle-down"></i></label>
+        <input type="button" onclick="Arrows(1)" id="seta_right">
+      </div>
 
-        <div class="setas left">
-          <label for="seta_left" class="arrow left"><i class="fa-solid fa-angle-down"></i></label>
-          <input type="button" onclick="Arrows(0)" id="seta_left">
-        </div>
+      <div class="setas left">
+        <label for="seta_left" class="arrow left"><i class="fa-solid fa-angle-down"></i></label>
+        <input type="button" onclick="Arrows(0)" id="seta_left">
+      </div>
 
       <div class="carrocel">
         <div class="carrocel-box">
@@ -560,32 +561,34 @@
       <form class="form">
         <div class="header-forms">
           <h3 class="subtitulo">Compartilhar</h3>
-          <input type="button" value="Sair" class="bnt texto sair" onclick='fechar(["none", "none", "none", "none"])'>
+          <input type="button" value="Sair" class="bnt texto sair"
+            onclick='fechar(null, ["none", "none", "none", "none"])'>
         </div>
         <ul class="lista">
           <li class="itens"><a
               href="https://api.whatsapp.com/send?text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo%20-%20https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F"
-              target="_blank" class="texto"><i class="fab fa-whatsapp icone"></i>Whatsapp</a></li>
+              target="_blank" class="texto"><i class="fab fa-whatsapp icon"></i>Whatsapp</a></li>
           <li class="itens"><a
               href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&quote=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
-              class="texto" target="_blank"><i class="fab fa-facebook icone"></i>Facebook</a></li>
+              class="texto" target="_blank"><i class="fab fa-facebook icon"></i>Facebook</a></li>
           <li class="itens"><a
               href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&title=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo&summary=Confira%20nosso%20site%20sobre%20sustentabilidade%20e%20as%20a%C3%A7%C3%B5es%20que%20podem%20mudar%20o%20mundo."
-              class="texto" target="_blank"><i class="fab fa-linkedin icone"></i>Linkedin</a></li>
+              class="texto" target="_blank"><i class="fab fa-linkedin icon"></i>Linkedin</a></li>
           <li class="itens"><a
               href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
-              class="texto" target="_blank"><i class="fab fa-twitter icone"></i>Twitter</a></li>
+              class="texto" target="_blank"><i class="fab fa-twitter icon"></i>Twitter</a></li>
           <li class="itens"><a
               href="https://t.me/share/url?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
-              target="_blank" class="texto"><i class="fab fa-telegram icone"></i>Telegram</a></li>
+              target="_blank" class="texto"><i class="fab fa-telegram icon"></i>Telegram</a></li>
           <li class="itens"><a
               href="https://www.reddit.com/submit?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&title=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
-              target="_blank" class="texto"><i class="fab fa-reddit icone"></i>Reddit</a></li>
+              target="_blank" class="texto"><i class="fab fa-reddit icon"></i>Reddit</a></li>
           <li class="itens"><a
               href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2F&media=https%3A%2F%2Fjaovit.github.io%2FAgrinho_2024%2Fimagens%2Fimagem-compartilhamento.jpg&description=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
-              target="_blank" class="texto"><i class="fab fa-pinterest icone"></i>Pinterest</a></li>
-          <li class="itens texto"><span>link:</span> <a href="https://jaovit.github.io/Agrinho_2024/">
-              https://jaovit.github.io/Agrinho_2024/ </a></li>
+              target="_blank" class="texto"><i class="fab fa-pinterest icon"></i>Pinterest</a></li>
+          <li class="itens texto"><button class="copy" id="copyButton"
+              infoCopy="https://jaovit.github.io/Agrinho_2024/"><i class="fa-regular fa-copy icon"></i></button>Copie o
+            link</li>
         </ul>
       </form>
     </section>
@@ -594,73 +597,108 @@
       <form class="form" id="form_c">
         <div class="header-forms">
           <h3 class="subtitulo">Entre em Contato</h3>
-          <input type="button" value="Sair" class=" bnt texto" onclick='fechar(["none", "none", "none", "none"])'>
+          <input type="button" value="Sair" class=" bnt texto" onclick='fechar(null, ["none", "none", "none", "none"])'>
         </div>
 
         <div class="content">
           <div class="part">
-          <div class="input-box">
-            <label for="input_nome" class="texto">Nome e sobrenome:</label>
-            <input type="text" id="input_nome" class="input texto" required>
+            <div class="input-box">
+              <label for="input_nome" class="texto">Nome e sobrenome:</label>
+              <input type="text" id="input_nome" class="input texto" required>
+            </div>
+            <div class="input-box">
+              <label for="input_email" class="texto">Email:</label>
+              <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
+            </div>
+            <div class="input-box">
+              <label for="input_telefone" class="texto">Telefone:</label>
+              <input type="tel" id="input_telefone" class="input texto" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
           </div>
-          <div class="input-box">
-            <label for="input_email" class="texto">Email:</label>
-            <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
-          </div>
-          <div class="input-box">
-            <label for="input_telefone" class="texto">Telefone:</label>
-            <input type="tel" id="input_telefone" class="input texto" placeholder="(XX) XXXXX-XXXX" required>
+          <div class="part">
+            <div class="input-box">
+              <label for="input_mensagem" class="texto">Mensagem:</label>
+              <textarea cols="50" rows="10" id="input_mensagem" class="input texto mensagem" required></textarea>
+            </div>
           </div>
         </div>
-        <div class="part">
-          <div class="input-box">
-            <label for="input_mensagem" class="texto">Mensagem:</label>
-            <textarea cols="50" rows="10" id="input_mensagem" class="input texto mensagem" required></textarea>
-          </div>
-        </div>
-        </div>
-        <input type="submit" value="Enviar" class="bnt texto" onclick="fecharCompleto(false)">
+        <input type="submit" value="Enviar" class="bnt texto" onclick="fecharCompleto(event, false)">
       </form>
     </section>
 
     <section class="entrar">
-      <form class="form" id="form_e">
-        <div class="header-forms">
-          <h3 class="subtitulo">Entrar</h3>
-          <input type="button" value="Sair" class="bnt texto sair" onclick='fechar(["none", "none", "none", "none"])''>
-      </div>
+      <div class="form-box">
+      <section class="local">
+        <form class="form" id="form_e">
+          <div class="header-forms">
+            <h3 class="subtitulo">Entrar</h3>
+          </div>
 
-      <div class="content">
-      <div class="input-box">
-        <label for="input_foto" id="label_foto">
-          <p class="texto textolabel">Foto:</p>
-        </label>
-        <input type="file" id="input_foto" accept=".png, .jpg, .jpeg" class="input_foto">
-      </div>
+          <div class="content">
+            <div class="input-box">
+              <label for="input_foto" id="label_foto">
+                <p class="texto textolabel"><i class="fa-regular fa-user icon"></i></p>
+              </label>
+              <input type="file" id="input_foto" accept=".png, .jpg, .jpeg" class="input_foto">
+            </div>
 
-      <div class="input-box">
-        <label for="input_nome" class="texto">Nome:</label>
-        <input type="text" id="input_nome" class="input texto" required>
-      </div>
+            <div class="input-box">
+              <label for="input_nome" class="texto">Nome:</label>
+              <input type="text" id="input_nome" class="input texto" required>
+            </div>
 
-      <div class="input-box">
-        <label for="input_data" class="texto">Data de nascimento:</label>
-        <input type="date" id="input_data" class="input texto" required>
-      </div>
+            <div class="input-box">
+              <label for="input_data" class="texto">Data de nascimento:</label>
+              <input type="date" id="input_data" class="input texto" required>
+            </div>
 
-      <div class="input-box">
-        <label for="input_email" class="texto">Email:</label>
-        <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
-      </div>
+            <div class="input-box">
+              <label for="input_email" class="texto">Email:</label>
+              <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
+            </div>
 
-      <div class="input-box">
-        <label for="input_senha" class="texto">Senha:</label>
-        <input type="password" id="input_email" class="input texto" required>
-      </div>
+            <div class="input-box">
+              <label for="input_senha" class="texto">Senha:</label>
+              <input type="password" id="input_email" class="input texto" required>
+            </div>
 
-        <input type="submit" value="Entrar" class="bnt texto" onclick="fecharCompleto(true)">
-      </div>
-      </form>
+            <input type="submit" value="Entrar" class="bnt texto" onclick="fecharCompleto(event, true)">
+          </div>
+        </form>
+      </section>
+
+        <section class="google">
+          <form class="form">
+            <div class="header-forms">
+              <h3 class="subtitulo">Entrar Com Google</h3>
+              <input type="button" value="Sair" class="bnt texto sair"
+                onclick='fechar(null, ["none", "none", "none", "none"])''>
+          </div>
+          <div class="content">
+            <div class="bnt-google"></div>
+            <div class="textos">
+              <p class="texto">
+                Você também pode usar parentNode no lugar de parentElement. Em muitos casos, eles são intercambiáveis, mas parentNode é mais geral e pode retornar um nó diferente do elemento pai, como um nó de documento ou um nó de comentário.
+              </p>
+            </div>
+            <section class="dadosEx" txt_max="120">
+            <div class="email">
+              <div class="texto"><button class="copy" id="copyButton" infoCopy="emaildeexemplo@gmail.com"><i class="fa-regular fa-copy icon"></i></button>emaildeexemplo@gamail.com</div>
+              <div class="texto"><button class="copy" id="copyButton" infoCopy="senha12345"><i class="fa-regular fa-copy icon"></i></button>senha12345</div>
+            </div>
+            <div class="email">
+              <div class="texto"><button class="copy" id="copyButton" infoCopy="emaildeexemplo@gmail.com"><i class="fa-regular fa-copy icon"></i></button>emaildeexemplo@gamail.com</div>
+              <div class="texto"><button class="copy" id="copyButton" infoCopy="senha12345"><i class="fa-regular fa-copy icon"></i></button>senha12345</div>
+            </div>
+            <!-- <div class="email">
+              <div class="texto"><button class="copy" id="copyButton" infoCopy="emaildeexemplo@gmail.com"><i class="fa-regular fa-copy icon"></i></button>emaildeexemplo@gamail.com</div>
+              <div class="texto"><button class="copy" id="copyButton" infoCopy="senha12345"><i class="fa-regular fa-copy icon"></i></button>senha12345</div>
+            </div> -->
+          </section>
+          </div>
+        </form>
+      </section>
+    </div>
     </section>
   </section>
 
@@ -686,7 +724,7 @@
       </li>
       <li class="itens texto"><span class="titulo">Aluno:</span> <span class="info"> &nbsp;João Vitor da Silva
           Antunes</span></li>
-      <li class="itens texto"> &copy; Sustentabilidade: Ações que mudam o mundo - 2023</li>
+      <li class="itens texto"> &copy; Do campo a cidade: Agrinho - 2024</li>
     </ul>
   </footer>
 
