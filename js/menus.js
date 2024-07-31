@@ -70,6 +70,7 @@ const fundo_element = document.querySelector(".formularios"); // elmento pai, pa
 const compartilhar_element = document.querySelector(".share");
 const contato_element = document.querySelector(".contato");
 const entrar_element = document.querySelector(".entrar");
+const perfil = document.querySelector(".perfil");
 
 const texto_label = document.querySelector(".textolabel");
 const Input = document.getElementById("input_foto");
@@ -126,6 +127,7 @@ function fechar(event, display) {
     contato_element,
     compartilhar_element,
     fundo_element,
+    perfil,
   ];
 
   for (let i = 0; i < forms.length; i++) {
