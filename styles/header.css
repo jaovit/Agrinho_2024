@@ -15,7 +15,7 @@
 
 .header.visible {
     background-color: var(--color-menu);
-    border-bottom: var(--borda-menu);
+    border-bottom: var(--borda);
     opacity: .95;
 }
 
@@ -158,7 +158,7 @@
     .header {
         padding: 0;
         height: 14.5vw;
-        border-bottom: var(--borda-menu);
+        border-bottom: var(--borda);
     }
 
     .header.visible {
