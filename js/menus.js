@@ -158,10 +158,8 @@ document.querySelectorAll("#copyButton").forEach((Element) => {
     let info = "";
 
     if (event.target === Element) {
-        console.log(event.target +  " elementto certo");
             info = event.target.attributes.infoCopy.value;
     } else {
-        console.log(event.target.parentElement);
             info = event.target.parentElement.attributes.infoCopy.value;
     }
 
