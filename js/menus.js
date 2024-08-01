@@ -101,13 +101,13 @@ function fecharCompleto(event, form) {
 
   if (form) {
     if (formulario_entrar.checkValidity()) {
-      fechar(null, ["none", "none", "none", "none"]);
+      fechar(null, ["none", "none", "none", "none" ,"none"]);
     } else {
       formulario_entrar.reportValidity();
     }
   } else {
     if (formulario_contato.checkValidity()) {
-      fechar(null, ["none", "none", "none", "none"]);
+      fechar(null, ["none", "none", "none", "none", "none"]);
     } else {
       formulario_contato.reportValidity();
     }
@@ -137,7 +137,7 @@ function fechar(event, display) {
 
 // ativa o "menu nativo" de compartilhamento
 function nativo(event) {
-  fechar(event, ["none", "none", "flex", "block"]);
+  fechar(event, ["none", "none", "flex", "block", "none"]);
   if (navigator.share !== undefined) {
     navigator.share({
       title: "Sustentabilidade: Ações que mudam o mundo",
