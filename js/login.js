@@ -1,11 +1,11 @@
 // login
 
-let perfil = {
-    nome: "",
-    sobrenome: "",
-    email: "",
-    foto: ""
-}
+// let perfil = {
+//     nome: "",
+//     sobrenome: "",
+//     email: "",
+//     foto: ""
+// }
 
 // jwt decode nativo, sla pq 
 function parseJWT(token) {
