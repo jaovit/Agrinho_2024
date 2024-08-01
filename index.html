@@ -7,16 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styleMain.css">
 
-  <script src="https://unpkg.com/jwt-decode@latest/build/jwt-decode.js"></script>
+  <script src="https://unpkg.com/jwt-decode@latest/build/jwt-decode.js" defer></script>
+  <script src="https://accounts.google.com/gsi/client" async></script>
   <script src="js/animations.js" defer></script>
   <script src="js/settings.js" defer></script>
   <script src="js/menus.js" defer></script>
   <script src="js/apiClima.js" defer></script>
   <script src="js/topicos.js" defer></script>
   <script src="js/login.js" defer></script>
-  <script src="https://accounts.google.com/gsi/client" async></script>
-  
-
 
   <!-- <link rel="icon" href="img/logo_escola.jpg"> -->
 
@@ -685,7 +683,7 @@
             <div class="content">
               <div class="bnt-google">
                 <div id="g_id_onload" 
-                  data-client_id="278083335487-r4hcr6jcnesdaga60bvq2ov9d5hbbhjv.apps.googleusercontent.com"
+                  data-client_id=""
                   data-context="signin" 
                   data-ux_mode="popup" 
                   data-callback="loginCredenciais" 
