@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styleMain.css">
 
+  <script src="https://accounts.google.com/gsi/client" async></script><script src="https://accounts.google.com/gsi/client" async></script>
   <script src="js/animations.js" defer></script>
   <script src="js/settings.js" defer></script>
   <script src="js/menus.js" defer></script>
@@ -15,6 +16,7 @@
   <script src="js/login.js" defer></script>
 
   <!-- <link rel="icon" href="img/logo_escola.jpg"> -->
+
   <!-- autenticação do google -->
   <meta name="google-site-verification" content="gouq0OgsHYtJfnfTdDQAeZa_0UGSQ_FH6FPg2Rc_5hE" />
 
@@ -60,7 +62,7 @@
     <!-- forms do cabeçalho -->
     <ul class="header_itens scroll_header tema">
       <li class="itens">
-        <a href="#" onclick='fechar(event, ["none", "flex", "none", "block"])'>
+        <a href="#" onclick='fechar(event, ["none", "flex", "none", "block", "none"])'>
           <p class="texto tema textColor">Contato</p>
         </a>
       </li>
@@ -72,7 +74,7 @@
       </li>
 
       <li class="itens">
-        <a href="#" onclick='fechar( event, ["flex", "none", "none", "block"])'>
+        <a href="#" onclick='fechar( event, ["flex", "none", "none", "block", "none"])'>
           <p class="texto tema textColor">Entrar</p>
         </a>
       </li>
@@ -98,13 +100,13 @@
           </li>
 
           <li class="item">
-            <a href="#" onclick='fechar(event, ["none", "flex", "none", "block"])'>
+            <a href="#" onclick='fechar(event, ["none", "flex", "none", "block", "none"])'>
               <p class="texto">Comentar<i class="far fa-comment"></i></p>
             </a>
           </li>
 
           <li class="item">
-            <a href="#" onclick='fechar(event, ["flex", "none", "none", "block"])'>
+            <a href="#" onclick='fechar(event, ["flex", "none", "none", "block", "none"])'>
               <p class="texto">Entrar<i class="fas fa-user"></i>
               </p>
             </a>
@@ -599,7 +601,8 @@
       <form class="form" id="form_c">
         <div class="header-forms">
           <h3 class="subtitulo">Entre em Contato</h3>
-          <input type="button" value="Sair" class=" bnt texto" onclick='fechar(null, ["none", "none", "none", "none", "none"])'>
+          <input type="button" value="Sair" class=" bnt texto"
+            onclick='fechar(null, ["none", "none", "none", "none", "none"])'>
         </div>
 
         <div class="content">
@@ -630,44 +633,44 @@
 
     <section class="entrar">
       <div class="form-box">
-      <section class="local">
-        <form class="form" id="form_e">
-          <div class="header-forms">
-            <h3 class="subtitulo">Entrar</h3>
-          </div>
-
-          <div class="content">
-            <div class="input-box">
-              <label for="input_foto" id="label_foto">
-                <p class="texto textolabel"><i class="fa-regular fa-user icon"></i></p>
-              </label>
-              <input type="file" id="input_foto" accept=".png, .jpg, .jpeg" class="input_foto">
+        <section class="local">
+          <form class="form" id="form_e">
+            <div class="header-forms">
+              <h3 class="subtitulo">Entrar</h3>
             </div>
 
-            <div class="input-box">
-              <label for="input_nome" class="texto">Nome:</label>
-              <input type="text" id="input_nome" class="input texto" required>
-            </div>
+            <div class="content">
+              <div class="input-box">
+                <label for="input_foto" id="label_foto">
+                  <p class="texto textolabel"><i class="fa-regular fa-user icon"></i></p>
+                </label>
+                <input type="file" id="input_foto" accept=".png, .jpg, .jpeg" class="input_foto">
+              </div>
 
-            <div class="input-box">
-              <label for="input_data" class="texto">Data de nascimento:</label>
-              <input type="date" id="input_data" class="input texto" required>
-            </div>
+              <div class="input-box">
+                <label for="input_nome" class="texto">Nome:</label>
+                <input type="text" id="input_nome" class="input texto" required>
+              </div>
 
-            <div class="input-box">
-              <label for="input_email" class="texto">Email:</label>
-              <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
-            </div>
+              <div class="input-box">
+                <label for="input_data" class="texto">Data de nascimento:</label>
+                <input type="date" id="input_data" class="input texto" required>
+              </div>
 
-            <div class="input-box">
-              <label for="input_senha" class="texto">Senha:</label>
-              <input type="password" id="input_email" class="input texto" required>
-            </div>
+              <div class="input-box">
+                <label for="input_email" class="texto">Email:</label>
+                <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
+              </div>
 
-            <input type="submit" value="Entrar" class="bnt texto" onclick="fecharCompleto(event, true)">
-          </div>
-        </form>
-      </section>
+              <div class="input-box">
+                <label for="input_senha" class="texto">Senha:</label>
+                <input type="password" id="input_email" class="input texto" required>
+              </div>
+
+              <input type="submit" value="Entrar" class="bnt texto" onclick="fecharCompleto(event, true)">
+            </div>
+          </form>
+        </section>
 
         <section class="google">
           <form class="form">
@@ -675,58 +678,70 @@
               <h3 class="subtitulo">Entrar Com Google</h3>
               <input type="button" value="Sair" class="bnt texto sair"
                 onclick='fechar(null, ["none", "none", "none", "none", "none"])'>
-          </div>
-          <div class="content">
-            <div class="bnt-google">
+            </div>
+            <div class="content">
               <div class="bnt-google">
-                <div id="g_id_onload"
+                <div id="g_id_onload" 
                   data-client_id="278083335487-r4hcr6jcnesdaga60bvq2ov9d5hbbhjv.apps.googleusercontent.com"
-                  data-context="signin" data-ux_mode="popup" data-login_uri="https://jaovit.github.io/Agrinho_2024/"
+                  data-context="signin" 
+                  data-ux_mode="popup" 
+                  data-callback="loginCredenciais" 
                   data-auto_prompt="false">
                 </div>
 
-                <div class="g_id_signin" data-type="standard" data-shape="pill" data-theme="filled_black"
-                  data-text="signin_with" data-size="medium" data-logo_alignment="left">
+                <div class="g_id_signin"
+                    data-type="standard"
+                    data-shape="pill"
+                    data-theme="filled_black"
+                    data-text="signin_with"
+                    data-size="large"
+                    data-logo_alignment="left">
                 </div>
               </div>
-            </div>
-            <div class="textos">
-              <p class="texto">
-                Você também pode usar parentNode no lugar de parentElement. Em muitos casos, eles são intercambiáveis, mas parentNode é mais geral e pode retornar um nó diferente do elemento pai, como um nó de documento ou um nó de comentário.
-              </p>
-            </div>
-            <section class="dadosEx" txt_max="120">
-            <div class="email">
-              <div class="texto"><button class="copy" id="copyButton" infoCopy="emaildeexemplo@gmail.com"><i class="fa-regular fa-copy icon"></i></button>emaildeexemplo@gamail.com</div>
-              <div class="texto"><button class="copy" id="copyButton" infoCopy="senha12345"><i class="fa-regular fa-copy icon"></i></button>senha12345</div>
-            </div>
-            <div class="email">
-              <div class="texto"><button class="copy" id="copyButton" infoCopy="emaildeexemplo@gmail.com"><i class="fa-regular fa-copy icon"></i></button>emaildeexemplo@gamail.com</div>
-              <div class="texto"><button class="copy" id="copyButton" infoCopy="senha12345"><i class="fa-regular fa-copy icon"></i></button>senha12345</div>
-            </div>
-            <!-- <div class="email">
+              <div class="textos">
+                <p class="texto">
+                  Você também pode usar parentNode no lugar de parentElement. Em muitos casos, eles são intercambiáveis,
+                  mas parentNode é mais geral e pode retornar um nó diferente do elemento pai, como um nó de documento
+                  ou um nó de comentário.
+                </p>
+              </div>
+              <section class="dadosEx" txt_max="120">
+                <div class="email">
+                  <div class="texto"><button class="copy" id="copyButton" infoCopy="emaildeexemplo@gmail.com"><i
+                        class="fa-regular fa-copy icon"></i></button>emaildeexemplo@gamail.com</div>
+                  <div class="texto"><button class="copy" id="copyButton" infoCopy="senha12345"><i
+                        class="fa-regular fa-copy icon"></i></button>senha12345</div>
+                </div>
+                <div class="email">
+                  <div class="texto"><button class="copy" id="copyButton" infoCopy="emaildeexemplo@gmail.com"><i
+                        class="fa-regular fa-copy icon"></i></button>emaildeexemplo@gamail.com</div>
+                  <div class="texto"><button class="copy" id="copyButton" infoCopy="senha12345"><i
+                        class="fa-regular fa-copy icon"></i></button>senha12345</div>
+                </div>
+                <!-- <div class="email">
               <div class="texto"><button class="copy" id="copyButton" infoCopy="emaildeexemplo@gmail.com"><i class="fa-regular fa-copy icon"></i></button>emaildeexemplo@gamail.com</div>
               <div class="texto"><button class="copy" id="copyButton" infoCopy="senha12345"><i class="fa-regular fa-copy icon"></i></button>senha12345</div>
             </div> -->
-          </section>
-          </div>
-        </form>
-
-        <section class="perfil">
-          <div class="header-forms">
-            <h3 class="subtitulo">Perfil</h3>
-            <input type="button" value="Sair" class=" bnt texto" onclick='fechar(null, ["none", "none", "none", "none", "none"])'>
-          </div>
-
-          <div class="content">
-          </div>
+              </section>
+            </div>
+          </form>
         </section>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="perfil">
+      <div class="header-forms">
+        <h3 class="subtitulo">Perfil</h3>
+        <input type="button" value="Sair" class=" bnt texto"
+          onclick='fechar(null, ["none", "none", "none", "none", "none"])'>
+      </div>
+
+      <div class="content">
+      </div>
     </section>
   </section>
 
-  <footer class="footer" txt_max="110" >
+  <footer class="footer" txt_max="110">
     <ul class="lista">
       <li class="itens texto"><img src="img/logo_escola.png" alt="logo da escola" class="logo_escola"> Colégio Estadual
         Bom Jesus E.F.M</li>
