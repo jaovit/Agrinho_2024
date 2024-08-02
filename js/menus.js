@@ -73,16 +73,23 @@ const entrar_element = document.querySelector(".entrar");
 const perfil_content = document.querySelector(".perfil");
 
 const texto_label = document.querySelector(".textolabel");
-const Input = document.getElementById("input_foto");
+const Input_foto = document.getElementById("input_foto");
 const Label = document.getElementById("label_foto");
 
-//coloca como perfil de fundo a foto selecionada no login "local"
-Input.addEventListener("change", function () {
+// esses ss são os forms 
+const formulario_entrar = document.getElementById("form_e");
+const formulario_contato = document.getElementById("form_c");
+
+let foto_perfil = ""; // vai para lá mo login.js
+
+//coloca como fundo da label a foto selecionada no login "local"
+Input_foto.addEventListener("change", function () {
   const file = this.files[0];
   if (file) {
     const reader = new FileReader();
     reader.onload = function () {
       Label.style.backgroundImage = `url('${reader.result}')`;
+      foto_perfil = reader.result;
     };
     reader.readAsDataURL(file);
     texto_label.style.cssText = "display: none;";
@@ -96,17 +103,16 @@ function fecharCompleto(event, form) {
     event.preventDefault();
   }
 
-  const formulario_entrar = document.getElementById("form_e");
-  const formulario_contato = document.getElementById("form_c");
-
   if (form) {
     if (formulario_entrar.checkValidity()) {
       fechar(null, ["none", "none", "none", "none" ,"none"]);
+      LoginLocal(event); //função criada no login.js
     } else {
       formulario_entrar.reportValidity();
     }
   } else {
     if (formulario_contato.checkValidity()) {
+      // faz nada, só desaparece
       fechar(null, ["none", "none", "none", "none", "none"]);
     } else {
       formulario_contato.reportValidity();
