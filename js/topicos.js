@@ -57,6 +57,12 @@ function ajustColunas() {
 
   box.style.width = `${colunaCarrocel * (cards.length + 3.5)}px`;
 
+
+  if (window.innerWidth >= 1900) {
+  box.style.width = `${colunaCarrocel * (cards.length + 4.4)}px`;
+  }
+
+
   return colunaCarrocel;
 }
 
