@@ -1,5 +1,7 @@
 // login
 
+
+// dados do perfil do usuario... segurança de uma marea 
 let perfil = {
   nome: "",
   sobrenome: "", // ou segundo nome nn sei, nn sei de mais nada porcaria dessa segurança do google
@@ -7,6 +9,7 @@ let perfil = {
   foto: "",
   id: "", //ou senha
   data: "",
+  bio: "",
   SetProfile: function (array) {
     this.foto = array[0];
     this.nome = array[1];
@@ -17,7 +20,7 @@ let perfil = {
   },
 };
 
-// jwt decode nativo, só separa as partes do JWT e usa o json no  opayload pra "traduzir?" sla, se der errado chama o console.erro
+// jwt decode nativo, só separa as partes do JWT e usa o json no opayload pra "traduzir?" sla, se der errado chama o console.erro
 function parseJWT(info) {
   try {
     var base64Url = info.split(".")[1];
@@ -78,6 +81,7 @@ function LoginLocal(event) {
 const ancora = document.querySelectorAll(".profile");
 
 function ProfileContent() {
+    fechar(null,["none", "none", "none", "none", "none"])
   ancora.forEach((a) => {
     a.innerHTML = `<a href="#" onclick='fechar( event, ["none", "none", "none", "flex", "flex"])'>
           <img src="${perfil.foto}" alt="foto de perfil">

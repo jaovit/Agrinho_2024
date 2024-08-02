@@ -105,7 +105,6 @@ function fecharCompleto(event, form) {
 
   if (form) {
     if (formulario_entrar.checkValidity()) {
-      fechar(null, ["none", "none", "none", "none" ,"none"]);
       LoginLocal(event); //função criada no login.js
     } else {
       formulario_entrar.reportValidity();
