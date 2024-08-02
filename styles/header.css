@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1.25vw 0;
+    height: 4.5vw;
     z-index: 2;
     transition: all .5s;
 }
@@ -24,19 +24,45 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.header_itens>.itens {
-    margin: 0 1vw;
+.header_itens > .itens {
+    margin: 0 .5vw;
+}
+
+.header_itens .itens {
+    display: flex;
+    align-items: center;
 }
 
 .header_itens a {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    column-gap: .75vw;
     text-decoration: none;
+    border-radius: 2vw;
+    transition: all .25s ease-in-out ;
+    padding: .3vw .65vw;
+}
+
+.header_itens a:hover {
+    background-color: #ffffff10;
 }
 
 .header_itens .texto {
     transition: .25s;
 }
 
+.header_itens .profile {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header_itens .profile a img {
+    width: 2.75vw;
+    height: 2.75vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 /* clima */
 

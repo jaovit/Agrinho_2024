@@ -201,9 +201,8 @@
 }
 
 .entrar .google .bnt-google {
+    padding: auto;
     width: 27.5vw;
-    height: 5vw;
-    background-color: red;
 }
 
 .entrar .google .textos {
@@ -256,6 +255,13 @@
     font-size: 1.2vw;
     margin: 0;
 }
+
+/* perfil */
+
+.perfil {
+    display: none;
+}
+
 
 /* compartilhar */
 .share {
