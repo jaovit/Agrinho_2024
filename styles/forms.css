@@ -19,7 +19,7 @@
     background-color: var(--color-menu-2);
     border-radius: .25vw;
     overflow-y: auto;
-    display: none; 
+    display: none;
 }
 
 .form {
@@ -167,7 +167,7 @@
     display: none;
 }
 
-.entrar .content > .bnt {
+.entrar .content>.bnt {
     padding: .25vw 0;
     width: 7.5vw;
 }
@@ -182,7 +182,7 @@
     row-gap: 1.5vw;
 }
 
-.entrar .google .texto{
+.entrar .google .texto {
     color: var(--color-text-light);
     font-weight: 500;
 }
@@ -197,7 +197,7 @@
 }
 
 .entrar .google .bnt:hover {
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .entrar .google .bnt-google {
@@ -211,7 +211,7 @@
 
 .entrar .google .dadosEx.txt_120 .texto {
     font-size: calc(1.2 * 1.15vw);
-  letter-spacing: .075vw;
+    letter-spacing: .075vw;
 
 }
 
@@ -247,11 +247,12 @@
     height: 2.5vw;
 }
 
-.entrar .google .copy:hover{
+.entrar .google .copy:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.entrar.google .copy, .icon{
+.entrar.google .copy,
+.icon {
     font-size: 1.2vw;
     margin: 0;
 }
@@ -301,18 +302,18 @@
     margin-left: 1vw;
 }
 
-.share .copy  {
+.share .copy {
     width: 3.75vw;
     height: 3.75vw;
     margin-right: .5vw;
     margin-left: .25vw;
 }
 
-.share .copy:hover{
+.share .copy:hover {
     background-color: rgba(53, 53, 53, 0.4);
 }
 
-.share .copy .icon{
+.share .copy .icon {
     color: var(--color-text-menu);
     margin: 0;
 }
@@ -504,5 +505,178 @@
 
     .share .icon {
         margin-right: 3vw;
+    }
+}
+
+@media (min-width: 1900px) {
+
+
+    .contato,
+    .entrar,
+    .share {
+        border-radius: .25vw;
+    }
+
+    .form {
+        margin: 1vw;
+    }
+
+    .header-forms .subtitulo {
+        font-size: calc(var(--font-size) * 1.75vw);
+    }
+
+    .header-forms .bnt {
+        top: 1vw;
+        right: 1vw;
+    }
+
+    .form .input {
+        padding: .25vw 1vw;
+        width: 27vw;
+        border-radius: .25vw;
+        margin-left: .5vw;
+        margin-top: .25vw;
+    }
+
+    .form .bnt {
+        border-radius: .25vw;
+        padding: .25vw 1.5vw;
+    }
+
+    /* Contatos, ou entre en contato */
+    .contato {
+        width: 65vw;
+        top: 6vw;
+        padding: 1vw;
+    }
+
+    .contato .form {
+        row-gap: 1.75vw;
+    }
+
+    .contato .form .part {
+        row-gap: .75vw;
+    }
+
+    .contato .form .mensagem {
+        height: 12vw;
+    }
+
+    .contato .form input[type="submit"] {
+        padding: .25vw 10vw;
+    }
+
+    /* login ou entrar soq em ingles sla */
+    .entrar {
+        height: 85vh;
+        top: 5.25vw;
+        width: 68vw;
+    }
+
+
+    .entrar .form {
+        row-gap: 1vw;
+    }
+
+    .entrar .content {
+        row-gap: 1vw;
+    }
+
+    .entrar #label_foto {
+        width: 8.25vw;
+        height: 8.25vw;
+        border-radius: 50%;
+        margin: 0;
+    }
+
+    .entrar #label_foto .icon {
+        font-size: 3.5vw;
+    }
+
+    .entrar .content>.bnt {
+        padding: .25vw 0;
+        width: 7.5vw;
+    }
+
+    .entrar .google .form,
+    .entrar .google .content {
+        row-gap: 1.5vw;
+    }
+
+    .entrar .google .bnt-google {
+        width: 27.5vw;
+    }
+
+    .entrar .google .textos {
+        margin: 0 1vw;
+    }
+
+    .entrar .google .dadosEx.txt_120 .texto {
+        font-size: calc(1.2 * 1.15vw);
+        letter-spacing: .075vw;
+
+    }
+
+    .entrar .dadosEx {
+        row-gap: 1vw;
+    }
+
+    .entrar .google .email {
+        width: 27.5vw;
+        padding: .25vw .5vw;
+    }
+
+    .entrar .google .email .texto {
+        column-gap: .5vw;
+    }
+
+    .entrar .google .copy,
+    .share .copy {
+        border-radius: 50%;
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .entrar.google .copy,
+    .icon {
+        font-size: 1.2vw;
+        margin: 0;
+    }
+
+    /* perfil */
+
+    .perfil {
+        display: none;
+    }
+
+    /* compartilhar */
+    .share {
+        top: 7.5vw;
+        height: 24vw;
+        width: 37.5vw;
+    }
+
+    .share .lista {
+        column-gap: 5vw;
+        row-gap: 1.4vw;
+        margin-top: 2.25vw;
+        margin-left: -1vw;
+    }
+
+    .share .icon {
+        font-size: 2.45vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+
+    .share .copy {
+        width: 3.75vw;
+        height: 3.75vw;
+        margin-right: .5vw;
+        margin-left: .25vw;
+    }
+
+    .share .copy .icon {
+        margin: 0;
     }
 }

@@ -10,13 +10,13 @@
     overflow: hidden;
 }
 
-.topicos .content > .titulo {
+.topicos .content>.titulo {
     text-align: center;
     font-weight: 300;
     font-size: calc(var(--font-size) * 2.25vw);
 }
 
-.topicos .setas{
+.topicos .setas {
     position: absolute;
     top: 53%;
     transform: translateY(-50%);
@@ -33,7 +33,8 @@
 }
 
 .topicos .setas.right {
-    right: .575vw; /* espaço para a barra de rolagem*/
+    right: .575vw;
+    /* espaço para a barra de rolagem*/
     padding: 13.5vw .5vw 13.5vw 3vw;
 }
 
@@ -133,7 +134,7 @@
 }
 
 
-.topicos .cards a:nth-child(1){
+.topicos .cards a:nth-child(1) {
     width: 100%;
 }
 
@@ -164,4 +165,98 @@
 
 .topicos .cards a {
     text-decoration: none;
+}
+
+@media (min-width: 1900px) {
+
+    .topicos {
+        padding: .5vw 0vw;
+    }
+
+    .topicos .content>.titulo {
+        font-size: calc(var(--font-size) * 2.25vw);
+    }
+
+    .topicos .setas {
+        top: 53%;
+    }
+
+    .topicos .setas.right {
+        right: .575vw;
+        /* espaço para a barra de rolagem*/
+        padding: 13.5vw .5vw 13.5vw 3vw;
+    }
+
+    .topicos .setas.left {
+        left: 0;
+        padding: 13.5vw 3vw 13.5vw .5vw;
+    }
+
+    .topicos .arrow {
+        font-size: 3vw;
+        transition: all .35s ease-in-out;
+    }
+
+    .topicos .carrocel {
+        width: 100vw;
+        height: 37vw;
+    }
+
+    .topicos .carrocel-box {
+        height: 42vw;
+        flex-shrink: 0;
+    }
+
+    .topicos .cards {
+        perspective: 37.5vw;
+        width: 22vw;
+    }
+
+    .topicos .cards-box {
+        row-gap: 2vw;
+        width: 18.5vw;
+        height: 75%;
+        border-radius: 2%;
+        transform: scale(.95);
+    }
+
+    .topicos .cards.centro .cards-box {
+        transform: scale(1.075);
+    }
+
+    .topicos .cards.cantoE .cards-box {
+        transform: scale(.965) rotateY(-3.5deg);
+    }
+
+    .topicos .cards.cantoD .cards-box {
+        transform: scale(.965) rotateY(3.5deg);
+    }
+
+    .topicos .cards.esquerdo .cards-box {
+        transform: rotateY(-1.75deg);
+    }
+
+    .topicos .cards.direito .cards-box {
+        transform: rotateY(1.75deg);
+    }
+
+
+    .topicos .cards a:nth-child(1) {
+        width: 100%;
+    }
+
+    .topicos .cards img {
+        width: 100%;
+        height: 19vw;
+        border-radius: 2.5%;
+    }
+
+    .topicos .cards .subtitulo {
+        font-size: calc(var(--font-size) * 1.5vw);
+    }
+
+    .topicos .cards .texto {
+        font-size: calc(var(--font-size) * 1vw);
+        padding: 0 1vw;
+    }
 }

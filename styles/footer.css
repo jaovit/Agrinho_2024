@@ -177,3 +177,58 @@
         background-color: red;
     }
 }
+
+@media (min-width: 1900px) {
+
+    /* footer */
+    .footer {
+        padding: 2.5vw;
+    }
+
+    .footer .lista {
+        grid-row-gap: 1.75vw;
+        grid-column-gap: 2.5vw;
+    }
+
+    .footer .texto {
+        font-size: calc(var(--font-size) * 1vw);
+    }
+
+    .footer .titulo {
+        font-size: calc(var(--font-size) * 1.35vw);
+    }
+
+    .footer .info {
+        margin-left: .75vw;
+    }
+
+    .footer .itens:nth-child(1) {
+        font-size: calc(var(--font-size) * 1.5vw);
+    }
+
+    .footer .logo_escola {
+        width: calc(var(--tamanho-img) * 5vw);
+    }
+
+    .footer .itens:nth-child(2) {
+        margin-left: .75vw;
+    }
+
+    .footer .itens:nth-child(2) .titulo {
+        margin-left: -.75vw;
+    }
+
+    .footer .mapa {
+        width: 100%;
+        height: 10vw;
+    }
+
+    .footer .itens:nth-child(2) .texto {
+        margin: 1vw 0;
+    }
+
+    .logo_escola {
+        width: 12vw;
+        margin-bottom: 1.5vw;
+    }
+}

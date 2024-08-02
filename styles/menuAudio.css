@@ -137,3 +137,39 @@
     }
 
 }
+
+@media (min-width: 1900px) {
+
+
+
+    .box-icon {
+        padding: 1.25vw;
+        width: 2.5vw;
+        border-radius: 0 .75vw .75vw 0;
+        margin-left: -.1vw;
+    }
+
+    .menu_audio audio {
+        width: 30vw;
+        margin: .75vw;
+    }
+
+    .menu_audio audio::-webkit-media-controls-enclosure {
+        padding: 1vw;
+        border-radius: 0;
+    }
+
+    .menu_audio audio::-webkit-media-controls-panel {
+        padding: .5vw;
+    }
+
+    .menu_audio audio::-webkit-media-controls-current-time-display,
+    .menu_audio audio::-webkit-media-controls-time-remaining-display {
+        font-size: calc(var(--font-size-js) * 1vw);
+        margin-left: 1vw;
+    }
+
+    .menu_audio audio::-webkit-media-controls-play-button {
+        transform: scale(2);
+    }
+}

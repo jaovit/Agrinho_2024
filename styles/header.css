@@ -24,7 +24,7 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.header_itens > .itens {
+.header_itens>.itens {
     margin: 0 .5vw;
 }
 
@@ -39,7 +39,7 @@
     column-gap: .75vw;
     text-decoration: none;
     border-radius: 2vw;
-    transition: all .25s ease-in-out ;
+    transition: all .25s ease-in-out;
     padding: .3vw .65vw;
 }
 
@@ -202,4 +202,85 @@
         display: none;
     }
 
+}
+
+@media (min-width: 1900px) {
+
+    .header {
+        height: 4.5vw;
+    }
+
+    .header_itens>.itens {
+        margin: 0 .5vw;
+    }
+
+    .header_itens a {
+        border-radius: 2vw;
+        padding: .3vw .65vw;
+    }
+
+    .header_itens .profile a img {
+        width: 2.75vw;
+        height: 2.75vw;
+        border-radius: 50%;
+    }
+
+    /* clima */
+
+    .clima {
+        left: 1.5vw;
+        font-size: calc(var(--font-size) * .875vw);
+    }
+
+
+    .setcity {
+        column-gap: 1vw;
+    }
+
+    .clima .input-box {
+        column-gap: 1vw;
+        padding: 0 0 0 .25vw;
+    }
+
+    .clima #cep {
+        padding: .3vw 0;
+    }
+
+    #set {
+        padding: 0 .4vw;
+    }
+
+
+    .condicoes {
+        padding-left: .35vw;
+        margin-top: .25vw;
+    }
+
+    .temp,
+    .humidade,
+    .vento {
+        margin-right: .75vw;
+    }
+
+    .iconClima {
+        width: 1.75vw;
+        height: 1.75vw;
+        overflow: hidden;
+    }
+
+    .iconClima img {
+        width: 3.25vw;
+    }
+
+    .load {
+        margin-left: 1.25vw;
+    }
+
+    .load div {
+        width: 1.75vw;
+        height: 1.75vw;
+        border-radius: 50%;
+        border: solid .3vw #969494;
+        border-top: solid .3vw #5e5c5c;
+    }
 }

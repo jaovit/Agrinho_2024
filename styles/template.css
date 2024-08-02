@@ -50,3 +50,30 @@
 .template .texto {
     margin-left: 1vw;
 }
+
+@media (min-width: 1900px) {
+
+    .template {
+        padding: 10vw 0;
+        height: 17.5vw;
+    }
+
+    .template::before {
+        top: -10vw;
+    }
+
+    .template .content {
+        margin-left: 18vw;
+        width: 70vw;
+    }
+
+    .template .titulo {
+        font-size: calc(var(--font-size) * 3.85vw);
+        line-height: 4.5vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .template .texto {
+        margin-left: 1vw;
+    }
+}

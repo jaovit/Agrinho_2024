@@ -57,3 +57,43 @@
     font-weight: 500;
     margin-left: 1vw;
 }
+
+@media (min-width: 1900px) {
+
+
+    .section_5,
+    .section_6 {
+        padding: 2vw 0;
+    }
+
+    .section_5 .content,
+    .section_6 .content {
+        min-height: 25vw;
+        width: 43vw;
+        padding: 1vw 0;
+    }
+
+    .section_6 .images {
+        left: -2vw;
+    }
+
+    .section_6 .images img {
+        width: calc(var(--img-size) * 55vw);
+        height: calc(var(--img-size) * 35vw);
+        max-width: 58vw;
+    }
+
+    .section_5 .texto,
+    .section_6 .texto {
+        margin-left: 1vw;
+    }
+
+    .section_6 .titulo {
+        margin-right: 10vw;
+    }
+
+    .section_6 .texto {
+        font-weight: 500;
+        margin-left: 1vw;
+    }
+}
