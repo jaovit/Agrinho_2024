@@ -174,7 +174,7 @@
     }
 
     .topicos .content>.titulo {
-        font-size: calc(var(--font-size) * 1.75vw);
+        font-size: calc(var(--font-size) * 1.5vw);
     }
 
     .topicos .setas {
@@ -198,7 +198,7 @@
 
     .topicos .carrocel {
         width: 100vw;
-        height: 33vw;
+        height: 32vw;
     }
 
     .topicos .carrocel-box {
@@ -214,7 +214,7 @@
     .topicos .cards-box {
         row-gap: 2vw;
         width: 16.5vw;
-        height: 77.50%;
+        height: 75.50%;
     }
 
     .topicos .cards img {

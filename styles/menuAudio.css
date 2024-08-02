@@ -20,7 +20,7 @@
 
 .menu_audio .box-audio {
     background-color: var(--color-menu);
-    border: var(--borda-menu);
+    border: var(--borda);
     border-left: none;
 }
 
@@ -32,7 +32,7 @@
     padding: 1.25vw;
     width: 2.5vw;
     border-radius: 0 .75vw .75vw 0;
-    border: var(--borda-menu);
+    border: var(--borda);
     border-left: none;
     margin-left: -.1vw;
 }
@@ -68,7 +68,7 @@
 .menu_audio audio::-webkit-media-controls-current-time-display,
 .menu_audio audio::-webkit-media-controls-time-remaining-display {
     color: var(--color-text-menu);
-    font-size: calc(var(--font-size-js) * 1vw);
+    font-size: calc(var(--font-size) * 1vw);
     filter: invert(100%);
     margin-left: 1vw;
 }
@@ -144,9 +144,13 @@
 
     .box-icon {
         padding: 1.25vw;
-        width: 2.5vw;
-        border-radius: 0 .75vw .75vw 0;
+        width: 2.25vw;
+        border-radius: 0 .5vw .5vw 0;
         margin-left: -.1vw;
+    }
+
+    .box-icon .fa-volume-up {
+        font-size: calc(var(--font-size) * 1.15vw);
     }
 
     .menu_audio audio {
@@ -156,7 +160,6 @@
 
     .menu_audio audio::-webkit-media-controls-enclosure {
         padding: 1vw;
-        border-radius: 0;
     }
 
     .menu_audio audio::-webkit-media-controls-panel {
