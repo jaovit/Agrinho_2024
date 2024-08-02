@@ -1,7 +1,6 @@
 // login
 
-
-// dados do perfil do usuario... segurança de uma marea 
+// dados do perfil do usuario... segurança de uma marea
 let perfil = {
   nome: "",
   sobrenome: "", // ou segundo nome nn sei, nn sei de mais nada porcaria dessa segurança do google
@@ -71,7 +70,7 @@ function LoginLocal(event) {
     iLoginvalue.push(input.value);
   });
 
-  iLoginvalue[0] = foto_perfil; 
+  iLoginvalue[0] = foto_perfil;
   perfil.SetProfile(iLoginvalue);
   console.log(iLoginvalue);
   ProfileContent();
@@ -81,7 +80,7 @@ function LoginLocal(event) {
 const ancora = document.querySelectorAll(".profile");
 
 function ProfileContent() {
-    fechar(null,["none", "none", "none", "none", "none"])
+  fechar(null, ["none", "none", "none", "none", "none"]);
   ancora.forEach((a) => {
     a.innerHTML = `<a href="#" onclick='fechar( event, ["none", "none", "none", "flex", "flex"])'>
           <img src="${perfil.foto}" alt="foto de perfil">
@@ -89,5 +88,5 @@ function ProfileContent() {
         </a>`;
   });
 
-//   setar os valores para o perfil
+  //   setar os valores para o perfil
 }

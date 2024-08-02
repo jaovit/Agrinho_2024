@@ -49,13 +49,13 @@ botao.addEventListener("click", async (e) => {
   Botao();
 });
 
-document.addEventListener("keypress", (e) =>  {
+document.addEventListener("keypress", (e) => {
   if (cepInput === document.activeElement) {
-  if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       Botao();
-  } 
-}
-})
+    }
+  }
+});
 
 function Botao(event) {
   const cep = cepInput.value;

@@ -76,7 +76,7 @@ const texto_label = document.querySelector(".textolabel");
 const Input_foto = document.getElementById("input_foto");
 const Label = document.getElementById("label_foto");
 
-// esses ss são os forms 
+// esses ss são os forms
 const formulario_entrar = document.getElementById("form_e");
 const formulario_contato = document.getElementById("form_c");
 
@@ -163,13 +163,13 @@ document.querySelectorAll("#copyButton").forEach((Element) => {
     let info = "";
 
     if (event.target === Element) {
-            info = event.target.attributes.infoCopy.value;
+      info = event.target.attributes.infoCopy.value;
     } else {
-            info = event.target.parentElement.attributes.infoCopy.value;
+      info = event.target.parentElement.attributes.infoCopy.value;
     }
 
-    navigator.clipboard.writeText(info).catch(function(error) {
-        console.error('Erro ao copiar o link: ', error);
+    navigator.clipboard.writeText(info).catch(function (error) {
+      console.error("Erro ao copiar o link: ", error);
     });
   });
 });

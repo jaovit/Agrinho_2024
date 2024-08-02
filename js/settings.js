@@ -5,8 +5,6 @@ let root = document.documentElement;
 
 const elementosMudar = document.querySelectorAll(".tema");
 
-
-
 function mudarRoot(tema) {
   resetcolor();
   if (tema == 0) {
@@ -32,22 +30,22 @@ function mudarRoot(tema) {
       elementosMudar[i].classList.add("light");
       elementosMudar[i].classList.remove("dark");
     }
-
-  } else if (tema == 1){
+  } else if (tema == 1) {
     // padrao
-   var root_prop = {
-    "--color-principal": "#222525",
-    "--color-principal-deg": "linear-gradient(to top, var(--color-principal) 7%, #1e1e1ecb 25%, transparent)",
-    "--color-segundaria": "#141414",
-    "--color-title": "#FEFEFE",
-    "--color-title-deg": "linear-gradient(120deg, #FFFFFF 0%, #96989C 80%)",
-    "--color-subtitle": "#d8d5d5",
-    "--color-text": "#dde1e6",
-    "--color-principal-light": "#e7eef1",
-    "--color-title-light": "#27272A",
-    "--color-subtitle-light": "rgb(194, 193, 193)",
-    "--color-text-light": "#504f4f"
-};
+    var root_prop = {
+      "--color-principal": "#222525",
+      "--color-principal-deg":
+        "linear-gradient(to top, var(--color-principal) 7%, #1e1e1ecb 25%, transparent)",
+      "--color-segundaria": "#141414",
+      "--color-title": "#FEFEFE",
+      "--color-title-deg": "linear-gradient(120deg, #FFFFFF 0%, #96989C 80%)",
+      "--color-subtitle": "#d8d5d5",
+      "--color-text": "#dde1e6",
+      "--color-principal-light": "#e7eef1",
+      "--color-title-light": "#27272A",
+      "--color-subtitle-light": "rgb(194, 193, 193)",
+      "--color-text-light": "#504f4f",
+    };
 
     for (let i = 0; i < elementosMudar.length; i++) {
       elementosMudar[i].classList.remove("light");
@@ -89,58 +87,58 @@ function mudarRoot(tema) {
 const txtMax = document.querySelectorAll("[txt_max]");
 const barraFont = document.querySelector("#progress_font_size");
 
-barraFont.addEventListener("input", fonte)
+barraFont.addEventListener("input", fonte);
 
 function fonte() {
-  
   document.querySelector(".fonte_tamanho").innerHTML = barraFont.value / 100;
   root.style.setProperty("--font-size", barraFont.value / 100);
 
   for (let i = 0; i < txtMax.length; i++) {
     let VtxtMax = parseInt(txtMax[i].attributes.txt_max.value);
     txtMax[i].classList.toggle(
-      `txt_${(txtMax[i].attributes.txt_max.value)}`, barraFont.value > VtxtMax
+      `txt_${txtMax[i].attributes.txt_max.value}`,
+      barraFont.value > VtxtMax
     );
   }
-};
-
+}
 
 // tamanho img
 const barraImg = document.querySelector("#progress_img");
 const imgMax = document.querySelectorAll("[img_max]");
 
-barraImg.addEventListener("input", img)
+barraImg.addEventListener("input", img);
 
-function img(){
+function img() {
   document.querySelector(".img_tamanho").innerHTML = barraImg.value / 100;
   root.style.setProperty("--img-size", barraImg.value / 100);
 
   for (let i = 0; i < imgMax.length; i++) {
     let VimgMax = parseInt(imgMax[i].attributes.img_max.value);
     imgMax[i].classList.toggle(
-      `img_${(imgMax[i].attributes.img_max.value)}`,barraImg.value > VimgMax
+      `img_${imgMax[i].attributes.img_max.value}`,
+      barraImg.value > VimgMax
     );
   }
-};
+}
 
 // letter space
 const letterBarra = document.querySelector("#progress_letter");
 const letterMax = document.querySelectorAll("[letter_max]");
 
-letterBarra.addEventListener("input", Letter)
+letterBarra.addEventListener("input", Letter);
 
-function Letter(){
+function Letter() {
   document.querySelector(".letter_tamanho").innerHTML = letterBarra.value / 100;
   root.style.setProperty("--letter-space", letterBarra.value / 100);
 
   for (let i = 0; i < letterMax.length; i++) {
     let VLetterMax = parseInt(letterMax[i].attributes.letterMax_max.value);
     letterMax[i].classList.toggle(
-      `letter_${(letterMax[i].attributes.letter_max.value)}`,letterBarra.value > VLetterMax
+      `letter_${letterMax[i].attributes.letter_max.value}`,
+      letterBarra.value > VLetterMax
     );
   }
-};
-
+}
 
 // geral
 const barraGeral = document.querySelector("#progress_geral");
@@ -153,8 +151,8 @@ function geral() {
   barraFont.value = barraGeral.value;
   barraImg.value = barraGeral.value;
 
-  img()
-  fonte()
+  img();
+  fonte();
 }
 
 // cores
@@ -180,7 +178,6 @@ input_cor_1.addEventListener("input", () => {
 
 input_cor_2.addEventListener("input", () => {
   root.style.setProperty("--color-segundaria", input_cor_2.value);
-  
 });
 
 input_cor_3.addEventListener("input", () => {
@@ -213,7 +210,6 @@ function resetcolor() {
   for (let i = 0; i < tituloColor.length; i++) {
     tituloColor[i].classList.remove("tituloColor");
   }
-  
 }
 
 // resetar

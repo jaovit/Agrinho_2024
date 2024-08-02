@@ -1,7 +1,6 @@
 const cards = document.querySelectorAll(".cards");
 const carrocel = document.querySelector(".carrocel");
-const box = document.querySelector(".carrocel-box")
-
+const box = document.querySelector(".carrocel-box");
 
 window.addEventListener("load", () => {
   ajustColunas();
@@ -16,12 +15,12 @@ window.addEventListener("resize", PositionCard); // quando o tamanho da página 
 function Positions(element) {
   const rect = element.getBoundingClientRect();
   const elementCenterX = rect.left + rect.width / 2;
-  
+
   const viewportWidth = window.innerWidth;
   const viewportWPorCento = (value) => (value / 100) * viewportWidth;
-//   const vwToPx = (value) => (parseFloat(value) / 100) * viewportWidth;
+  //   const vwToPx = (value) => (parseFloat(value) / 100) * viewportWidth;
 
-   const colunaCarrocel = ajustColunas();
+  const colunaCarrocel = ajustColunas();
 
   const positions = [
     [viewportWPorCento(50), "centro"],
@@ -29,8 +28,8 @@ function Positions(element) {
     [viewportWPorCento(72), "direito"],
     [viewportWPorCento(7.5), "cantoE"],
     [viewportWPorCento(92.5), "cantoD"],
-    [viewportWidth - (colunaCarrocel * 1.5), "fimEs"],
-    [viewportWidth + (colunaCarrocel * 1.5), "fimDi"]
+    [viewportWidth - colunaCarrocel * 1.5, "fimEs"],
+    [viewportWidth + colunaCarrocel * 1.5, "fimDi"],
   ];
 
   const tolerance = viewportWPorCento(10);
@@ -58,7 +57,7 @@ function ajustColunas() {
 
   box.style.width = `${colunaCarrocel * (cards.length + 3.5)}px`;
 
-  return colunaCarrocel
+  return colunaCarrocel;
 }
 
 function Arrows(direction) {
@@ -67,8 +66,8 @@ function Arrows(direction) {
   const colunaCarrocel = ajustColunas();
 
   if (direction == 0) {
-  carrocel.scrollLeft -= colunaCarrocel;
+    carrocel.scrollLeft -= colunaCarrocel;
   } else {
-  carrocel.scrollLeft += colunaCarrocel;
+    carrocel.scrollLeft += colunaCarrocel;
   }
 }
