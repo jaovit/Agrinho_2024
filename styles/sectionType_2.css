@@ -57,7 +57,7 @@
 @media (min-width: 1900px) {
 
     .section_2 {
-        padding: 5vw 0;
+        padding: 3vw 0;
     }
 
     .section_2 .content {
@@ -71,8 +71,8 @@
 
     .section_2 .images img {
         margin-left: -5vw;
-        width: calc(var(--img-size) * 55vw);
-        height: calc(var(--img-size) * 30vw);
+        width: calc(var(--img-size) * 50vw);
+        height: calc(var(--img-size) * 27.5vw);
     }
 
 }

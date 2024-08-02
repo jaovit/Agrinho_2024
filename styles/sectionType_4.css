@@ -68,8 +68,8 @@
 
     .section_5 .content,
     .section_6 .content {
-        min-height: 25vw;
-        width: 43vw;
+        min-height: 20vw;
+        width: 45vw;
         padding: 1vw 0;
     }
 
@@ -78,8 +78,8 @@
     }
 
     .section_6 .images img {
-        width: calc(var(--img-size) * 55vw);
-        height: calc(var(--img-size) * 35vw);
+        width: calc(var(--img-size) * 50vw);
+        height: calc(var(--img-size) * 30vw);
         max-width: 58vw;
     }
 
@@ -93,7 +93,6 @@
     }
 
     .section_6 .texto {
-        font-weight: 500;
         margin-left: 1vw;
     }
 }

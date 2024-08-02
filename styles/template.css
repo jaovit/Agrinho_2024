@@ -55,7 +55,7 @@
 
     .template {
         padding: 10vw 0;
-        height: 17.5vw;
+        height: 16.5vw;
     }
 
     .template::before {
@@ -68,7 +68,7 @@
     }
 
     .template .titulo {
-        font-size: calc(var(--font-size) * 3.85vw);
+        font-size: calc(var(--font-size) * 3.5vw);
         line-height: 4.5vw;
         margin-bottom: 1.5vw;
     }

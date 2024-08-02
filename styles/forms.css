@@ -107,7 +107,7 @@
 
 /* login ou entrar soq em ingles sla */
 .entrar {
-    display: flex;
+    /* display: flex; */
     height: 85vh;
     top: 5.25vw;
     width: 68vw;

@@ -119,17 +119,17 @@
 
     .section_3,
     .section_4 {
-        padding: 5vw 0;
+        padding: 3vw 0;
     }
 
     .section_3 .content,
     .section_4 .content {
-        gap: 3vw;
+        gap: 2vw;
     }
 
     .section_3 .images img {
-        width: calc(var(--img-size) * 30vw);
-        height: calc(var(--img-size) * 43vw);
+        width: calc(var(--img-size) * 27vw);
+        height: calc(var(--img-size) * 40vw);
     }
 
     .section_3 .textos {
@@ -143,17 +143,17 @@
 
     .section_3 .box-lista {
         gap: 1vw;
-        margin-left: 1.75vw;
+        margin-left: 1.5vw;
     }
 
     .section_3 .item,
     .section_4 .item {
-        column-gap: 1vw;
+        column-gap: .75vw;
     }
 
     .section_3 .pos {
-        width: 8vw;
-        height: 10vw;
+        width: 5vw;
+        height: 8vw;
     }
 
     .section_3 .item .texto:not(.section_3 .pos .texto) {
@@ -161,7 +161,7 @@
     }
 
     .section_4 {
-        padding: 6vw 0;
+        padding: 4.5vw 0;
     }
 
     .section_4 .content {

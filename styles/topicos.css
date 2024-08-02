@@ -170,11 +170,11 @@
 @media (min-width: 1900px) {
 
     .topicos {
-        padding: .5vw 0vw;
+        padding: .25vw 0vw;
     }
 
     .topicos .content>.titulo {
-        font-size: calc(var(--font-size) * 2.25vw);
+        font-size: calc(var(--font-size) * 1.75vw);
     }
 
     .topicos .setas {
@@ -193,70 +193,42 @@
     }
 
     .topicos .arrow {
-        font-size: 3vw;
-        transition: all .35s ease-in-out;
+        font-size: 2.5vw;
     }
 
     .topicos .carrocel {
         width: 100vw;
-        height: 37vw;
+        height: 33vw;
     }
 
     .topicos .carrocel-box {
-        height: 42vw;
+        height: 37.5vw;
         flex-shrink: 0;
     }
 
     .topicos .cards {
         perspective: 37.5vw;
-        width: 22vw;
+        width: 18.5vw;
     }
 
     .topicos .cards-box {
         row-gap: 2vw;
-        width: 18.5vw;
-        height: 75%;
-        border-radius: 2%;
-        transform: scale(.95);
-    }
-
-    .topicos .cards.centro .cards-box {
-        transform: scale(1.075);
-    }
-
-    .topicos .cards.cantoE .cards-box {
-        transform: scale(.965) rotateY(-3.5deg);
-    }
-
-    .topicos .cards.cantoD .cards-box {
-        transform: scale(.965) rotateY(3.5deg);
-    }
-
-    .topicos .cards.esquerdo .cards-box {
-        transform: rotateY(-1.75deg);
-    }
-
-    .topicos .cards.direito .cards-box {
-        transform: rotateY(1.75deg);
-    }
-
-
-    .topicos .cards a:nth-child(1) {
-        width: 100%;
+        width: 16.5vw;
+        height: 77.50%;
     }
 
     .topicos .cards img {
         width: 100%;
-        height: 19vw;
+        height: 17vw;
         border-radius: 2.5%;
     }
 
     .topicos .cards .subtitulo {
-        font-size: calc(var(--font-size) * 1.5vw);
+        font-size: calc(var(--font-size) * 1.25vw);
     }
 
     .topicos .cards .texto {
-        font-size: calc(var(--font-size) * 1vw);
+        font-size: calc(var(--font-size) * .825vw);
         padding: 0 1vw;
     }
 }

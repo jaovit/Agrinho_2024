@@ -207,7 +207,7 @@
 @media (min-width: 1900px) {
 
     .header {
-        height: 4.5vw;
+        height: 3.75vw;
     }
 
     .header_itens>.itens {
@@ -220,26 +220,23 @@
     }
 
     .header_itens .profile a img {
-        width: 2.75vw;
-        height: 2.75vw;
-        border-radius: 50%;
+        width: 2.25vw;
+        height: 2.25vw;
     }
 
     /* clima */
 
     .clima {
-        left: 1.5vw;
-        font-size: calc(var(--font-size) * .875vw);
+        font-size: calc(var(--font-size) * .8vw);
     }
 
 
     .setcity {
-        column-gap: 1vw;
+        column-gap: .85vw;
     }
 
     .clima .input-box {
-        column-gap: 1vw;
-        padding: 0 0 0 .25vw;
+        column-gap: .75vw;
     }
 
     .clima #cep {
@@ -263,24 +260,20 @@
     }
 
     .iconClima {
-        width: 1.75vw;
-        height: 1.75vw;
-        overflow: hidden;
+        width: 1.5vw;
+        height: 1.5vw;
     }
 
     .iconClima img {
-        width: 3.25vw;
+        width: 3vw;
     }
 
     .load {
-        margin-left: 1.25vw;
+        margin-left: 1.05vw;
     }
 
     .load div {
-        width: 1.75vw;
-        height: 1.75vw;
-        border-radius: 50%;
-        border: solid .3vw #969494;
-        border-top: solid .3vw #5e5c5c;
+        width: 1.05vw;
+        height: 1.05vw;
     }
 }

@@ -37,7 +37,7 @@
 }
 
 .footer .logo_escola {
-    width: calc(var(--tamanho-img) * 5vw);
+    width: calc(var(--img-size) * 5vw);
     border-radius: 0;
     z-index: 0;
 }
@@ -173,29 +173,23 @@
 }
 
 @media (min-width: 1900px) {
-    .footer {
-        background-color: red;
-    }
-}
-
-@media (min-width: 1900px) {
 
     /* footer */
     .footer {
-        padding: 2.5vw;
+        padding: 2vw;
     }
 
     .footer .lista {
-        grid-row-gap: 1.75vw;
-        grid-column-gap: 2.5vw;
+        grid-row-gap: 1.5vw;
+        grid-column-gap: 2.25vw;
     }
 
     .footer .texto {
-        font-size: calc(var(--font-size) * 1vw);
+        font-size: calc(var(--font-size) * .825vw);
     }
 
     .footer .titulo {
-        font-size: calc(var(--font-size) * 1.35vw);
+        font-size: calc(var(--font-size) * 1.1vw);
     }
 
     .footer .info {
@@ -203,11 +197,11 @@
     }
 
     .footer .itens:nth-child(1) {
-        font-size: calc(var(--font-size) * 1.5vw);
+        font-size: calc(var(--font-size) * 1.15vw);
     }
 
     .footer .logo_escola {
-        width: calc(var(--tamanho-img) * 5vw);
+        width: calc(var(--img-size) * 4.5vw);
     }
 
     .footer .itens:nth-child(2) {
@@ -225,10 +219,5 @@
 
     .footer .itens:nth-child(2) .texto {
         margin: 1vw 0;
-    }
-
-    .logo_escola {
-        width: 12vw;
-        margin-bottom: 1.5vw;
     }
 }

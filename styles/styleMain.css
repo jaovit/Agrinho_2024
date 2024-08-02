@@ -233,18 +233,17 @@ table {
     margin-bottom: calc(var(--font-size) * 0.8vw);
     letter-spacing: calc(var(--letter-space) * .075vw);
     word-spacing: calc(var(--letter-space) * .075vw);
-
   }
 
   .subtitulo {
-    font-size: calc(var(--font-size) * 1.15vw);
+    font-size: calc(var(--font-size) * 1.1vw);
     margin-bottom: calc(var(--font-size) * .4vw);
     letter-spacing: calc(var(--letter-space) * .075vw);
     word-spacing: calc(var(--letter-space) * .075vw);
   }
 
   .texto {
-    font-size: calc(var(--font-size) * .85vw);
+    font-size: calc(var(--font-size) * .825vw);
     line-height: calc(var(--font-size) * 1.5vw);
     letter-spacing: calc(var(--letter-space) * .075vw);
     word-spacing: calc(var(--letter-space) * .075vw);

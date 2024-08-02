@@ -61,7 +61,7 @@
 
     .section_1,
     .section_7 {
-        padding: 5vw 0;
+        padding: 3vw 0;
     }
 
     .section_1 .content,
@@ -86,22 +86,22 @@
 
 
     .section_1 .images img {
-        width: calc(var(--img-size) * 14vw);
-        height: calc(var(--img-size) * 14.5vw);
+        width: calc(var(--img-size) * 12vw);
+        height: calc(var(--img-size) * 12.5vw);
     }
 
     .section_1 .images img:nth-child(1) {
-        width: calc(var(--img-size) * 26vw);
-        height: calc(var(--img-size) * 30vw);
+        width: calc(var(--img-size) * 24vw);
+        height: calc(var(--img-size) * 26vw);
     }
 
     .section_1 .images img:nth-child(4) {
-        width: calc(var(--img-size) * 20vw);
+        width: calc(var(--img-size) * 18vw);
     }
 
     .section_7 .images img {
-        width: calc(var(--img-size) * 24vw);
-        height: calc(var(--img-size) * 24.5vw);
+        width: calc(var(--img-size) * 23vw);
+        height: calc(var(--img-size) * 23.5vw);
     }
 
 }
