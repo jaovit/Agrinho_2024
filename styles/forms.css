@@ -522,7 +522,7 @@
     }
 
     .header-forms .subtitulo {
-        font-size: calc(var(--font-size) * 1.75vw);
+        font-size: calc(var(--font-size) * 1.5vw);
     }
 
     .header-forms .bnt {
@@ -550,12 +550,21 @@
         padding: 1vw;
     }
 
+    .contato .content {
+        column-gap: 1vw;
+    }
+
     .contato .form {
         row-gap: 1.75vw;
     }
 
     .contato .form .part {
         row-gap: .75vw;
+    }
+
+    .contato .input-box {
+        display: flex;
+        flex-direction: column;
     }
 
     .contato .form .mensagem {
@@ -569,7 +578,7 @@
     /* login ou entrar soq em ingles sla */
     .entrar {
         height: 85vh;
-        top: 5.25vw;
+        top: 5.5vw;
         width: 68vw;
     }
 
@@ -652,31 +661,19 @@
     /* compartilhar */
     .share {
         top: 7.5vw;
-        height: 24vw;
+        height: 20vw;
         width: 37.5vw;
     }
 
     .share .lista {
-        column-gap: 5vw;
-        row-gap: 1.4vw;
+        column-gap: 4vw;
+        row-gap: 1vw;
         margin-top: 2.25vw;
         margin-left: -1vw;
     }
 
     .share .icon {
-        font-size: 2.45vw;
-        margin-right: 1vw;
-        margin-left: 1vw;
+        font-size: 2.15vw;
     }
 
-    .share .copy {
-        width: 3.75vw;
-        height: 3.75vw;
-        margin-right: .5vw;
-        margin-left: .25vw;
-    }
-
-    .share .copy .icon {
-        margin: 0;
-    }
 }

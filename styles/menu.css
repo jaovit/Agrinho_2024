@@ -477,12 +477,12 @@
     .botao {
         right: 1.5vw;
         padding: .75vw;
-        width: 2.75vw;
-        height: 1.75vw;
+        width: 2.5vw;
+        height: 1.5vw;
     }
 
     .botao .barras {
-        height: .15vw;
+        height: .125vw;
         border-radius: 1vw;
     }
 
@@ -513,40 +513,45 @@
     /* configuração */
 
     .config {
-        max-width: 26vw;
+        width: 20vw;
     }
 
     .config>.subtitulo {
-        font-size: calc(var(--font-size) * 1.5vw);
+        font-size: calc(var(--font-size) * 1.25vw);
         margin: 1.5vw 0 1vw 0;
     }
 
     .config .box-input {
-        padding: .5vw 1.15vw;
+        width: calc(100% - (2 * .5vw));
+        padding: .25vw .5vw;
+        
     }
 
     .config .subMenu .item:nth-child(1) .fa-solid {
-        font-size: 1.5vw;
+        font-size: 1.35vw;
         margin-right: 1.3vw;
     }
 
     .config .subMenu .subtitulo {
         margin: 0;
         padding: 1vw 0;
-        font-size: calc(var(--font-size) * 1.2vw);
+        font-size: calc(var(--font-size) * 1vw);
         margin-left: 1.3vw;
     }
 
+    .config .subMenu .content {
+    }
+
     .config .sizes.aberto .content {
-        height: 17vw;
+        height: 15vw;
     }
 
     .config .color.aberto .content {
-        height: 20vw;
+        height: 17vw;
     }
 
     .config .otimizacao.aberto .content {
-        height: 4.85vw;
+        height: 5vw;
     }
 
     .progress {
