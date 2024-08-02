@@ -73,9 +73,9 @@
         </a>
       </li>
 
-      <li class="itens">
+      <li class="itens profile">
         <a href="#" onclick='fechar( event, ["flex", "none", "none", "block", "none"])'>
-          <p class="texto tema textColor">Entrar</p>
+          <p class="texto tema textColor ">Entrar</p>
         </a>
       </li>
     </ul>
@@ -105,7 +105,7 @@
             </a>
           </li>
 
-          <li class="item">
+          <li class="item profile">
             <a href="#" onclick='fechar(event, ["flex", "none", "none", "block", "none"])'>
               <p class="texto">Entrar<i class="fas fa-user"></i>
               </p>
@@ -462,8 +462,6 @@
     </div>
   </section>
 
-
-
   <section class="section_4 animation" data-animation="scrollOpacity" id="section_4">
     <div class="content ">
       <div class="textos">
@@ -559,7 +557,6 @@
   </section>
 
 
-
   <section class="formularios">
     <section class="share">
       <form class="form">
@@ -644,7 +641,7 @@
                 <label for="input_foto" id="label_foto">
                   <p class="texto textolabel"><i class="fa-regular fa-user icon"></i></p>
                 </label>
-                <input type="file" id="input_foto" accept=".png, .jpg, .jpeg" class="input_foto">
+                <input type="file" id="input_foto" accept=".png, .jpg, .jpeg" class="input_foto input">
               </div>
 
               <div class="input-box">
@@ -681,28 +678,17 @@
             </div>
             <div class="content">
               <div class="bnt-google">
-                <div id="g_id_onload" 
-                  data-client_id=""
-                  data-context="signin" 
-                  data-ux_mode="popup" 
-                  data-callback="loginCredenciais" 
-                  data-auto_prompt="false">
+                <div id="g_id_onload" data-client_id="" data-context="signin" data-ux_mode="popup"
+                  data-callback="loginCredenciais" data-auto_prompt="false">
                 </div>
 
-                <div class="g_id_signin"
-                    data-type="standard"
-                    data-shape="pill"
-                    data-theme="filled_black"
-                    data-text="signin_with"
-                    data-size="large"
-                    data-logo_alignment="left">
+                <div class="g_id_signin" data-type="standard" data-shape="pill" data-theme="filled_black"
+                  data-text="signin_with" data-size="large" data-logo_alignment="left">
                 </div>
               </div>
               <div class="textos">
-                <p class="texto">
-                  Você também pode usar parentNode no lugar de parentElement. Em muitos casos, eles são intercambiáveis,
-                  mas parentNode é mais geral e pode retornar um nó diferente do elemento pai, como um nó de documento
-                  ou um nó de comentário.
+                <p class="texto"> O login com Google está no modo de teste para garantir a segurança dos dados. Para testar, use um dos
+                  seguintes e-mails e senhas:
                 </p>
               </div>
               <section class="dadosEx" txt_max="120">
@@ -718,10 +704,12 @@
                   <div class="texto"><button class="copy" id="copyButton" infoCopy="agrinhoLoginTeste02"><i
                         class="fa-regular fa-copy icon"></i></button>agrinhoLoginTeste02</div>
                 </div>
-                <!-- <div class="email">
-              <div class="texto"><button class="copy" id="copyButton" infoCopy="agrinho.loginTeste03@gmail.com"><i class="fa-regular fa-copy icon"></i></button>agrinho.loginTeste03@gmail.com</div>
-              <div class="texto"><button class="copy" id="copyButton" infoCopy="agrinhoLoginTeste03"><i class="fa-regular fa-copy icon"></i></button>agrinhoLoginTeste03</div>
-            </div> -->
+                <div class="email">
+                  <div class="texto"><button class="copy" id="copyButton" infoCopy="agrinho.loginTeste03@gmail.com"><i
+                        class="fa-regular fa-copy icon"></i></button>agrinho.loginTeste03@gmail.com</div>
+                  <div class="texto"><button class="copy" id="copyButton" infoCopy="agrinhoLoginTeste03"><i
+                        class="fa-regular fa-copy icon"></i></button>agrinhoLoginTeste03</div>
+                </div>
               </section>
             </div>
           </form>
