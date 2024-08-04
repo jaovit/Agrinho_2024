@@ -9,6 +9,7 @@ let perfil = {
   id: "", //ou senha
   data: "",
   bio: "",
+  capa: "",
   SetProfile: function (array) {
     this.foto = array[0];
     this.nome = array[1];
@@ -16,6 +17,8 @@ let perfil = {
     this.email = array[3];
     this.id = array[4];
     this.sobrenome = array[5];
+    this.bio = array[6];
+    this.capa = array[7];
   },
 };
 
@@ -58,6 +61,7 @@ function loginCredenciais(response) {
     dados.family_name,
   ]);
 
+  fechar(null, ["none", "none", "none", "none", "none"]);
   ProfileContent();
 }
 
@@ -72,21 +76,92 @@ function LoginLocal(event) {
 
   iLoginvalue[0] = foto_perfil;
   perfil.SetProfile(iLoginvalue);
-  console.log(iLoginvalue);
+  fechar(null, ["none", "none", "none", "none", "none"]);
   ProfileContent();
 }
 
+// parte da logica do perfil
 //  const formulario_entrar = document.getElementById("form_e");
 const ancora = document.querySelectorAll(".profile");
+const perfilInputs = document.querySelectorAll(".perfil .input");
+
+perfilInputs.forEach((input) => {
+  input.addEventListener("change", () => {
+    atualizaPerfil(input);
+  });
+});
 
 function ProfileContent() {
-  fechar(null, ["none", "none", "none", "none", "none"]);
   ancora.forEach((a) => {
-    a.innerHTML = `<a href="#" onclick='fechar( event, ["none", "none", "none", "flex", "flex"])'>
+    a.innerHTML = `<a href="#" onclick='fechar( event, ["none", "none", "none", "block", "flex"])'>
           <img src="${perfil.foto}" alt="foto de perfil">
           <p class="texto tema textColor ">Perfil</p>
         </a>`;
   });
 
-  //   setar os valores para o perfil
+  const perfilMap = new Map(Object.entries(perfil));
+
+  for (let i = 0; i < perfilInputs.length; i++) {
+    const input = perfilInputs[i];
+    const infoType = input.getAttribute("infoType");
+
+    if (perfilMap.has(infoType)) {
+      if (infoType != "capa" && infoType != "foto") {
+        input.value = perfilMap.get(infoType);
+
+        if (perfilMap.get(infoType) == null) {
+          input.value = `${infoType}`;
+        }
+
+        if (infoType == "email") {
+          input.textContent = perfilMap.get(infoType);
+        }
+      }
+    }
+  }
+
+  for (let i = 0; i < labels.length; i++) {
+    if (perfil.foto  != "img/null.png") {
+      labels[i].style.backgroundImage = `url('${perfil.foto}')`;
+      texto_labels[i].style.display = "none";
+    }
+  }
+
+  const capa = document.querySelector(".capa");
+  const capaText = document.querySelector(".capa > .textolabel");
+
+  if (perfil.capa != null) {
+    capa.style.backgroundImage = `url('${perfil.capa}')`;
+    capaText.style.display = "none";
+  } else {
+    capa.style.backgroundImage = "none";
+    capaText.style.display = "block";
+  }
+}
+
+function atualizaPerfil(input) {
+  const attributes = input.getAttribute("infoType");
+
+  if (input.value != "") {
+    perfil[attributes] = input.value;
+  } else {
+    if (attributes != "capa" && attributes != "foto") {
+      input.value = perfil[attributes]
+    }
+  }
+
+  for (let i = 0; i < inputs_foto.length; i++) {
+    if (input === inputs_foto[i]) {
+      const file = inputs_foto[i].files[0];
+
+      if (file) {
+        const fileReader = new FileReader();
+
+        fileReader.onload = function (event) {
+          perfil[attributes] = event.target.result;
+        };
+        fileReader.readAsDataURL(file);
+      }
+    }
+  }
 }

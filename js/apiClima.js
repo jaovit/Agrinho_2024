@@ -82,7 +82,7 @@ async function setApiCep(cep) {
 
 erroMensagem.addEventListener("click", (e) => {
   e.preventDefault();
-  exibir(["block", "none", "none", "none"]);
+  exibir(["flex", "none", "none", "none"]);
 });
 
 function exibir(display) {

@@ -72,30 +72,34 @@ const contato_element = document.querySelector(".contato");
 const entrar_element = document.querySelector(".entrar");
 const perfil_content = document.querySelector(".perfil");
 
-const texto_label = document.querySelector(".textolabel");
-const Input_foto = document.getElementById("input_foto");
-const Label = document.getElementById("label_foto");
+const texto_labels = document.querySelectorAll(".textolabel");
+const inputs_foto = document.querySelectorAll(".input_foto");
+const labels = document.querySelectorAll(".label_foto");
 
-// esses ss são os forms
+// esses são os forms
 const formulario_entrar = document.getElementById("form_e");
 const formulario_contato = document.getElementById("form_c");
 
-let foto_perfil = ""; // vai para lá mo login.js
+let foto_perfil = "img/null.png"; // vai para lá no login.js
 
-//coloca como fundo da label a foto selecionada no login "local"
-Input_foto.addEventListener("change", function () {
-  const file = this.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function () {
-      Label.style.backgroundImage = `url('${reader.result}')`;
-      foto_perfil = reader.result;
-    };
-    reader.readAsDataURL(file);
-    texto_label.style.cssText = "display: none;";
-  } else {
-    Label.style.backgroundImage = "none";
-  }
+// Coloca como fundo da label a foto selecionada no login "local"
+inputs_foto.forEach((input, index) => {
+  input.addEventListener("change", function () {
+
+    const file = this.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function () {
+        labels[index].style.backgroundImage = `url('${reader.result}')`;
+        foto_perfil = reader.result;
+      };
+      reader.readAsDataURL(file);
+      texto_labels[index].style.display = "none";
+    } else {
+      labels[index].style.backgroundImage = "none";
+      texto_labels[index].style.display = "block";
+    }
+  });
 });
 
 function fecharCompleto(event, form) {
