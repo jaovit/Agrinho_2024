@@ -163,6 +163,10 @@
     animation: load 1.25s infinite;
 }
 
+.erro {
+    cursor: pointer;
+}
+
 .resultado,
 .erro,
 .load {

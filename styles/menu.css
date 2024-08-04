@@ -102,7 +102,7 @@
     font-size: calc(var(--font-size) * 1.5vw);
     font-weight: 300;
     margin: 1.5vw 0 1vw 0;
-    color: var(--color-text-menu);
+    color: var(--color-title-menu);
 }
 
 .config .box-lista .forms {
@@ -246,7 +246,7 @@
     width: 4vw;
     height: 2vw;
     grid-row: 3;
-    background-color: var(--cor-menu-2);
+    background-color: transparent;
 }
 
 .config .box-bnt {
@@ -537,9 +537,6 @@
         padding: 1vw 0;
         font-size: calc(var(--font-size) * 1vw);
         margin-left: 1.3vw;
-    }
-
-    .config .subMenu .content {
     }
 
     .config .sizes.aberto .content {

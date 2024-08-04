@@ -38,7 +38,7 @@
 }
 
 .box-icon .fa-volume-up {
-    color: var(--color-text);
+    color: var(--color-text-menu);
     font-size: calc(var(--font-size) * 1.45vw);
 }
 

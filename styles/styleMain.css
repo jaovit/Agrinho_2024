@@ -17,13 +17,16 @@
 :root {
   --font-title: "Lexend", sans-serif;
   --font-text: "Montserrat", sans-serif;
-  --color-menu: #151515;
   --font-size: 1;
   --img-size: 1;
   --letter-space: 1;
-  --color-text-menu: #dde1e6;
-  --color-menu-2: #111111;
   --borda: solid .1vw #dde1e6;
+
+  /* menu */
+  --color-menu: #131313;
+  --color-text-menu: #dde1e6;
+  --color-menu-2: #1a1a1a;
+  --color-title-menu: #d8d5d5;
 
   /*  modo neutro padrão */
   --color-principal: #252929;
@@ -41,9 +44,9 @@
   --borda-light: solid .1vw #141414;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
-    /* modo claro padrão*/
+    
     --cor-principal: #2A2F34;
     --cor-segundaria: #b6b6b6;
     --cor-titulo: #202020;
@@ -52,7 +55,7 @@
     --borda: solid .01vw rgb(70, 70, 70);
     --cor-principal-deg: none;
   }
-}
+} */
 
 html {
   scroll-behavior: smooth;

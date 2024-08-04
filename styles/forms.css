@@ -10,13 +10,14 @@
 
 .contato,
 .entrar,
-.share {
+.share,
+.perfil {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    background-color: var(--color-menu-2);
+    background-color: var(--color-menu);
     border-radius: .25vw;
     overflow-y: auto;
     display: none;
@@ -26,6 +27,14 @@
     display: flex;
     align-items: center;
     margin: 1vw;
+}
+
+.form .subtitulo {
+    color: var(--color-title-menu);
+}
+
+.form .texto {
+    color: var(--color-text-menu);
 }
 
 .header-forms {
@@ -50,15 +59,13 @@
 }
 
 .form .input {
-    margin: auto;
-    background-color: transparent;
     padding: .25vw 1vw;
     width: 27vw;
     border-radius: .25vw;
     margin-left: .5vw;
     margin-top: .25vw;
     border: var(--borda);
-    background-color: var(--color-menu);
+    background-color: var(--color-menu-2);
 }
 
 .form .input:focus {
@@ -142,7 +149,7 @@
     flex-direction: column;
 }
 
-.entrar #label_foto {
+.label_foto:not(.capa) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,7 +165,7 @@
     cursor: pointer;
 }
 
-.entrar #label_foto .icon {
+.label_foto .icon {
     color: var(--color-text-menu);
     font-size: 3.5vw;
 }
@@ -260,9 +267,119 @@
 /* perfil */
 
 .perfil {
+    display: flex;
+    top: 6vw;
+    width: 75vw;
+}
+
+.perfil .form {
+    flex-direction: column;
+    width: 95%;
+}
+
+
+.perfil .content {
+    margin-top: .5vw;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.perfil .part {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75vw;
+    padding: 1vw;
+    width: 46%;
+}
+
+.perfil .input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil .label {
+    display: flex;
+    align-items: center;
+    column-gap: .35vw;
+    background-color: var(--color-menu-2);
+    padding: 0 .5vw 0 0;
+    align-self: flex-start;
+    margin-left: .5vw;
+}
+
+.perfil .label .icon {
+    font-size: 1.15vw;
+    color: var(--color-text-menu);
+    cursor: pointer;
+}
+
+.perfil .label .input {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    margin: 0;
+    width: 23vw;
+}
+
+.perfil .span {
+    padding: .25vw 1.5vw;
+    width: 24.25vw;
+    min-height: 1.65vw;
+    overflow-x: auto;
+}
+
+.perfil .span::-webkit-scrollbar {
     display: none;
 }
 
+.perfil .input {
+    width: 25.5vw;
+}
+
+.perfil .input-box .capa {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.15vw 1vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: .5vw;
+    border: var(--borda);
+    width: 85%;
+    height: auto;
+}
+
+.perfil .capa::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Filtro de cor */
+}
+
+.perfil .capa>.icon {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-size: 1.25vw;
+}
+
+.perfil .label_foto:not(.capa) {
+    z-index: 2;
+    align-self: flex-start;
+    width: 9.6vw;
+    height: 9.6vw;
+    background-color: var(--color-menu-2);
+    box-shadow: .75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
+}
+
+.perfil input[type="file"] {
+    display: none;
+}
 
 /* compartilhar */
 .share {
@@ -318,13 +435,6 @@
     margin: 0;
 }
 
-
-
-/* .share .itens:last-of-type {
-    grid-column: span 2;
-    margin-left: .75vw;
-    margin-top: 1vw;
-} */
 
 /* tablet */
 @media (max-width: 850px) {
