@@ -638,10 +638,10 @@
 
             <div class="content">
               <div class="input-box">
-                <label for="input_foto" id="label_foto">
+                <label class="label_foto">
                   <p class="texto textolabel"><i class="fa-regular fa-user icon"></i></p>
+                  <input type="file" accept=".png, .jpg, .jpeg" class="input_foto input">
                 </label>
-                <input type="file" id="input_foto" accept=".png, .jpg, .jpeg" class="input_foto input">
               </div>
 
               <div class="input-box">
@@ -661,7 +661,7 @@
 
               <div class="input-box">
                 <label for="input_senha" class="texto">Senha:</label>
-                <input type="password" id="input_email" class="input texto" required>
+                <input type="password" id="input_senha" class="input texto" required>
               </div>
 
               <input type="submit" value="Entrar" class="bnt texto" onclick="fecharCompleto(event, true)">
@@ -677,7 +677,7 @@
                 onclick='fechar(null, ["none", "none", "none", "none", "none"])'>
             </div>
             <div class="content">
-              <div class="bnt-google">
+              <div class="btn-google">
                 <div id="g_id_onload" data-client_id="" data-context="signin" data-ux_mode="popup"
                   data-callback="loginCredenciais" data-auto_prompt="false">
                 </div>
@@ -687,7 +687,8 @@
                 </div>
               </div>
               <div class="textos">
-                <p class="texto">Para garantir a segurança dos dados, o login com Google está no modo de teste. Para avaliação, use um dos seguintes e-mails e senhas:
+                <p class="texto">Para garantir a segurança dos dados, o login com Google está no modo de teste. Para
+                  avaliação, use um dos seguintes e-mails e senhas:
                 </p>
               </div>
               <section class="dadosEx" txt_max="120">
@@ -717,13 +718,72 @@
     </section>
 
     <section class="perfil">
-      <div class="header-forms">
-        <h3 class="subtitulo">Perfil</h3>
-        <input type="button" value="Sair" class=" bnt texto"
-          onclick='fechar(null, ["none", "none", "none", "none", "none"])'>
-      </div>
+      <div class="form">
+        <div class="header-forms">
+          <h3 class="subtitulo">Perfil</h3>
+          <input type="button" value="Sair" class="bnt texto sair"
+            onclick='fechar(null, ["none", "none", "none", "none", "none"])'>
+        </div>
 
-      <div class="content">
+        <div class="content">
+          <div class="part">
+            <div class="input-box">
+              <label class="label_foto capa" for="input-capa">
+                <input type="file" accept=".png, .jpg, .jpeg" class="input_foto input" id="input-capa" infoType="capa">
+                <i class="fa-solid fa-camera icon texto textolabel"></i>
+
+                <label class="label_foto">
+                  <p class="texto textolabel"><i class="fa-regular fa-user icon"></i></p>
+                  <input type="file" accept=".png, .jpg, .jpeg" class="input_foto input" infoType="foto">
+                </label>
+
+              </label>
+
+            </div>
+
+            <div class="input-box">
+              <span class="texto">Nome:</span>
+              <label class="label">
+                <input type="text" id="input_nome" class="input texto" infoType="nome">
+                <i class="fa-solid fa-pen-to-square icon"></i>
+              </label>
+            </div>
+
+            <div class="input-box">
+              <span class="texto">Sobrenome:</span>
+              <label class="label">
+                <input type="text" id="input_nome" class="input texto" infoType="sobrenome">
+                <i class="fa-solid fa-pen-to-square icon"></i>
+              </label>
+            </div>
+
+            <div class="input-box">
+              <span class="texto">Data de nascimento:</span>
+              <label class="label">
+                <input type="date" id="input_data" class="input texto" infoType="data">
+                <i class="fa-solid fa-pen-to-square icon"></i>
+              </label>
+            </div>
+          </div>
+
+          <div class="part">
+            <div class="input-box">
+              <span class="texto">Email:</span>
+              <div class="label">
+                <span class="span texto input" infoType="email"></span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label for="input_mensagem" class="texto">bio:</label>
+              <textarea cols="50" rows="10" id="input_mensagem" class="input texto mensagem" infoType="bio"></textarea>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      </div>
       </div>
     </section>
   </section>
