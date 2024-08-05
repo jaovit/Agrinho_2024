@@ -173,44 +173,37 @@ const input_cor_6 = document.querySelector("#input_cor_6");
 
 input_cor_1.addEventListener("input", () => {
   root.style.setProperty("--color-principal", input_cor_1.value);
-  root.style.setProperty("--color-principal-deg", `${input_cor_1.value}00`);
 });
 
 input_cor_2.addEventListener("input", () => {
   root.style.setProperty("--color-segundaria", input_cor_2.value);
+  root.style.setProperty("--color-principal-deg", `linear-gradient(to top, var(--color-segundaria) 10%, ${input_cor_2.value} 45%, transparent 90%);`);
+  root.style.setProperty("--color-principal-light", input_cor_2.value);
 });
 
 input_cor_3.addEventListener("input", () => {
   root.style.setProperty("--color-title", input_cor_3.value);
   root.style.setProperty("--color-subtitle", input_cor_3.value);
-  for (let i = 0; i < tituloColor.length; i++) {
-    tituloColor[i].classList.add("tituloColor");
-  }
+
+  root.style.setProperty("--color-title-light", input_cor_3.value);
+  root.style.setProperty("--color-subtitle-light", input_cor_3.value);
 });
 
 input_cor_4.addEventListener("input", () => {
   root.style.setProperty("--color-text", input_cor_4.value);
-  for (let i = 0; i < txtColor.length; i++) {
-    txtColor[i].classList.add("txtColor");
-  }
+  root.style.setProperty("--color-text-light", input_cor_4.value);
 });
 
 input_cor_5.addEventListener("input", () => {
   root.style.setProperty("--color-menu", input_cor_5.value);
+  root.style.setProperty("--color-menu-2", input_cor_5.value);
 });
 
 input_cor_6.addEventListener("input", () => {
   root.style.setProperty("--color-text-menu", input_cor_6.value);
+  root.style.setProperty("--color-title-menu", input_cor_6.value);
 });
 
-function resetcolor() {
-  for (let i = 0; i < txtColor.length; i++) {
-    txtColor[i].classList.remove("txtColor");
-  }
-  for (let i = 0; i < tituloColor.length; i++) {
-    tituloColor[i].classList.remove("tituloColor");
-  }
-}
 
 // resetar
 
@@ -220,7 +213,6 @@ function resetConf() {
   barraGeral.value = 100;
   letterBarra.value = 100;
   Letter();
-  resetcolor();
   geral();
   mudarRoot(1);
   modo = 1;

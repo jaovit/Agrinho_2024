@@ -2,6 +2,7 @@
 
 // dados do perfil do usuario... segurança de uma marea
 let perfil = {
+  logado: false,
   nome: "",
   sobrenome: "", // ou segundo nome nn sei, nn sei de mais nada porcaria dessa segurança do google
   email: "",
@@ -20,7 +21,22 @@ let perfil = {
     this.bio = array[6];
     this.capa = array[7];
   },
+  SalvaStorage: () => {
+    localStorage.setItem("perfil", JSON.stringify(perfil));
+  },
 };
+
+window.addEventListener("load", () => {
+  const perfilStr = localStorage.getItem("perfil");
+
+  if (perfilStr) {
+    const storedPerfil = JSON.parse(perfilStr);
+    if (storedPerfil.logado) {
+      perfil = Object.assign(perfil, storedPerfil);
+      ProfileContent();
+    }
+  }
+});
 
 // jwt decode nativo, só separa as partes do JWT e usa o json no opayload pra "traduzir?" sla, se der errado chama o console.erro
 function parseJWT(info) {
@@ -85,13 +101,9 @@ function LoginLocal(event) {
 const ancora = document.querySelectorAll(".profile");
 const perfilInputs = document.querySelectorAll(".perfil .input");
 
-perfilInputs.forEach((input) => {
-  input.addEventListener("change", () => {
-    atualizaPerfil(input);
-  });
-});
-
 function ProfileContent() {
+  perfil.logado = true;
+
   ancora.forEach((a) => {
     a.innerHTML = `<a href="#" onclick='fechar( event, ["none", "none", "none", "block", "flex"])'>
           <img src="${perfil.foto}" alt="foto de perfil">
@@ -109,7 +121,7 @@ function ProfileContent() {
       if (infoType != "capa" && infoType != "foto") {
         input.value = perfilMap.get(infoType);
 
-        if (perfilMap.get(infoType) == null) {
+        if (perfilMap.get(infoType) == null || perfilMap.get(infoType) == "") {
           input.value = `${infoType}`;
         }
 
@@ -121,47 +133,76 @@ function ProfileContent() {
   }
 
   for (let i = 0; i < labels.length; i++) {
-    if (perfil.foto  != "img/null.png") {
+    if (perfil.foto != "img/null.png" && perfil.foto != "") {
       labels[i].style.backgroundImage = `url('${perfil.foto}')`;
       texto_labels[i].style.display = "none";
+    } else {
+      labels[i].style.backgroundImage = "none";
+      texto_labels[i].style.display = "block";
     }
   }
 
   const capa = document.querySelector(".capa");
   const capaText = document.querySelector(".capa > .textolabel");
 
-  if (perfil.capa != null) {
+  if (perfil.capa != null && perfil.capa != "") {
     capa.style.backgroundImage = `url('${perfil.capa}')`;
     capaText.style.display = "none";
   } else {
     capa.style.backgroundImage = "none";
     capaText.style.display = "block";
   }
+
+  perfil.SalvaStorage();
 }
+
+perfilInputs.forEach((input) => {
+  input.addEventListener("change", () => {
+    atualizaPerfil(input);
+  });
+});
 
 function atualizaPerfil(input) {
   const attributes = input.getAttribute("infoType");
 
-  if (input.value != "") {
-    perfil[attributes] = input.value;
+  if (input.value == "") {
+    if (attributes != "capa" && attributes != "foto") {
+      input.value = perfil[attributes];
+    }
   } else {
     if (attributes != "capa" && attributes != "foto") {
-      input.value = perfil[attributes]
-    }
-  }
-
-  for (let i = 0; i < inputs_foto.length; i++) {
-    if (input === inputs_foto[i]) {
-      const file = inputs_foto[i].files[0];
-
+      perfil[attributes] = input.value;
+    } else {
+      const file = input.files[0];
       if (file) {
         const fileReader = new FileReader();
 
         fileReader.onload = function (event) {
           perfil[attributes] = event.target.result;
+          perfil.SalvaStorage();
+          ProfileContent();
         };
         fileReader.readAsDataURL(file);
       }
     }
   }
+
+  perfil.SalvaStorage();
+  ProfileContent();
+}
+
+function Deslogar() {
+  fechar(null, ["none", "none", "none", "none", "none"]);
+
+  perfil.SetProfile(["", "", "2000-01-01", "", "", "", "", ""]);
+  ProfileContent();
+
+  ancora.forEach((a) => {
+    a.innerHTML = ` <a href="#" onclick='fechar( event, ["flex", "none", "none", "block", "none"])'>
+          <p class="texto tema textColor ">Entrar</p>
+        </a>`;
+  });
+
+  perfil.logado = false;
+  perfil.SalvaStorage();
 }
