@@ -96,10 +96,6 @@ body {
   vertical-align: baseline;
 }
 
-* :not(.topicos, .config) {
-  transition: background-color 1s;
-}
-
 article,
 aside,
 details,
