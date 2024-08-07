@@ -6,7 +6,6 @@ let root = document.documentElement;
 const elementosMudar = document.querySelectorAll(".tema");
 
 function mudarRoot(tema) {
-  resetcolor();
   if (tema == 0) {
     var root_prop = {
       // claro
