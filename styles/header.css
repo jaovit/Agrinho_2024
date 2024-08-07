@@ -76,7 +76,6 @@
     font-family: var(--font-text);
 }
 
-
 .setcity {
     display: flex;
     align-items: center;
@@ -183,6 +182,69 @@
     }
 }
 
+
+/* tablet  */
+@media (max-width: 1000px) {
+    .header {
+        height: 7.5vw;
+    }
+
+    .header_itens {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header_itens .itens:not(.opcoes .itens) {
+        margin:  0;
+    }
+
+    .header_itens a {
+        column-gap: .75vw;
+        border-radius: 2vw;
+        padding: .3vw .65vw;
+        justify-content: center;
+        font-size: 2vw;
+    }
+
+    .header_itens .texto {
+        font-size: 2vw;
+    }
+
+    .header_itens .profile a img {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .clima {
+        font-size: 1.5vw;
+    }
+
+    .setcity {
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: .75vw;
+    }
+
+    .clima .input-box {
+        column-gap: 1.5vw;
+        padding: 0 0 0 .35vw;
+    }
+
+    .clima #cep {
+        padding: .35vw 0;
+        font-size: 1.25vw;
+    }
+
+    .load div {
+        width: 2.75vw;
+        height: 2.75vw;
+    }
+
+    .erro {
+        width: 75%  ;
+    }
+}
+
 /* celular  */
 @media (max-width: 500px) {
     .header {
@@ -205,22 +267,11 @@
     .header_itens .itens:not(.opcoes .itens, .header_itens .itens:nth-child(4)) {
         display: none;
     }
-
 }
 
 @media (min-width: 1900px) {
-
     .header {
         height: 3.75vw;
-    }
-
-    .header_itens>.itens {
-        margin: 0 .5vw;
-    }
-
-    .header_itens a {
-        border-radius: 2vw;
-        padding: .3vw .65vw;
     }
 
     .header_itens .profile a img {
@@ -229,11 +280,9 @@
     }
 
     /* clima */
-
     .clima {
         font-size: calc(var(--font-size) * .8vw);
     }
-
 
     .setcity {
         column-gap: .85vw;
@@ -251,16 +300,8 @@
         padding: 0 .4vw;
     }
 
-
     .condicoes {
         padding-left: .35vw;
-        margin-top: .25vw;
-    }
-
-    .temp,
-    .humidade,
-    .vento {
-        margin-right: .75vw;
     }
 
     .iconClima {

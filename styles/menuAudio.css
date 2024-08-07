@@ -78,9 +78,7 @@
 }
 
 /* tablet */
-@media (max-width: 850px) {
-    /* acessbilidade */
-
+@media (max-width: 1000px) {
     .menu_audio {
         bottom: 5vw;
     }
@@ -112,8 +110,6 @@
 
 /* celular  */
 @media (max-width: 500px) {
-    /* acessbilidade */
-
     .menu_audio {
         bottom: 15vw;
     }
@@ -135,13 +131,9 @@
     .menu_audio audio::-webkit-media-controls-time-remaining-display {
         font-size: calc(var(--font-size-js) * 2.75vw);
     }
-
 }
 
 @media (min-width: 1900px) {
-
-
-
     .box-icon {
         padding: 1.25vw;
         width: 2.25vw;

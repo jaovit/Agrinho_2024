@@ -151,7 +151,7 @@ table {
 }
 
 /* tablet */
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   html {
     scroll-padding-top: 8vw;
   }

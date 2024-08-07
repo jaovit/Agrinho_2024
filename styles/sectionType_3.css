@@ -7,7 +7,6 @@
 
 .section_3 .content,
 .section_4 .content {
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +21,6 @@
 }
 
 .section_3 .textos {
-    /* background-color: blueviolet; */
     width: 45%;
 }
 
@@ -36,7 +34,6 @@
 }
 
 .section_3 .box-lista {
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -45,7 +42,6 @@
 
 .section_3 .item,
 .section_4 .item {
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     column-gap: 1vw;
@@ -63,12 +59,10 @@
 
 .section_3 .item .texto:not(.section_3 .pos .texto) {
     margin-left: 1vw;
-    /* background-color: red; */
 }
 
 .section_4 {
     position: relative;
-    display: flex;
     padding: 6vw 0;
     box-shadow: 0 .2vw 2vw 0 rgba(0, 0, 0, 0.25);
 }
@@ -80,7 +74,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url(../img/tipos-de-drones.webp);
+    background-image: url(../img/tecnologia-no-campo.jpg);
     background-size: cover;
     background-position: center center;
     z-index: -1;
@@ -95,13 +89,11 @@
 .section_4 .box-lista {
     display: flex;
     justify-content: space-between;
-    /* background-color: blue; */
 }
 
 .section_4 .item {
     flex-direction: column;
     width: 24%;
-    /* background-color: green; */
 }
 
 .section_4 .item .texto {
@@ -115,8 +107,72 @@
     margin-bottom: 1vw;
 }
 
-@media (min-width: 1900px) {
+/* tablet */
+@media (max-width: 1000px) {
+    .section_3 .images img {
+        width: calc(var(--img-size) * 55vw);
+        height: calc(var(--img-size) * 25vw);
+    }
 
+    .section_3 .content {
+        flex-direction: column;
+    }
+
+    .section_3 .textos {
+        width: 85%;
+    }
+
+    .section_3 .titulo,
+    .section_4 .titulo {
+        margin-bottom: 3.25vw;
+    }
+
+    .section_3 .box-lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 3vw;
+        flex-shrink: 0;
+    }
+
+    .section_3 .item {
+        width: 75vw;
+    }
+
+    .section_3 .pos {
+        width: 5.5vw;
+        height: 17.5vw;
+        flex-shrink: 0;
+        margin-right: 2vw;
+    }
+
+    .section_3 .item .texto:not(.section_3 .pos .texto) {
+        margin-left: 2vw;
+    }
+
+    .section_4 .textos {
+        width: 100%;
+        margin-left: -2vw;
+    }
+    
+    .section_4 .box-lista {
+        flex-wrap: wrap;
+        column-gap: 2.5vw;
+        row-gap: 3vw;
+        width: 80vw;
+        margin-left: 2vw;
+    }
+
+    .section_4 .item {
+        width: 38vw;
+        flex-shrink: 0;
+    }
+
+    .section_4 .item .icon {
+        font-size: 4.5vw;
+    }
+}
+
+@media (min-width: 1900px) {
     .section_3,
     .section_4 {
         padding: 3vw 0;
