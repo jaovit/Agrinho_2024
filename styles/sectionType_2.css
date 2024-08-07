@@ -56,6 +56,19 @@
     }
 }
 
+/* celular  */
+@media (max-width: 500px) {
+
+    .section_2 .texto {
+        margin-left: 2.75vw;
+    }
+
+    .section_2 .images img {
+        width: calc(var(--img-size) * 30vw);
+        height: calc(var(--img-size) * 60vw);
+    }
+}
+
 @media (min-width: 1900px) {
     .section_2 {
         padding: 3vw 0;

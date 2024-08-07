@@ -54,10 +54,17 @@
     width: calc(var(--img-size) * 24vw);
     height: calc(var(--img-size) * 24.5vw);
     object-fit: cover;
+    box-shadow: .75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
+
 }
 
 /* tablet */
 @media (max-width: 1000px) {
+    .section_1 .texto,
+.section_7 .texto {
+    margin-left: 1.75vw;
+}
+
     .section_1 .images img {
         width: calc(var(--img-size) * 12vw);
         height: calc(var(--img-size) * 12.5vw);
@@ -70,6 +77,45 @@
 
     .section_1 .images img:nth-child(4) {
         width: calc(var(--img-size) * 18vw);
+    }
+}
+
+/* celular  */
+@media (max-width: 500px) {
+
+    .section_1 .content,
+.section_7 .content {
+    flex-direction: column;
+    width: 94vw;
+    row-gap: 4vw;
+}
+
+.section_1 .texto,
+.section_7 .texto {
+    margin-left: 2.75vw;
+}
+
+.section_1 .images, .section_7 .images {
+    align-self: center;
+    gap: calc(var(--img-size) * 2vw);
+}
+    .section_1 .images img {
+        width: calc(var(--img-size) * 20vw);
+        height: calc(var(--img-size) * 20.5vw);
+    }
+
+    .section_1 .images img:nth-child(1) {
+        width: calc(var(--img-size) * 30vw);
+        height: calc(var(--img-size) * 43vw);
+    }
+
+    .section_1 .images img:nth-child(4) {
+        width: calc(var(--img-size) * 30vw);
+    }
+
+    .section_7 .images .img {
+        width: calc(var(--img-size) * 60vw);
+        height: calc(var(--img-size) * 30vw);
     }
 }
 

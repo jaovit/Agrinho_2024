@@ -72,8 +72,35 @@
     }
 }
 
+/* celular  */
+@media (max-width: 500px) {
+
+    .section_5,
+    .section_6 {
+        padding: 4vw 0;
+    }
+
+    .section_6 .images img {
+        width: calc(var(--img-size) * 30vw);
+        height: calc(var(--img-size) * 70vw);
+    }
+
+    .section_5 .content,
+    .section_6 .content {
+        width: 65vw;
+        margin-right: 3vw;
+    }
+
+    .section_5 .texto,
+    .section_6 .texto {
+        margin-left: 2.75vw;
+    }
+
+}
+
 /* desktop */
 @media (min-width: 1900px) {
+
     .section_5 .content,
     .section_6 .content {
         min-height: 20vw;
