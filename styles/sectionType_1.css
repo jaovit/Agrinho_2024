@@ -100,22 +100,22 @@
     gap: calc(var(--img-size) * 2vw);
 }
     .section_1 .images img {
-        width: calc(var(--img-size) * 20vw);
-        height: calc(var(--img-size) * 20.5vw);
+        width: calc(var(--img-size) * 25vw);
+        height: calc(var(--img-size) * 25.5vw);
     }
 
     .section_1 .images img:nth-child(1) {
-        width: calc(var(--img-size) * 30vw);
-        height: calc(var(--img-size) * 43vw);
+        width: calc(var(--img-size) * 35vw);
+        height: calc(var(--img-size) * 53vw);
     }
 
     .section_1 .images img:nth-child(4) {
-        width: calc(var(--img-size) * 30vw);
+        width: calc(var(--img-size) * 35vw);
     }
 
     .section_7 .images .img {
-        width: calc(var(--img-size) * 60vw);
-        height: calc(var(--img-size) * 30vw);
+        width: calc(var(--img-size) * 90vw);
+        height: calc(var(--img-size) * 50vw);
     }
 }
 

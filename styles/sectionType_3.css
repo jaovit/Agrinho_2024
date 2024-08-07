@@ -178,8 +178,8 @@
 /* celular  */
 @media (max-width: 500px) {
     .section_3 .images img {
-        width: calc(var(--img-size) * 75vw);
-        height: calc(var(--img-size) * 40vw);
+        width: calc(var(--img-size) * 90vw);
+        height: calc(var(--img-size) * 50vw);
     }
 
     .section_3 .textos {

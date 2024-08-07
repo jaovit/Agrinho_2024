@@ -72,6 +72,26 @@
     }
 }
 
+@media (max-width: 500px) {
+    .template {
+        padding: 25vw 0;
+        height: 30vw;
+    }    
+
+    .template .content {
+        margin-left: 10vw;
+    }
+
+    .template .titulo {
+        font-size: calc(var(--font-size) * 7vw);
+        margin-bottom: calc(var(--font-size) * 2.5vw);
+    }
+    
+    .template .texto {
+        margin-left: 4vw;
+    }
+}
+
 @media (min-width: 1900px) {
     .template {
         height: 16.5vw;
