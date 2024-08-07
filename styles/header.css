@@ -277,9 +277,7 @@
     }
 
     .setcity {
-        flex-direction: row;
         column-gap: 2vw;
-        align-items: center;
     }
 
     .condicoes {
@@ -291,16 +289,19 @@
         padding: 0 0 0 .5vw;
     }
 
-    .iconClima #condicao-icon {
-        padding: 0;
+    .iconClima {
         width: 6vw;
         height: 6vw;
-        background-color: red;
+    }
+
+    .iconClima #condicao-icon {
+        width: 8vw;
+        height: 8vw;
     }
 
     .clima #cep {
         padding: .75vw 0;
-        font-size: 2.25vw;
+        font-size: 2.5vw;
     }
 
     .load div {
