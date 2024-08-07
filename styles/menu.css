@@ -298,7 +298,7 @@
     }
 
     .botao .barras {
-        background-color: var(--cor-text-menu);
+        background-color: var(--color-text-menu);
         height: .4vw;
     }
 
@@ -332,7 +332,8 @@
         border-left: none;
         border-bottom: var(--borda);
         opacity: 1;
-        width: 100%;
+        width: 100vw;
+        max-width: none;
     }
 
     #menu_input:checked~.header_itens .config {

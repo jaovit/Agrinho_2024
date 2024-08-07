@@ -74,7 +74,7 @@
 
 @media (max-width: 500px) {
     .template {
-        padding: 25vw 0;
+        padding: 25vw 0 20vw 0;
         height: 30vw;
     }    
 
