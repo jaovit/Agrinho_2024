@@ -85,7 +85,6 @@ let foto_perfil = "img/null.png"; // vai para lá no login.js
 // Coloca como fundo da label a foto selecionada no login "local"
 inputs_foto.forEach((input, index) => {
   input.addEventListener("change", function () {
-
     const file = this.files[0];
     if (file) {
       const reader = new FileReader();
@@ -140,7 +139,7 @@ function fechar(event, display) {
   ];
 
   for (let i = 0; i < forms.length; i++) {
-    forms[i].style.cssText = `display: ${display[i]}`;
+    forms[i].style.display = display[i];
   }
 }
 
