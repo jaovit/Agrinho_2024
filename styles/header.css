@@ -249,10 +249,9 @@
 @media (max-width: 500px) {
     .header {
         padding: 0;
-        height: 14vw;
-        border-bottom: none;
-        filter: opacity(1);
+        height: 14.75vw;
     background-color: var(--color-menu);
+    border-bottom: none;
     }
 
   .header::before {

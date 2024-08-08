@@ -78,7 +78,7 @@
     top: 0;
     right: 0;
     transform: translateX(calc(100% + .2vw));
-    height: 100%;
+    height: 100vh;
     z-index: 1;
     transition: .75s;
     border-left: var(--borda);
@@ -87,6 +87,10 @@
     max-width: 26vw;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.config .forms {
+    display: none;
 }
 
 .config::-webkit-scrollbar-thumb {
@@ -403,7 +407,7 @@
     }
 
     .config {
-        top: 14.25vw;
+        top: 14vw;
         transform: translateY(-100%);
         height: 125vw;
         border-left: none;
@@ -413,7 +417,7 @@
         max-width: none;
     }
 
-    .config .box-lista .forms {
+    .config .forms {
         display: flex;
         flex-direction: column;
     }
@@ -430,10 +434,23 @@
         font-size: calc(var(--font-size) * 3.75vw);
     }
 
+    .config .forms .profile a{
+        display: flex;
+        align-items: center;
+        column-gap: 3vw;
+        flex-direction: row-reverse;
+    }
+    
+    .config .forms .profile a img {
+        width: 9vw;
+        height: 9vw;
+        border-radius: 50%;
+        object-fit: cover;
+    }
     
     .config > .subtitulo {
-        font-size: calc(var(--font-size) * 4.5vw);
-        margin: 0 0 4vw 0;
+        font-size: calc(var(--font-size) * 4.75vw);
+        margin: 1vw 0 4vw 0;
     }
 
     .config .box-input {

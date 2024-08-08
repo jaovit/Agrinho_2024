@@ -129,7 +129,6 @@
 
 /* login ou entrar soq em ingles sla */
 .entrar {
-    max-height: 40vw;
     top: 5.25vw;
     width: 68vw;
     margin: 0;
@@ -647,49 +646,210 @@
 }
 
 /* celular */
-@media (max-width: 500px) {}
-
-@media (min-width: 1900px) {
-
-
+@media (max-width: 500px) {
     .contato,
     .entrar,
-    .share {
-        border-radius: .25vw;
+    .share,
+    .perfil {
+        top: 20vw;
+        padding: 0;
     }
 
     .form {
-        margin: 1vw;
+        margin: 3vw;
     }
+
+    .form .input {
+        padding: .05vw .5vw;
+        width: 39vw;
+        margin-left: 1.5vw;
+        margin-top: .5vw;
+    }
+
+    .form .subtitulo {
+        font-size: calc(var(--font-size) * 4.5vw);
+    }
+
+    .header-forms .bnt {
+        width: 15vw;
+        top: 2.25vw;
+        right: 3vw;
+        padding: .25vw;
+    }
+
+    .contato {
+        width: 85vw;
+        min-height: 100vw;
+    }
+
+    .contato .content {
+        margin: 2vw 0;
+        row-gap: 3vw;
+    }
+
+    .contato .form .part {
+        row-gap: 3vw;
+    }
+
+    .contato .input {
+        width: 67.5vw;
+    }
+
+    .contato .form .mensagem {
+        height: 20vw;
+    }
+
+
+    /* entrar */
+
+    .entrar {
+        width: 95vw;
+        min-height: 100vw;
+    }
+
+    .entrar .form-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2 1fr)
+    }
+
+    .entrar .form {
+        row-gap: 1.5vw;
+    }
+
+    .entrar .header-forms {
+        margin-bottom: 1vw;
+    }
+
+    .label_foto:not(.capa) {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .entrar .google .subtitulo {
+        position: relative;
+        color: transparent;
+    }
+
+    .entrar .google .subtitulo::before {
+        content: "Com Google";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: var(--color-subtitle-light);
+        text-align: center;
+    }
+
+    .entrar .google .bnt {
+        width: 10vw;
+    }
+
+    .entrar .content>.bnt {
+        margin-top: 1.5vw;
+        padding: .25vw 0;
+        width: 15vw;
+    }
+
+    .entrar .dadosEx {
+        row-gap: 1.5vw;
+    }
+
+    .entrar .google .email {
+        width: 42vw;
+        padding: .25vw .5vw;
+    }
+
+    .entrar .google .email .texto {
+        font-size: calc(var(--font-size) * 2.15vw);
+    }
+
+    
+    /* perfil */
+    .perfil {
+        width: 90vw;
+        min-height: 143vw;
+    }
+
+    .perfil .content {
+        margin-top: 4vw ;
+    }
+
+    .perfil .part {
+        width: 95%;
+        row-gap: 3vw;
+    }
+
+    .perfil .label {
+        column-gap: 1vw;
+        padding: 0 1.5vw 0 1vw;
+        margin-left: 3vw;
+    }
+
+    .perfil .label .input {
+        width: 70vw;
+    }
+
+    .perfil .label .icon {
+        font-size: 3vw;
+    }
+
+    .perfil .label .span {
+        width: 74vw;
+    }
+
+    .perfil .input-box .capa {
+        padding: 5vw 0 5vw 5vw;
+    }
+
+    .perfil .label_foto:not(.capa) {
+        width:  17vw;
+        height: 17vw;
+    }
+
+    .perfil .mensagem {
+        width: 77.5vw;
+    }
+
+    .share {
+        width: 80vw;
+        min-height: 47.5vw;
+    }
+
+    .share .bnt {
+        text-align: center;
+    }
+
+    .share .lista {
+        column-gap: 7.5vw;
+        row-gap: 3vw;
+        margin-top: 4vw;
+    }
+
+    .share .icon {
+        font-size: 4.5vw;
+        margin-right: 2.25vw;
+        margin-left: 1vw;
+    }
+
+    .share .copy {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 2.5vw;
+        margin-left: .5vw;
+    }
+
+}
+
+@media (min-width: 1900px) {
+
 
     .header-forms .subtitulo {
         font-size: calc(var(--font-size) * 1.5vw);
     }
 
-    .header-forms .bnt {
-        top: 1vw;
-        right: 1vw;
-    }
-
-    .form .input {
-        padding: .25vw 1vw;
-        width: 27vw;
-        border-radius: .25vw;
-        margin-left: .5vw;
-        margin-top: .25vw;
-    }
-
-    .form .bnt {
-        border-radius: .25vw;
-        padding: .25vw 1.5vw;
-    }
-
-    /* Contatos, ou entre en contato */
-    .contato {
-        width: 65vw;
-        top: 6vw;
-        padding: 1vw;
-    }
+    /* Contatos, ou entre em contato */
 
     .contato .content {
         column-gap: 1vw;
@@ -699,241 +859,14 @@
         row-gap: 1.75vw;
     }
 
-    .contato .form .part {
-        row-gap: .75vw;
-    }
-
-    .contato .input-box {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contato .form .mensagem {
-        height: 12vw;
-    }
-
-    .contato .form input[type="submit"] {
-        padding: .25vw 10vw;
-    }
-
     /* login ou entrar soq em ingles sla */
     .entrar {
         height: 85vh;
         top: 5.5vw;
-        width: 68vw;
-    }
-
-
-    .entrar .form {
-        row-gap: 1vw;
-    }
-
-    .entrar .content {
-        row-gap: 1vw;
-    }
-
-    .entrar #label_foto {
-        width: 8.25vw;
-        height: 8.25vw;
-        border-radius: 50%;
-        margin: 0;
-    }
-
-    .entrar #label_foto .icon {
-        font-size: 3.5vw;
-    }
-
-    .entrar .content>.bnt {
-        padding: .25vw 0;
-        width: 7.5vw;
-    }
-
-    .entrar .google .form,
-    .entrar .google .content {
-        row-gap: 1.5vw;
-    }
-
-    .entrar .google .bnt-google {
-        width: 27.5vw;
-    }
-
-    .entrar .google .textos {
-        margin: 0 1vw;
-    }
-
-    .entrar .google .dadosEx.txt_120 .texto {
-        font-size: calc(1.2 * 1.15vw);
-        letter-spacing: .075vw;
-
-    }
-
-    .entrar .dadosEx {
-        row-gap: 1vw;
-    }
-
-    .entrar .google .email {
-        width: 27.5vw;
-        padding: .25vw .5vw;
-    }
-
-    .entrar .google .email .texto {
-        column-gap: .5vw;
-    }
-
-    .entrar .google .copy,
-    .share .copy {
-        border-radius: 50%;
-        width: 2.5vw;
-        height: 2.5vw;
-    }
-
-    .entrar.google .copy,
-    .icon {
-        font-size: 1.2vw;
-        margin: 0;
-    }
-
-    /* perfil */
-
-    .perfil {
-        top: 6vw;
-        width: 75vw;
-        max-height: 35.5vw;
-    }
-
-    .perfil .form {
-        flex-direction: column;
-        width: 95%;
-    }
-
-
-    .perfil .content {
-        margin-top: .5vw;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .perfil .part {
-        display: flex;
-        flex-direction: column;
-        row-gap: .75vw;
-        padding: 1vw;
-        width: 46%;
-    }
-
-    .perfil .input-box {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .perfil .label {
-        display: flex;
-        align-items: center;
-        column-gap: .35vw;
-        background-color: var(--color-menu-2);
-        padding: 0 .5vw 0 0;
-        align-self: flex-start;
-        margin-left: .5vw;
-    }
-
-    .perfil .label .icon {
-        font-size: 1.15vw;
-        color: var(--color-text-menu);
-        cursor: pointer;
-    }
-
-    .perfil .label .input {
-        border: none;
-        background-color: transparent;
-        border-radius: 0;
-        margin: 0;
-        width: 23vw;
-    }
-
-    .perfil .span {
-        padding: .25vw 1.5vw;
-        width: 24.25vw;
-        min-height: 1.65vw;
-        overflow-x: auto;
-    }
-
-    .perfil .span::-webkit-scrollbar {
-        display: none;
-    }
-
-    .perfil .input {
-        width: 25.5vw;
-    }
-
-    .perfil .input-box .capa {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        padding: 1.5vw 1vw;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: .5vw;
-        border: var(--borda);
-        width: 95%;
-        height: auto;
-    }
-
-    .perfil .capa::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-        /* Filtro de cor */
-    }
-
-    .perfil .capa>.icon {
-        position: absolute;
-        top: 1vw;
-        right: 1vw;
-        font-size: 1.25vw;
-    }
-
-    .perfil .label_foto:not(.capa) {
-        z-index: 2;
-        align-self: flex-start;
-        width: 9.6vw;
-        height: 9.6vw;
-        background-color: var(--color-menu-2);
-        box-shadow: .75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
-    }
-
-    .perfil input[type="file"] {
-        display: none;
-    }
-
-    .perfil .sing-out {
-        margin-top: 1vw;
-        margin-right: 4.5vw;
-        align-self: center;
-        width: 15vw;
     }
 
     /* compartilhar */
     .share {
-        top: 7.5vw;
         height: 20vw;
-        width: 37.5vw;
     }
-
-    .share .lista {
-        column-gap: 4vw;
-        row-gap: 1vw;
-        margin-top: 2.25vw;
-        margin-left: -1vw;
-    }
-
-
-    .share .icon {
-        font-size: 2.15vw;
-    }
-
 }
