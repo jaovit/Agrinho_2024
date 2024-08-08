@@ -81,160 +81,160 @@
     </ul>
 
     <!-- menu -->
-    <input type="checkbox" id="menu_input" checked>
-    <nav class="config">
+    <input type="checkbox" id="menu_input">
+    <nav class="config tema">
       <h4 class="subtitulo">
         Menu
       </h4>
 
-        <!-- forms do menu cllr e tablete -->
-        <ul class="opcoes tema forms">
-          <li class="item">
-            <a href="#" onclick="nativo(event)">
-              <p class="texto">Compartilhar<i class="fas fa-share icon"></i>
-              </p>
-            </a>
-          </li>
+      <!-- forms do menu cllr-->
+      <ul class="opcoes tema forms">
+        <li class="item">
+          <a href="#" onclick="nativo(event)">
+            <p class="texto">Compartilhar<i class="fas fa-share icon"></i>
+            </p>
+          </a>
+        </li>
 
-          <li class="item">
-            <a href="#" onclick='fechar(event, ["none", "flex", "none", "block", "none"])'>
-              <p class="texto">Comentar<i class="far fa-comment icon"></i></p>
-            </a>
-          </li>
+        <li class="item">
+          <a href="#" onclick='fechar(event, ["none", "flex", "none", "block", "none"])'>
+            <p class="texto">Comentar<i class="far fa-comment icon"></i></p>
+          </a>
+        </li>
 
-          <li class="item profile">
-            <a href="#" onclick='fechar(event, ["flex", "none", "none", "block", "none"])'>
-              <p class="texto">Entrar<i class="fas fa-user icon"></i>
-              </p>
-            </a>
+        <li class="item profile">
+          <a href="#" onclick='fechar(event, ["flex", "none", "none", "block", "none"])'>
+            <p class="texto">Entrar<i class="fas fa-user icon"></i>
+            </p>
+          </a>
+        </li>
+      </ul>
+
+      <!-- sub menu alteraçoẽs de tanhamos -->
+      <ul class="subMenu sizes">
+        <li class="item">
+          <p class="subtitulo">Escalas:</p>
+          <label for="dropDown_1">
+            <input type="checkbox" id="dropDown_1" class="dropDown">
+            <i class="fa-solid fa-angle-down"></i>
+          </label>
+        </li>
+        <ul class="content">
+          <li class="item">
+            <div class="box-input">
+              <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
+            </div>
+          </li>
+          <li class="item">
+            <div class="box-input">
+              <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
+            </div>
+          </li>
+          <li class="item">
+            <div class="box-input">
+              <label for="progress_letter" class="texto">
+                espaçamento entre letras: <span class="letter_tamanho num">
+                  1</span> </label>
+              <input type="range" min="0" max="500" value="100" id="progress_letter" class="progress">
+            </div>
+          </li>
+          <li class="item">
+            <div class="box-input">
+              <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
+                  1</span> </label>
+              <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
+            </div>
           </li>
         </ul>
+      </ul>
 
-        <!-- sub menu alteraçoẽs de tanhamos -->
-        <ul class="subMenu sizes">
+      <!-- sub meno alterações das cores -->
+      <ul class="subMenu color">
+        <li class="item">
+          <h3 class="subtitulo">Cores:</h3>
+          <label for="dropDown_2">
+            <input type="checkbox" id="dropDown_2" class="dropDown">
+            <i class="fa-solid fa-angle-down"></i>
+          </label>
+        </li>
+        <ul class="content">
           <li class="item">
-            <p class="subtitulo">Escalas:</p>
-            <label for="dropDown_1">
-              <input type="checkbox" id="dropDown_1" class="dropDown">
-              <i class="fa-solid fa-angle-down"></i>
-            </label>
-          </li>
-          <ul class="content">
-            <li class="item">
-              <div class="box-input">
-                <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
-                    1</span> </label>
-                <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
-              </div>
-            </li>
-            <li class="item">
-              <div class="box-input">
-                <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
-                    1</span> </label>
-                <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
-              </div>
-            </li>
-            <li class="item">
-              <div class="box-input">
-                <label for="progress_letter" class="texto">
-                  espaçamento entre letras: <span class="letter_tamanho num">
-                    1</span> </label>
-                <input type="range" min="0" max="500" value="100" id="progress_letter" class="progress">
-              </div>
-            </li>
-            <li class="item">
-              <div class="box-input">
-                <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
-                    1</span> </label>
-                <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
-              </div>
-            </li>
-          </ul>
-        </ul>
+            <div class="box-input">
+              <span class="texto">Fundo:</span>
+              <label for="input_cor_1" class="texto">Principal:</label>
+              <input type="color" id="input_cor_1" class="input_cor">
 
-        <!-- sub meno alterações das cores -->
-        <ul class="subMenu color">
+              <label for="input_cor_2" class="texto">Segundaria:</label>
+              <input type="color" id="input_cor_2" class="input_cor">
+            </div>
+          </li>
           <li class="item">
-            <h3 class="subtitulo">Cores:</h3>
-            <label for="dropDown_2">
-              <input type="checkbox" id="dropDown_2" class="dropDown">
-              <i class="fa-solid fa-angle-down"></i>
-            </label>
+            <div class="box-input">
+              <span class="texto">Texto:</span>
+              <label for="input_cor_3" class="texto">Titulo:</label>
+              <input type="color" id="input_cor_3" class="input_cor">
+
+              <label for="input_cor_4" class="texto">Texto:</label>
+              <input type="color" id="input_cor_4" class="input_cor">
+            </div>
           </li>
-          <ul class="content">
-            <li class="item">
-              <div class="box-input">
-                <span class="texto">Fundo:</span>
-                <label for="input_cor_1" class="texto">Principal:</label>
-                <input type="color" id="input_cor_1" class="input_cor">
-
-                <label for="input_cor_2" class="texto">Segundaria:</label>
-                <input type="color" id="input_cor_2" class="input_cor">
-              </div>
-            </li>
-            <li class="item">
-              <div class="box-input">
-                <span class="texto">Texto:</span>
-                <label for="input_cor_3" class="texto">Titulo:</label>
-                <input type="color" id="input_cor_3" class="input_cor">
-
-                <label for="input_cor_4" class="texto">Texto:</label>
-                <input type="color" id="input_cor_4" class="input_cor">
-              </div>
-            </li>
-            <li class="item">
-              <div class="box-input">
-                <span class="texto">Menu:</span>
-                <label for="input_cor_5" class="texto">Fundo:</label>
-                <input type="color" id="input_cor_5" class="input_cor">
-
-                <label for="input_cor_6" class="texto">Texto:</label>
-                <input type="color" id="input_cor_6" class="input_cor">
-              </div>
-            </li>
-          </ul>
-        </ul>
-
-        <ul class="subMenu otimizacao">
           <li class="item">
-            <h3 class="subtitulo">Otimização:</h3>
-            <label for="dropDown_3">
-              <input type="checkbox" id="dropDown_3" class="dropDown">
-              <i class="fa-solid fa-angle-down"></i>
-            </label>
-          </li>
-          <ul class="content">
-            <li class="item">
-              <div class="box-input">
-                <div class="textos">
-                  <div class="texto">Baixa</div>
-                  <div class="texto">Média</div>
-                  <div class="texto">Alta</div>
-                </div>
-                <input type="range" min="0" max="2" value="0" id="progress_otim_size" class="progress">
-              </div>
-            </li>
-          </ul>
-        </ul>
+            <div class="box-input">
+              <span class="texto">Menu:</span>
+              <label for="input_cor_5" class="texto">Fundo:</label>
+              <input type="color" id="input_cor_5" class="input_cor">
 
-        <!-- mudar tema-->
-        <div class="item">
-          <div class="box-bnt">
-            <label class="texto tema">
-              <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
-                onclick="modo += 1; if (modo == 3) {modo = 0}; mudarRoot(modo)">
-            </label>
-          </div>
+              <label for="input_cor_6" class="texto">Texto:</label>
+              <input type="color" id="input_cor_6" class="input_cor">
+            </div>
+          </li>
+        </ul>
+      </ul>
+
+      <ul class="subMenu otimizacao">
+        <li class="item">
+          <h3 class="subtitulo">Otimização:</h3>
+          <label for="dropDown_3">
+            <input type="checkbox" id="dropDown_3" class="dropDown">
+            <i class="fa-solid fa-angle-down"></i>
+          </label>
+        </li>
+        <ul class="content">
+          <li class="item">
+            <div class="box-input">
+              <div class="textos">
+                <div class="texto">Baixa</div>
+                <div class="texto">Média</div>
+                <div class="texto">Alta</div>
+              </div>
+              <input type="range" min="0" max="2" value="0" id="progress_otim_size" class="progress">
+            </div>
+          </li>
+        </ul>
+      </ul>
+
+      <!-- mudar tema-->
+      <div class="item">
+        <div class="box-bnt">
+          <label class="texto tema">
+            <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
+              onclick="modo += 1; if (modo == 3) {modo = 0}; mudarRoot(modo)">
+          </label>
         </div>
-        <!-- botão de rest -->
-        <div class="item">
-          <div class="box-bnt">
-            <label class="texto">
-              <input type="button" id="input_reset" class="bnt" value="Resetar" alt="botão de resetar"
-                onclick="resetConf()">
-            </label>
-          </div>
+      </div>
+      <!-- botão de rest -->
+      <div class="item">
+        <div class="box-bnt">
+          <label class="texto">
+            <input type="button" id="input_reset" class="bnt" value="Resetar" alt="botão de resetar"
+              onclick="resetConf()">
+          </label>
         </div>
+      </div>
     </nav>
 
     <div class="botao scroll_header">
@@ -258,7 +258,7 @@
     </label>
   </section>
 
-  <section class="template">
+  <section class="template tema">
     <div class="content">
       <h1 class="titulo tema titleColor" txt_max="120">
         Da fazenda à cidade
@@ -268,7 +268,7 @@
     </div>
   </section>
 
-  <section class="topicos">
+  <section class="topicos tema">
     <div class="content">
       <h1 class="titulo">
         tópicos
@@ -408,7 +408,7 @@
     </div>
   </section>
 
-  <section class="section_3 animation" data-animation="scrollOpacity" id="section_3">
+  <section class="section_3 animation tema" data-animation="scrollOpacity" id="section_3">
     <div class="content ">
       <div class="textos">
         <h1 class="titulo textColor">
@@ -459,7 +459,7 @@
     </div>
   </section>
 
-  <section class="section_4 animation" data-animation="scrollOpacity" id="section_4">
+  <section class="section_4 animation tema" data-animation="scrollOpacity" id="section_4">
     <div class="content ">
       <div class="textos">
         <h1 class="titulo textColor">
@@ -625,7 +625,7 @@
       </form>
     </section>
 
-    <section class="entrar">
+    <section class="entrar tema">
       <div class="form-box">
         <section class="local">
           <form class="form" id="form_e">
@@ -776,10 +776,9 @@
               <textarea cols="50" rows="10" id="input_mensagem" class="input texto mensagem" infoType="bio"></textarea>
             </div>
 
-          <div class="input-box">
-            <input type="button" value="Sing Out" class="bnt texto sair sing-out"
-            onclick='Deslogar()'>
-          </div>
+            <div class="input-box">
+              <input type="button" value="Sing Out" class="bnt texto sair sing-out" onclick='Deslogar()'>
+            </div>
 
           </div>
         </div>
@@ -790,7 +789,7 @@
     </section>
   </section>
 
-  <footer class="footer" txt_max="110">
+  <footer class="footer tema" txt_max="110">
     <ul class="lista">
       <li class="itens texto">
         <img src="img/logo_escola.png" alt="logo da escola" class="logo_escola"> Colégio Estadual
