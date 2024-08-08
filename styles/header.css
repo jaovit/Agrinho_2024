@@ -16,7 +16,7 @@
 .header.visible {
     background-color: var(--color-menu);
     border-bottom: var(--borda);
-    opacity: .95;
+    filter: opacity(.95);
 }
 
 .header_itens {
@@ -249,21 +249,28 @@
 @media (max-width: 500px) {
     .header {
         padding: 0;
-        height: 14.5vw;
+        height: 14vw;
         border-bottom: none;
+        filter: opacity(1);
+    background-color: var(--color-menu);
+    }
 
+  .header::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        background-color: var(--color-menu);
+        z-index: 2;
+        filter: opacity(1);
     }
 
     .header.visible {
         border-bottom: none;
         filter: opacity(1);
-    }
-
-    .header::before {
-        top: 0;
-        left: 0;
-        z-index: 3;
-        background-color: var(--cor-menu);
+    background-color: var(--color-menu);
     }
 
     .header_itens .itens:not(.opcoes .itens, .header_itens .itens:nth-child(4)){

@@ -19,6 +19,8 @@
 }
 
 .menu_audio .box-audio {
+    display: flex;
+    align-items: center;
     background-color: var(--color-menu);
     border: var(--borda);
     border-left: none;
@@ -79,57 +81,66 @@
 
 /* tablet */
 @media (max-width: 1000px) {
+
     .menu_audio {
-        bottom: 5vw;
+        transform: translateX(calc(-100% + 8vw));
+        top: 80%;
     }
 
-    .clic_audio {
-        height: 70%;
-        width: 5vw;
-        border-radius: 0 2vw 2vw 0;
+    .box-icon {
+        padding: 2.25vw 0;
+        width: 8vw;
+        margin-left: -.3vw;
+    border-radius: 0 1vw 1vw 0;
+
     }
 
-    .clic_audio .fa-volume-up {
-        top: 2vw;
-        left: 1vw;
+    .box-icon .fa-volume-up {
+        font-size: calc(var(--font-size) * 2.15vw);
     }
 
     .menu_audio audio {
         width: 45vw;
+        height: 7vw;
     }
 
     .menu_audio audio::-webkit-media-controls-current-time-display,
     .menu_audio audio::-webkit-media-controls-time-remaining-display {
-        font-size: calc(var(--font-size-js) * 1.85vw);
+        font-size: calc(var(--font-size-js) * 1.75vw);
     }
 
-    .menu_audio audio::-webkit-media-controls-play-button {
-        transform: scale(1.25);
-    }
 }
 
 /* celular  */
 @media (max-width: 500px) {
     .menu_audio {
-        bottom: 15vw;
+        transform: translateX(calc(-100% + 10vw));
+        top: 80%;
     }
 
-    .clic_audio {
-        width: 7.5vw;
-        border-radius: 0 2.75vw 2.75vw 0;
+    .box-icon {
+        padding: 3vw 0;
+        width: 10vw;
+        margin-left: -.3vw;
+
     }
 
-    .clic_audio .fa-volume-up {
-        top: 3vw;
+    .box-icon .fa-volume-up {
+        font-size: calc(var(--font-size) * 3vw);
     }
 
     .menu_audio audio {
-        width: 75vw;
+        width: 70vw;
+        height: 10vw;
     }
 
     .menu_audio audio::-webkit-media-controls-current-time-display,
     .menu_audio audio::-webkit-media-controls-time-remaining-display {
-        font-size: calc(var(--font-size-js) * 2.75vw);
+        font-size: calc(var(--font-size-js) * 1.75vw);
+    }
+
+    .menu_audio audio::-webkit-media-controls-play-button {
+        transform: scale(1.25);
     }
 }
 
