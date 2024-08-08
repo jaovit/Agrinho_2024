@@ -8,21 +8,25 @@ const elementosMudar = document.querySelectorAll(".tema");
 function mudarRoot(tema) {
   if (tema == 0) {
     var root_prop = {
-      // claro
-      "--borda-menu": "solid .1vw #ebc4b0",
-      "--cor-principal-deg": "none",
-      "--menu-cor": "#191919",
-      "--cor-text-menu": "#c9c2c0",
-      "--cor-menu-2": "#e4b7a0",
-
-      "--cor-principal": "#c7c7c7",
-      "--cor-segundaria": "#b6b6b6",
-      "--cor-titulo": "#202020",
-      "--sub-titulo": "#242424",
-      "--cor-texto": "#2e2e2e",
-      "--borda": "solid .01vw rgb(70, 70, 70)",
-      "--background-card": "url(../img/fundo_elem.jpg)",
-      "--filtro": "brightness(75%) opacity(.5)",
+      "--color-menu": "#131313",
+      "--color-text-menu": "#dde1e6",
+      "--color-menu-2": "#1a1a1a",
+      "--color-title-menu": "#d8d5d5",
+    
+      /* modo neutro padrão */
+      "--color-principal": "#252929",
+      "--color-segundaria": "#1a1a1a",
+      "--color-principal-deg": "linear-gradient(to top, var(--color-segundaria) 10%, #1a1a1ad0 45%, transparent 90%)",
+      "--color-title": "#FEFEFE",
+      "--color-title-deg": "linear-gradient(120deg, #FFFFFF 0%, #96989C 80%)",
+      "--color-subtitle": "#d8d5d5",
+      "--color-text": "#dde1e6",
+    
+      "--color-principal-light": "#e7eef1",
+      "--color-title-light": "#27272A",
+      "--color-subtitle-light": "rgb(51, 51, 51)",
+      "--color-text-light": "#504f4f",
+      "--borda-light": "solid .1vw #141414",
     };
 
     for (let i = 0; i < elementosMudar.length; i++) {
@@ -32,18 +36,25 @@ function mudarRoot(tema) {
   } else if (tema == 1) {
     // padrao
     var root_prop = {
-      "--color-principal": "#222525",
-      "--color-principal-deg":
-        "linear-gradient(to top, var(--color-principal) 7%, #1e1e1ecb 25%, transparent)",
-      "--color-segundaria": "#141414",
+      "--color-menu": "#131313",
+      "--color-text-menu": "#dde1e6",
+      "--color-menu-2": "#1a1a1a",
+      "--color-title-menu": "#d8d5d5",
+    
+      /* modo neutro padrão */
+      "--color-principal": "#252929",
+      "--color-segundaria": "#1a1a1a",
+      "--color-principal-deg": "linear-gradient(to top, var(--color-segundaria) 10%, #1a1a1ad0 45%, transparent 90%)",
       "--color-title": "#FEFEFE",
       "--color-title-deg": "linear-gradient(120deg, #FFFFFF 0%, #96989C 80%)",
       "--color-subtitle": "#d8d5d5",
       "--color-text": "#dde1e6",
+    
       "--color-principal-light": "#e7eef1",
       "--color-title-light": "#27272A",
-      "--color-subtitle-light": "rgb(194, 193, 193)",
+      "--color-subtitle-light": "rgb(51, 51, 51)",
       "--color-text-light": "#504f4f",
+      "--borda-light": "solid .1vw #141414",
     };
 
     for (let i = 0; i < elementosMudar.length; i++) {
@@ -55,20 +66,25 @@ function mudarRoot(tema) {
   } else {
     // escuro
     var root_prop = {
-      "--borda-menu": "solid .1vw #ebc4b0",
-      "--cor-principal-deg": "#302d2cc9",
-      "--menu-cor": "#191919",
-      "--cor-text-menu": "#c9c2c0",
-      "--cor-menu-2": "#e4b7a0",
-
-      "--cor-principal": "#292626",
-      "--cor-segundaria": "#413d3c",
-      "--cor-titulo": "#e4b7a0",
-      "--sub-titulo": "#EBCCBB",
-      "--cor-texto": "#c9c2c0",
-      "--borda": "solid .01vw rgb(172, 170, 170)",
-      "--background-card": "url(../img/fundo.jpg)",
-      "--filtro": "brightness(25%)",
+      "--color-menu": "#131313",
+      "--color-text-menu": "#dde1e6",
+      "--color-menu-2": "#1a1a1a",
+      "--color-title-menu": "#d8d5d5",
+    
+      /* modo neutro padrão */
+      "--color-principal": "#252929",
+      "--color-segundaria": "#1a1a1a",
+      "--color-principal-deg": "linear-gradient(to top, var(--color-segundaria) 10%, #1a1a1ad0 45%, transparent 90%)",
+      "--color-title": "#FEFEFE",
+      "--color-title-deg": "linear-gradient(120deg, #FFFFFF 0%, #96989C 80%)",
+      "--color-subtitle": "#d8d5d5",
+      "--color-text": "#dde1e6",
+    
+      "--color-principal-light": "#e7eef1",
+      "--color-title-light": "#27272A",
+      "--color-subtitle-light": "rgb(51, 51, 51)",
+      "--color-text-light": "#504f4f",
+      "--borda-light": "solid .1vw #141414",
     };
 
     for (let i = 0; i < elementosMudar.length; i++) {
