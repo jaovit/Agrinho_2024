@@ -8,3 +8,7 @@
 [data-animation="scrollOpacity"].visible>.content {
   filter: opacity(1);
 }
+
+* {
+  transition: background .5s ease-in-out;
+}

@@ -54,7 +54,7 @@
     .template {
         padding: 13vw 0;
         height: 20vw;
-    }    
+    }
 
     .template .content {
         margin-left: 12vw;
@@ -66,7 +66,7 @@
         margin-bottom: calc(var(--font-size) * 1.75vw);
         font-weight: 600;
     }
-    
+
     .template .texto {
         margin-left: 1.75vw;
     }
@@ -76,7 +76,7 @@
     .template {
         padding: 25vw 0 20vw 0;
         height: 30vw;
-    }    
+    }
 
     .template .content {
         margin-left: 10vw;
@@ -86,7 +86,7 @@
         font-size: calc(var(--font-size) * 7vw);
         margin-bottom: calc(var(--font-size) * 2.5vw);
     }
-    
+
     .template .texto {
         margin-left: 4vw;
     }

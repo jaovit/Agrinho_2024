@@ -179,15 +179,15 @@
     .topicos .carrocel {
         height: 45vw;
     }
-    
+
     .topicos .carrocel-box {
         height: 50vw;
     }
-    
+
     .topicos .cards {
         width: 25vw;
     }
-    
+
     .topicos .cards-box {
         width: 22vw;
     }
@@ -200,7 +200,7 @@
         font-size: calc(var(--font-size) * 2.25vw);
         margin-bottom: .5vw;
     }
-    
+
     .topicos .cards .texto {
         font-size: calc(var(--font-size) * 1.7vw);
         line-height: calc(var(--font-size) * 2.4vw);
@@ -215,7 +215,7 @@
         margin-bottom: 1vw;
     }
 
-    .topicos .setas{
+    .topicos .setas {
         filter: opacity(1);
     }
 
@@ -226,16 +226,16 @@
     .topicos .carrocel {
         height: 80vw;
     }
-    
+
     .topicos .carrocel-box {
         height: 68vw;
     }
-    
+
     .topicos .cards {
         height: 100%;
         width: 45vw;
     }
-    
+
     .topicos .cards-box {
         height: 100%;
         width: 40vw;
@@ -249,7 +249,7 @@
         font-size: calc(var(--font-size) * 3.25vw);
         margin-bottom: 2vw;
     }
-    
+
     .topicos .cards .texto {
         font-size: calc(var(--font-size) * 2.75vw);
         line-height: calc(var(--font-size) * 4.5vw);

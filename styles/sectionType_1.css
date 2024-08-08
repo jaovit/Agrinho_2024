@@ -60,10 +60,11 @@
 
 /* tablet */
 @media (max-width: 1000px) {
+
     .section_1 .texto,
-.section_7 .texto {
-    margin-left: 1.75vw;
-}
+    .section_7 .texto {
+        margin-left: 1.75vw;
+    }
 
     .section_1 .images img {
         width: calc(var(--img-size) * 12vw);
@@ -84,21 +85,23 @@
 @media (max-width: 500px) {
 
     .section_1 .content,
-.section_7 .content {
-    flex-direction: column;
-    width: 94vw;
-    row-gap: 4vw;
-}
+    .section_7 .content {
+        flex-direction: column;
+        width: 94vw;
+        row-gap: 4vw;
+    }
 
-.section_1 .texto,
-.section_7 .texto {
-    margin-left: 2.75vw;
-}
+    .section_1 .texto,
+    .section_7 .texto {
+        margin-left: 2.75vw;
+    }
 
-.section_1 .images, .section_7 .images {
-    align-self: center;
-    gap: calc(var(--img-size) * 2vw);
-}
+    .section_1 .images,
+    .section_7 .images {
+        align-self: center;
+        gap: calc(var(--img-size) * 2vw);
+    }
+
     .section_1 .images img {
         width: calc(var(--img-size) * 25vw);
         height: calc(var(--img-size) * 25.5vw);
@@ -121,6 +124,7 @@
 
 /* desktop */
 @media (min-width: 1900px) {
+
     .section_1,
     .section_7 {
         padding: 3vw 0;

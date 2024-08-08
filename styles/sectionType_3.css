@@ -156,7 +156,7 @@
     .section_4 .textos {
         width: 100%;
     }
-    
+
     .section_4 .box-lista {
         flex-wrap: wrap;
         column-gap: 2.5vw;
@@ -197,7 +197,7 @@
 
     .section_3 .box-lista {
         row-gap: 5vw;
-        margin-left: 5vw ;
+        margin-left: 5vw;
     }
 
     .section_3 .item {
@@ -231,13 +231,15 @@
     .section_4 .item .icon {
         font-size: 6vw;
     }
+
     .section_4 .item .texto {
-        margin-left: 3vw ;
+        margin-left: 3vw;
     }
 
 }
 
 @media (min-width: 1900px) {
+
     .section_3,
     .section_4 {
         padding: 3vw 0;

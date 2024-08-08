@@ -195,7 +195,7 @@
     }
 
     .header_itens .itens:not(.opcoes .itens) {
-        margin:  0;
+        margin: 0;
     }
 
     .header_itens a {
@@ -241,7 +241,7 @@
     }
 
     .erro {
-        width: 75%  ;
+        width: 75%;
     }
 }
 
@@ -250,11 +250,11 @@
     .header {
         padding: 0;
         height: 14.75vw;
-    background-color: var(--color-menu);
-    border-bottom: none;
+        background-color: var(--color-menu);
+        border-bottom: none;
     }
 
-  .header::before {
+    .header::before {
         content: '';
         position: absolute;
         right: 0;
@@ -269,10 +269,10 @@
     .header.visible {
         border-bottom: none;
         filter: opacity(1);
-    background-color: var(--color-menu);
+        background-color: var(--color-menu);
     }
 
-    .header_itens .itens:not(.opcoes .itens, .header_itens .itens:nth-child(4)){
+    .header_itens .itens:not(.opcoes .itens, .header_itens .itens:nth-child(4)) {
         display: none;
     }
 

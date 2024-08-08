@@ -584,7 +584,7 @@
     }
 
     .perfil .content {
-        margin-top: 2vw ;
+        margin-top: 2vw;
         flex-direction: column;
         align-items: center;
     }
@@ -647,6 +647,7 @@
 
 /* celular */
 @media (max-width: 500px) {
+
     .contato,
     .entrar,
     .share,
@@ -765,7 +766,7 @@
         font-size: calc(var(--font-size) * 2.15vw);
     }
 
-    
+
     /* perfil */
     .perfil {
         width: 90vw;
@@ -773,7 +774,7 @@
     }
 
     .perfil .content {
-        margin-top: 4vw ;
+        margin-top: 4vw;
     }
 
     .perfil .part {
@@ -804,7 +805,7 @@
     }
 
     .perfil .label_foto:not(.capa) {
-        width:  17vw;
+        width: 17vw;
         height: 17vw;
     }
 
