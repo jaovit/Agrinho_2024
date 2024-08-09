@@ -106,7 +106,8 @@ function scroll() {
 // animação do topicos 
 let direcao = true;
 // Chama a função rolagem a cada 10 segundos
-setInterval(rolagem, 10000);
+
+window.addEventListener("load", setInterval(rolagem, 10000));
 
 function rolagem() {
   if (animations) {
