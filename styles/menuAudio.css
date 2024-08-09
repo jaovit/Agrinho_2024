@@ -145,9 +145,15 @@
 }
 
 @media (min-width: 1900px) {
+
+    .menu_audio {
+        transform: translateX(calc(-100% + 4vw));
+        top: 80%;
+    }
+
     .box-icon {
-        padding: 1vw;
-        width: 2.25vw;
+        padding: .75vw 0;
+        width: 4vw;
         border-radius: 0 .5vw .5vw 0;
         margin-left: -.1vw;
     }
@@ -157,7 +163,8 @@
     }
 
     .menu_audio audio {
-        width: 30vw;
+        width: 25vw;
+        height: 2.5vw;
         margin: .75vw;
     }
 

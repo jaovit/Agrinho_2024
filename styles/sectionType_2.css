@@ -45,6 +45,11 @@
     box-shadow: .75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
 }
 
+.ide {
+    width: 100vw;
+    height: 50vw;
+}
+
 /* tablet */
 @media (max-width: 1000px) {
 
@@ -58,7 +63,7 @@
 /* celular  */
 @media (max-width: 500px) {
 
-    .ide {
+    .section_8 .ide {
         display: none;
     }
 
@@ -86,7 +91,7 @@
 
     .section_2,
     .section_8 {
-        padding: 3vw 0;
+        padding: 2.5vw 0;
     }
 
     .section_2 .content,
@@ -105,4 +110,10 @@
         width: calc(var(--img-size) * 50vw);
         height: calc(var(--img-size) * 27.5vw);
     }
+
+    .ide {
+        width: 100vw;
+        height: 40vw;
+    }
+    
 }
