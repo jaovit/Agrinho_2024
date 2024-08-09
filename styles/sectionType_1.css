@@ -37,11 +37,12 @@
     width: calc(var(--img-size) * 14vw);
     height: calc(var(--img-size) * 14.5vw);
     object-fit: cover;
+    box-shadow: .75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
 }
 
 .section_1 .images img:nth-child(1) {
     grid-row: span 2;
-    width: calc(var(--img-size) * 26vw);
+    width: calc(var(--img-size) * 24vw);
     height: calc(var(--img-size) * 30vw);
 }
 
@@ -51,11 +52,10 @@
 }
 
 .section_7 .images img {
-    width: calc(var(--img-size) * 24vw);
-    height: calc(var(--img-size) * 24.5vw);
+    width: calc(var(--img-size) * 33vw);
+    height: calc(var(--img-size) * 25vw);
     object-fit: cover;
     box-shadow: .75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
-
 }
 
 /* tablet */

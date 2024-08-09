@@ -18,6 +18,7 @@
 
 .section_2 .textos {
     position: relative;
+    padding-right: 2vw;
 }
 
 .section_2 .textos::before {

@@ -53,8 +53,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 8vw;
+    width: 5vw;
     height: 10vw;
+    flex-shrink: 0;
 }
 
 .section_3 .item .texto:not(.section_3 .pos .texto) {
@@ -74,7 +75,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url(../img/tecnologia-no-campo.jpg);
+    background-image: url(../img/img_24.jpg);
     background-size: cover;
     background-position: center center;
     z-index: -1;
@@ -89,11 +90,12 @@
 .section_4 .box-lista {
     display: flex;
     justify-content: space-between;
+    column-gap: 2vw;
 }
 
 .section_4 .item {
     flex-direction: column;
-    width: 24%;
+    width: 20vw;
 }
 
 .section_4 .item .texto {

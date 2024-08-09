@@ -1,8 +1,8 @@
 .template {
     position: relative;
-    padding: 10vw 0;
+    padding: 10vw 0 0 0;
     width: 100vw;
-    height: 17.5vw;
+    height: 27.5vw;
 }
 
 .template::before {
@@ -10,11 +10,11 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    top: -10vw;
+    top: -8vw;
     left: 0;
-    background-image: url(../img/fundo.jpg);
+    background-image: url(../img/img_8.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     z-index: -2;
     filter: brightness(.5);
 }
