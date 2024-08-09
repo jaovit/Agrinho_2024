@@ -60,18 +60,22 @@ function ajustColunas() {
 
   const colunaCarrocel = marginLeft + marginRight + width;
 
-  box.style.width = `${colunaCarrocel * (cards.length + 3.75)}px`;
+  
+
+  if (window.innerWidth < 1900 && window.innerWidth > 1000) {
+    box.style.width = `${colunaCarrocel * (cards.length + 3.625)}px`;
+  }
 
   if (window.innerWidth >= 1900) {
-    box.style.width = `${colunaCarrocel * (cards.length + 4.4)}px`;
+    box.style.width = `${colunaCarrocel * (cards.length + 4.125)}px`;
   }
 
   if (window.innerWidth <= 1000 && window.innerWidth > 500) {
-    box.style.width = `${colunaCarrocel * (cards.length + 3)}px`;
+    box.style.width = `${colunaCarrocel * (cards.length + 2.5)}px`;
   }
 
   if (window.innerWidth <= 500) {
-    box.style.width = `${colunaCarrocel * (cards.length + 1.225)}px`;
+    box.style.width = `${colunaCarrocel * (cards.length + 1.2)}px`;
   }
 
   return colunaCarrocel;
