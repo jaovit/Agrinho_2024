@@ -60,7 +60,7 @@ function ajustColunas() {
 
   const colunaCarrocel = marginLeft + marginRight + width;
 
-  box.style.width = `${colunaCarrocel * (cards.length + 3.5)}px`;
+  box.style.width = `${colunaCarrocel * (cards.length + 3.75)}px`;
 
   if (window.innerWidth >= 1900) {
     box.style.width = `${colunaCarrocel * (cards.length + 4.4)}px`;

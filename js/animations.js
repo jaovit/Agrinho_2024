@@ -73,7 +73,7 @@ function alta() {
 
 const elementosHeader = document.querySelectorAll(".scroll_header");
 const elementos = document.querySelectorAll(".animation");
-const ajuste = 0.35; // ajusta a porcentagem do objeto que deve aparecer antes da opacidade aumentar
+const ajuste = 0.5; // ajusta a porcentagem do objeto que deve aparecer antes da opacidade aumentar
 window.addEventListener("resize", scroll); // qunado o tamanho da pagina for alterado
 window.addEventListener("load", scroll); // quando ela terminar de carregar
 window.addEventListener("scroll", scroll); // qunado a pagina for scrolada (essa palavra existe?)
@@ -102,3 +102,31 @@ function scroll() {
     }
   }
 }
+
+// animação do topicos 
+let direcao = true;
+// Chama a função rolagem a cada 10 segundos
+setInterval(rolagem, 10000);
+
+function rolagem() {
+  if (animations) {
+  
+  const scrollTotal = carrocel.scrollWidth - carrocel.clientWidth;
+  const colunaCarrocel = ajustColunas();
+
+
+  if (carrocel.scrollLeft >= scrollTotal) {
+    direcao = false;
+  } else if(carrocel.scrollLeft <= 0) {
+    direcao = true;
+  }
+
+  if (direcao) {
+    carrocel.scrollLeft += colunaCarrocel;
+  } else {
+    carrocel.scrollLeft -= colunaCarrocel;
+  }
+}
+}
+
+
