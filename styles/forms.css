@@ -92,33 +92,33 @@
 }
 
 .titulo {
-  color: var(--color-title);
-  font-family: var(--font-title);
-  font-weight: 500;
-  font-size: calc(var(--font-size) * 2.9vw);
-  letter-spacing: calc(var(--letter-space) * .075vw);
-  word-spacing: calc(var(--letter-space) * .075vw);
-  margin-bottom: .9vw;
+    color: var(--color-title);
+    font-family: var(--font-title);
+    font-weight: 500;
+    font-size: calc(var(--font-size) * 2.9vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
+    margin-bottom: .9vw;
 }
 
 .subtitulo {
-  font-size: calc(var(--font-size) * 1.7vw);
-  letter-spacing: calc(var(--letter-space) * .075vw);
-  word-spacing: calc(var(--letter-space) * .075vw);
-  font-weight: 300;
-  margin-bottom: .5vw;
-  color: var(--color-subtitle);
-  font-family: var(--font-title);
+    font-size: calc(var(--font-size) * 1.7vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
+    font-weight: 300;
+    margin-bottom: .5vw;
+    color: var(--color-subtitle);
+    font-family: var(--font-title);
 }
 
 .texto {
-  color: var(--color-text);
-  font-family: var(--font-text);
-  font-size: calc(var(--font-size) * 1.15vw);
-  line-height: calc(var(--font-size) * 1.75vw);
-  letter-spacing: calc(var(--letter-space) * .075vw);
-  word-spacing: calc(var(--letter-space) * .075vw);
-  font-weight: 300;
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: calc(var(--font-size) * 1.15vw);
+    line-height: calc(var(--font-size) * 1.75vw);
+    letter-spacing: calc(var(--letter-space) * .075vw);
+    word-spacing: calc(var(--letter-space) * .075vw);
+    font-weight: 300;
 }
 
 /* Contatos, ou entre en contato */
@@ -220,6 +220,10 @@
 .entrar .content>.bnt {
     padding: .25vw 0;
     width: 7.5vw;
+}
+
+.entrar .local .btn-google {
+    display: none;
 }
 
 .entrar .google {
@@ -691,10 +695,10 @@
     }
 
     .form .input {
-        padding: .05vw .5vw;
-        width: 39vw;
-        margin-left: 1.5vw;
-        margin-top: .5vw;
+        padding: .5vw 1vw;
+        width: 80vw;
+        margin-left: 3vw;
+        margin-top: 1vw;
     }
 
     .form .subtitulo {
@@ -735,7 +739,7 @@
 
     .entrar {
         width: 95vw;
-        min-height: 100vw;
+        max-height: 140vw;
     }
 
     .entrar .form-box {
@@ -752,48 +756,35 @@
         margin-bottom: 1vw;
     }
 
+    .entrar .content {
+        row-gap: 3vw;
+    }
+
     .label_foto:not(.capa) {
-        width: 12vw;
-        height: 12vw;
+        width: 20vw;
+        height: 20vw;
     }
 
-    .entrar .google .subtitulo {
-        position: relative;
-        color: transparent;
+    .label_foto:not(.capa) .icon {
+        font-size: 7vw;
     }
 
-    .entrar .google .subtitulo::before {
-        content: "Com Google";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        color: var(--color-subtitle-light);
-        text-align: center;
+
+    .entrar .local .btn-google {
+        margin-top: 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
-    .entrar .google .bnt {
-        width: 10vw;
+
+    .entrar .google {
+        display: none;
     }
 
-    .entrar .content>.bnt {
-        margin-top: 1.5vw;
-        padding: .25vw 0;
-        width: 15vw;
-    }
-
-    .entrar .dadosEx {
-        row-gap: 1.5vw;
-    }
-
-    .entrar .google .email {
-        width: 42vw;
-        padding: .25vw .5vw;
-    }
-
-    .entrar .google .email .texto {
-        font-size: calc(var(--font-size) * 2.15vw);
+    .entrar .google .bnt-google {
+        display: none;
     }
 
 
@@ -801,6 +792,7 @@
     .perfil {
         width: 90vw;
         min-height: 143vw;
+        overflow-x: hidden;
     }
 
     .perfil .content {
@@ -809,7 +801,7 @@
 
     .perfil .part {
         width: 95%;
-        row-gap: 3vw;
+        row-gap: 2.75vw;
     }
 
     .perfil .label {
@@ -831,7 +823,7 @@
     }
 
     .perfil .input-box .capa {
-        padding: 5vw 0 5vw 5vw;
+        padding: 4vw 0 4vw 5vw;
     }
 
     .perfil .label_foto:not(.capa) {

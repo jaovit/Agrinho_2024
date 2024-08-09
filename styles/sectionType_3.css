@@ -79,7 +79,7 @@
     background-size: cover;
     background-position: center center;
     z-index: -1;
-    filter: brightness(.25) opacity(.5);
+    filter: brightness(.15) opacity(.5);
 }
 
 .section_4 .content {
@@ -114,6 +114,7 @@
     .section_3 .images img {
         width: calc(var(--img-size) * 55vw);
         height: calc(var(--img-size) * 25vw);
+        box-shadow: 1vw 1vw 2.5vw 0 rgba(0, 0, 0, 0.5);
     }
 
     .section_3 .content {
@@ -149,6 +150,10 @@
 
     .section_3 .item .texto:not(.section_3 .pos .texto) {
         margin-left: 2vw;
+    }
+
+    .section_4 {
+        box-shadow: 0 .5vw 2.5vw 0 rgba(0, 0, 0, 0.5);
     }
 
     .section_4 .content {

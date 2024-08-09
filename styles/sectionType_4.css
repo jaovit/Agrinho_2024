@@ -59,35 +59,58 @@
 
 /* tablet */
 @media (max-width: 1000px) {
-    .section_6 .images img {
-        width: calc(var(--img-size) * 45vw);
-        height: calc(var(--img-size) * 30vw);
-    }
+
 
     .section_5 .content,
     .section_6 .content {
         min-height: 22.5vw;
-        width: 52vw;
+        width: 75vw;
         margin-right: 2vw;
+    }
+
+    .section_5 {
+        padding: 3vw 0 23vw 7.5vw;
+        flex-direction: row;
+    }
+
+    .section_6 {
+        padding: 23vw 0 3vw 7.5vw;
+        flex-direction: row;
+
+    }
+
+    .section_6 .images img {
+        position: relative;
+    }
+
+    .section_6 .images img {
+        width: calc(var(--img-size) * 75vw);
+        max-width: none;
+        height: calc(var(--img-size) * 40vw);
     }
 }
 
 /* celular  */
 @media (max-width: 500px) {
 
-    .section_5,
+
+    .section_5 {
+        padding: 4vw 0 26vw 0;
+    }
+
     .section_6 {
-        padding: 4vw 0;
+        padding: 26vw 0 4vw 0;
     }
 
     .section_6 .images img {
-        width: calc(var(--img-size) * 30vw);
-        height: calc(var(--img-size) * 70vw);
+        width: calc(var(--img-size) * 75vw);
+        height: calc(var(--img-size) * 45vw);
+        box-shadow: 1vw 1vw 2.5vw 0 rgba(0, 0, 0, 0.5);
     }
 
     .section_5 .content,
     .section_6 .content {
-        width: 65vw;
+        width: 90vw;
         margin-right: 3vw;
     }
 

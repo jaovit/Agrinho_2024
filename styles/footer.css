@@ -31,18 +31,18 @@
 
 .footer.letter_120 .titulo {
     letter-spacing: calc(1.20 * .075vw);
-  word-spacing: calc(1.20 * .075vw);
-  }
-  
-  .footer.letter_120  .subtitulo {
+    word-spacing: calc(1.20 * .075vw);
+}
+
+.footer.letter_120 .subtitulo {
     letter-spacing: calc(1.20 * .075vw);
-  word-spacing: calc(1.20 * .075vw);
-  }
-  
-  .footer.letter_120 .texto {
+    word-spacing: calc(1.20 * .075vw);
+}
+
+.footer.letter_120 .texto {
     letter-spacing: calc(1.20 * .075vw);
-  word-spacing: calc(1.20 * .075vw);
-  }
+    word-spacing: calc(1.20 * .075vw);
+}
 
 .footer .info {
     margin-left: .75vw;
