@@ -148,8 +148,8 @@ function nativo(event) {
   fechar(event, ["none", "none", "flex", "block", "none"]);
   if (navigator.share !== undefined) {
     navigator.share({
-      title: "Sustentabilidade: Ações que mudam o mundo",
-      text: "Como mudar o mundo de maneira sustentável",
+      title: "Tecnologia e Sustentabilidade: Unindo Campo e Cidade",
+      text: "Descubra como a tecnologia está transformando a agricultura e a vida urbana, promovendo uma conexão mais eficiente e sustentável entre o campo e a cidade.",
       url: "https://jaovit.github.io/Agrinho_2024/",
     });
   }
