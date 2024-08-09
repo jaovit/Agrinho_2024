@@ -96,7 +96,7 @@
 
 .section_4 .item {
     flex-direction: column;
-    width: 20vw;
+    width: 27vw;
 }
 
 .section_4 .item .texto {
@@ -158,7 +158,8 @@
     }
 
     .section_4 .content {
-        width: auto;
+        width: 92.5vw;
+        margin-left: 2vw;
     }
 
     .section_4 .textos {
@@ -174,7 +175,7 @@
     }
 
     .section_4 .item {
-        width: 38vw;
+        width: 85vw;
         flex-shrink: 0;
     }
 

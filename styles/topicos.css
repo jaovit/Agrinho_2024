@@ -73,7 +73,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 42vw;
+    height: 44vw;
     flex-shrink: 0;
 }
 
@@ -88,7 +88,7 @@
     transform-style: preserve-3d;
     perspective: 37.5vw;
     height: 100%;
-    width: 21vw;
+    width: 21.5vw;
     flex-shrink: 0;
 }
 
@@ -96,8 +96,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: .5vw;
-    width: 18.5vw;
+    row-gap: .75vw;
+    width: 19vw;
     height: 75%;
     background-color: var(--color-principal);
     border-radius: 2%;
@@ -141,7 +141,7 @@
 
 .topicos .cards img {
     width: 100%;
-    height: 19vw;
+    height: 18vw;
     border-radius: 2.5%;
     box-shadow: .75vw .75vw 1vw 0 rgba(0, 0, 0, 0.25);
     object-fit: cover;
@@ -153,7 +153,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 .75vw;
+    padding: 0 .4vw;
 }
 
 .topicos .cards .subtitulo {
@@ -180,32 +180,33 @@
     }
 
     .topicos .carrocel {
-        height: 45vw;
-    }
-
-    .topicos .carrocel-box {
         height: 50vw;
     }
 
+    .topicos .carrocel-box {
+        height: 45vw;
+    }
+
     .topicos .cards {
-        width: 25vw;
+        width: 28.5vw;
     }
 
     .topicos .cards-box {
-        width: 22vw;
+        width: 25vw;
+        height: 95%;
     }
 
     .topicos .cards img {
-        height: 20vw;
+        height: 22vw;
     }
 
     .topicos .cards .subtitulo {
-        font-size: 2.25vw;
+        font-size: 2.15vw;
         margin-bottom: .5vw;
     }
 
     .topicos .cards .texto {
-        font-size: 1.7vw;
+        font-size: 1.45vw;
         line-height:  2.4vw;
         padding: 0 .75vw;
     }
@@ -227,37 +228,37 @@
     }
 
     .topicos .carrocel {
-        height: 80vw;
+        height: 84vw;
     }
 
     .topicos .carrocel-box {
-        height: 68vw;
+        height: 73vw;
     }
 
     .topicos .cards {
         height: 100%;
-        width: 45vw;
+        width: 46vw;
     }
 
     .topicos .cards-box {
         height: 100%;
-        width: 40vw;
+        width: 41vw;
         box-shadow: 1vw 1vw 2.5vw 0 rgba(0, 0, 0, 0.5);
 
     }
 
     .topicos .cards img {
-        height: 37.5vw;
+        height: 38.75vw;
     }
 
     .topicos .cards .subtitulo {
-        font-size: 3.25vw;
-        margin-bottom: 2vw;
+        font-size: 3.15vw;
+        margin-bottom: 1.75vw;
     }
 
     .topicos .cards .texto {
-        font-size: 2.75vw;
-        line-height: 4.5vw;
+        font-size: 2.5vw;
+        line-height: 4vw;
         padding: 0 .75vw;
     }
 }
@@ -289,21 +290,21 @@
     }
 
     .topicos .carrocel {
-        height: 32vw;
+        height: 36.5vw;
     }
 
     .topicos .carrocel-box {
-        height: 37.5vw;
+        height: 33.5vw;
     }
 
     .topicos .cards {
         perspective: 37.5vw;
-        width: 18.5vw;
+        width: 19.5vw;
     }
 
     .topicos .cards-box {
-        width: 16.5vw;
-        height: 75.50%;
+        width: 17vw;
+        height: 90%;
     }
 
     .topicos .cards img {

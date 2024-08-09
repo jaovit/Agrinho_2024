@@ -557,7 +557,7 @@
 
     .entrar {
         width: 95vw;
-        min-height: 70vw;
+        max-height: 70vw;
     }
 
     .entrar .form {

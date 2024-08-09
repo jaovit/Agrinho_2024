@@ -51,7 +51,7 @@
 /* tablet  */
 @media (max-width: 1000px) {
     .template {
-        padding: 13vw 0 12vw 0;
+        padding: 20vw 0 12vw 0;
     }
 
     .template .content {
@@ -72,7 +72,7 @@
 
 @media (max-width: 500px) {
     .template {
-        padding: 25vw 0 15vw 0;
+        padding: 40vw 0 15vw 0;
     }
 
     .template .content {
