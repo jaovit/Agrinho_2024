@@ -1,8 +1,7 @@
 .template {
     position: relative;
-    padding: 10vw 0 0 0;
+    padding: 12vw 0 12vw 0;
     width: 100vw;
-    height: 27.5vw;
 }
 
 .template::before {
@@ -32,8 +31,8 @@
 }
 
 .template .content {
-    margin-left: 18vw;
-    width: 70vw;
+    margin-left: 12vw;
+    width: 77.5vw;
 }
 
 .template .titulo {
@@ -41,7 +40,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: calc(var(--font-size) * 3.85vw);
+    font-size: calc(var(--font-size) * 3.5vw);
     margin-bottom: 1.5vw;
 }
 
@@ -52,8 +51,7 @@
 /* tablet  */
 @media (max-width: 1000px) {
     .template {
-        padding: 13vw 0;
-        height: 20vw;
+        padding: 13vw 0 12vw 0;
     }
 
     .template .content {
@@ -74,8 +72,7 @@
 
 @media (max-width: 500px) {
     .template {
-        padding: 25vw 0 20vw 0;
-        height: 30vw;
+        padding: 25vw 0 15vw 0;
     }
 
     .template .content {

@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     padding: 5vw 0;
+    overflow-x: hidden;
 }
 
 .section_3 .content,
@@ -21,7 +22,7 @@
 }
 
 .section_3 .textos {
-    width: 45%;
+    width: 55%;
 }
 
 .section_3 .titulo,
@@ -36,7 +37,7 @@
 .section_3 .box-lista {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 2vw;
     margin-left: 1.75vw;
 }
 
@@ -187,6 +188,7 @@
     .section_3 .images img {
         width: calc(var(--img-size) * 90vw);
         height: calc(var(--img-size) * 50vw);
+        max-width: calc(90vw * 1.1);
     }
 
     .section_3 .textos {
@@ -217,7 +219,8 @@
 
     .section_3 .pos {
         width: 6vw;
-        height: 20vw;
+        height: 16vw;
+        margin-right: 0;
     }
 
     .section_3 .item .texto:not(.section_3 .pos .texto) {

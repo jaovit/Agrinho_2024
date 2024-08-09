@@ -70,6 +70,7 @@
     .section_7 .texto,
     .section_9 .texto {
         margin-left: 1.75vw;
+        padding-right: 0;
     }
 
     .section_1 .images img {
@@ -94,7 +95,7 @@
     .section_7 .content,
     .section_9 .content {
         flex-direction: column;
-        width: 94vw;
+        width: 95vw;
         row-gap: 4vw;
     }
 

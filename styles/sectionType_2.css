@@ -63,7 +63,7 @@
 /* celular  */
 @media (max-width: 500px) {
 
-    .section_8 .ide {
+    .ide {
         display: none;
     }
 
@@ -74,7 +74,7 @@
 
     .section_2 .content,
     .section_8 .content {
-        width: 90vw;
+        width: 95vw;
         row-gap: 3vw;
         flex-direction: column;
     }
