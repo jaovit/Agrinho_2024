@@ -157,7 +157,7 @@ table {
 .texto {
   color: var(--color-text);
   font-family: var(--font-text);
-  font-size: calc(var(--font-size) * 1.15vw);
+  font-size: calc(var(--font-size) * 1.225vw);
   line-height: calc(var(--font-size) * 1.75vw);
   letter-spacing: calc(var(--letter-space) * .075vw);
   word-spacing: calc(var(--letter-space) * .075vw);

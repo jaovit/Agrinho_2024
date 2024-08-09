@@ -88,7 +88,7 @@
     transform-style: preserve-3d;
     perspective: 37.5vw;
     height: 100%;
-    width: 22vw;
+    width: 21vw;
     flex-shrink: 0;
 }
 
@@ -153,16 +153,17 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding: 0 .75vw;
 }
 
 .topicos .cards .subtitulo {
-    font-size: calc(var(--font-size) * 1.5vw);
+    font-size:  1.5vw;
 }
 
 .topicos .cards .texto {
-    font-size: calc(var(--font-size) * 1vw);
-    letter-spacing: calc(var(--letter-space) * .065vw);
-    line-height: calc(var(--font-size) * 1.5vw);
+    font-size:  1vw;
+    letter-spacing:.065vw;
+    line-height:  1.5vw;
     padding: 0 1vw;
 }
 
@@ -199,13 +200,13 @@
     }
 
     .topicos .cards .subtitulo {
-        font-size: calc(var(--font-size) * 2.25vw);
+        font-size: 2.25vw;
         margin-bottom: .5vw;
     }
 
     .topicos .cards .texto {
-        font-size: calc(var(--font-size) * 1.7vw);
-        line-height: calc(var(--font-size) * 2.4vw);
+        font-size: 1.7vw;
+        line-height:  2.4vw;
         padding: 0 .75vw;
     }
 }
@@ -250,13 +251,13 @@
     }
 
     .topicos .cards .subtitulo {
-        font-size: calc(var(--font-size) * 3.25vw);
+        font-size: 3.25vw;
         margin-bottom: 2vw;
     }
 
     .topicos .cards .texto {
-        font-size: calc(var(--font-size) * 2.75vw);
-        line-height: calc(var(--font-size) * 4.5vw);
+        font-size: 2.75vw;
+        line-height: 4.5vw;
         padding: 0 .75vw;
     }
 }

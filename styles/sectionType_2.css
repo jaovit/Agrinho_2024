@@ -58,6 +58,10 @@
 /* celular  */
 @media (max-width: 500px) {
 
+    .ide {
+        display: none;
+    }
+
     .section_2 .texto,
     .section_8 .texto {
         margin-left: 2.75vw;
