@@ -10,7 +10,12 @@ window.addEventListener("load", () => {
 }); // quando a página terminar de carregar
 
 carrocel.addEventListener("scroll", PositionCard); // quando o carrocel for rolado (melhor doq scrolado...)
-window.addEventListener("resize", PositionCard); // quando o tamanho da página for alterado
+window.addEventListener("resize", () => {
+  PositionCard();
+
+  const scrollTotal = carrocel.scrollWidth - carrocel.clientWidth;
+  carrocel.scrollLeft = scrollTotal / 2;
+}); // quando o tamanho da página for alterado
 
 function Positions(element) {
   const rect = element.getBoundingClientRect();

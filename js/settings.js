@@ -10,9 +10,9 @@ function mudarRoot(tema) {
     var root_prop = {
       /* modo neutro padrão */
       "--color-principal": "#252929",
-      "--color-segundaria": "#1a1a1a",
+      "--color-segundaria": "#141414",
       "--color-principal-deg":
-        "linear-gradient(to top, var(--color-segundaria) 10%, #1a1a1ad0 45%, transparent 90%)",
+        "linear-gradient(to top, linear-gradient(to top, var(--color-segundaria) 0%, #141414d0 35%, transparent 75%)",
       "--color-title": "#FEFEFE",
       "--color-title-deg": "linear-gradient(120deg, #FFFFFF 0%, #96989C 80%)",
       "--color-subtitle": "#d8d5d5",
@@ -134,7 +134,7 @@ function Letter() {
   root.style.setProperty("--letter-space", letterBarra.value / 100);
 
   for (let i = 0; i < letterMax.length; i++) {
-    let VLetterMax = parseInt(letterMax[i].attributes.letterMax_max.value);
+    let VLetterMax = parseInt(letterMax[i].attributes.letter_max.value);
     letterMax[i].classList.toggle(
       `letter_${letterMax[i].attributes.letter_max.value}`,
       letterBarra.value > VLetterMax
