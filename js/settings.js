@@ -6,58 +6,46 @@ let root = document.documentElement;
 const elementosMudar = document.querySelectorAll(".tema");
 
 function mudarRoot(tema) {
-  if (tema == 0) {
-    var root_prop = {
-      /* modo neutro padrão */
-      "--color-principal": "#252929",
-      "--color-segundaria": "#141414",
-      "--color-principal-deg":
-        "linear-gradient(to top, linear-gradient(to top, var(--color-segundaria) 0%, #141414d0 35%, transparent 75%)",
-      "--color-title": "#FEFEFE",
-      "--color-title-deg": "linear-gradient(120deg, #FFFFFF 0%, #96989C 80%)",
-      "--color-subtitle": "#d8d5d5",
-      "--color-text": "#dde1e6",
-
-      "--color-principal-light": "#e7eef1",
-      "--color-title-light": "#27272A",
-      "--color-subtitle-light": "rgb(51, 51, 51)",
-      "--color-text-light": "#504f4f",
-      "--borda-light": "solid .1vw #141414",
-    };
-
-    for (let i = 0; i < elementosMudar.length; i++) {
-      elementosMudar[i].classList.add("light");
-      elementosMudar[i].classList.remove("dark");
-    }
-  } else if (tema == 1) {
+   if (tema == 1) {
     // padrao
     var root_prop = {
-      /* modo neutro padrão */
-      "--color-principal": "#252929",
-      "--color-segundaria": "#1a1a1a",
-      "--color-principal-deg":
-        "linear-gradient(to top, var(--color-segundaria) 10%, #1a1a1ad0 45%, transparent 90%)",
-      "--color-title": "#FEFEFE",
-      "--color-title-deg": "linear-gradient(120deg, #FFFFFF 0%, #96989C 80%)",
-      "--color-subtitle": "#d8d5d5",
-      "--color-text": "#dde1e6",
+       /* menu */
+  "--color-menu": "#131313",
+  "--color-text-menu": "#dde1e6",
+  "--color-menu-2": "#1a1a1a",
+  "--color-title-menu": "#d8d5d5",
 
-      "--color-principal-light": "#e7eef1",
-      "--color-title-light": "#27272A",
-      "--color-subtitle-light": "rgb(51, 51, 51)",
-      "--color-text-light": "#504f4f",
-      "--borda-light": "solid .1vw #141414",
+  /* modo neutro padrão */
+  "--color-principal": "#252929",
+  "--color-segundaria": "#141414",
+  "--color-principal-deg": "linear-gradient(to top, var(--color-segundaria) 5%, #141414d5 50%, transparent 75%)",
+  "--color-title": "#FEFEFE",
+  "--color-title-deg": "linear-gradient(120deg, #FFFFFF 0%, #96989C 80%)",
+  "--color-subtitle": "#d8d5d5",
+  "--color-text": "#dde1e6",
+
+  "--color-principal-light": "#e7eef1",
+  "--color-title-light": "#1b1b1d",
+  "--color-subtitle-light": "rgb(36, 35, 35)",
+  "--color-text-light": "#3f3f3f",
+  "--borda-light": "solid .1vw #141414",
     };
 
     for (let i = 0; i < elementosMudar.length; i++) {
-      elementosMudar[i].classList.remove("light");
       elementosMudar[i].classList.remove("dark");
+      // caso fosse necessario usar, nn usei... mas poderia
     }
 
     modo = true;
   } else {
     // escuro
     var root_prop = {
+        /* menu */
+  "--color-menu": "#131313",
+  "--color-text-menu": "#dde1e6",
+  "--color-menu-2": "#1a1a1a",
+  "--color-title-menu": "#d8d5d5",
+
       "--color-principal": "#171a1a",
       "--color-segundaria": "#131313",
       "--color-principal-deg":
@@ -76,7 +64,7 @@ function mudarRoot(tema) {
 
     for (let i = 0; i < elementosMudar.length; i++) {
       elementosMudar[i].classList.add("dark");
-      elementosMudar[i].classList.remove("light");
+      // caso fosse necessario usar, mas nn usei... mas poderia
     }
   }
 
