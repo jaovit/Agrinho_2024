@@ -107,7 +107,9 @@ function scroll() {
 let direcao = true;
 // Chama a função rolagem a cada 10 segundos
 
-window.addEventListener("load", setInterval(rolagem, 7500));
+window.addEventListener("load", function() {
+  setInterval(rolagem, 7500);
+});
 
 function rolagem() {
   if (animations) {
