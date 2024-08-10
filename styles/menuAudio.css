@@ -115,7 +115,7 @@
 @media (max-width: 500px) {
     .menu_audio {
         transform: translateX(calc(-100% + 10vw));
-        top: 80%;
+        top: 90%;
     }
 
     .box-icon {
