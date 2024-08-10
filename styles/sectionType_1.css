@@ -135,8 +135,8 @@
         width: calc(var(--img-size) * 35vw);
     }
 
-    .section_7 .images .img,
-    .section_9 .images .img {
+    .section_7 .images img,
+    .section_9 .images img {
         width: calc(var(--img-size) * 90vw);
         height: calc(var(--img-size) * 50vw);
         box-shadow: 1vw 1vw 2.5vw 0 rgba(0, 0, 0, 0.5);

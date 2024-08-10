@@ -51,7 +51,7 @@
 /* tablet  */
 @media (max-width: 1000px) {
     .template {
-        padding: 20vw 0 12vw 0;
+        padding: 15vw 0 12vw 0;
     }
 
     .template .content {
@@ -72,7 +72,7 @@
 
 @media (max-width: 500px) {
     .template {
-        padding: 40vw 0 15vw 0;
+        padding: 23vw 0 15vw 0;
     }
 
     .template .content {
@@ -82,6 +82,12 @@
     .template .titulo {
         font-size: calc(var(--font-size) * 7vw);
         margin-bottom: calc(var(--font-size) * 2.5vw);
+        
+    }
+
+    .template .titulo.txt_135 {
+        font-size: calc(1.15 * 7vw);
+        margin-bottom: calc(1.35 * 2.5vw);
     }
 
     .template .texto {
